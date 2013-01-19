@@ -1,0 +1,4 @@
+.idea/*
+app/runtime/*
+yii/*
+web/assets/*
