@@ -1,0 +1,16 @@
+Options +followSymLinks
+IndexIgnore */*
+
+<ifModule mod_rewrite.c>
+
+	RewriteEngine on
+	RewriteBase {baseUrl}
+
+	# If the requested file or directory does not exist...
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	# ...and if the source URL points to an image, we redirect to the create image URL.
+	RewriteRule {sourceUrl} {targetUrl} [L,R,QSA]
+
+</ifModule>
