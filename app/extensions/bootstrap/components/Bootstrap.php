@@ -4,7 +4,8 @@
  * @author Christoffer Niska <ChristofferNiska@gmail.com>
  * @copyright Copyright &copy; Christoffer Niska 2011-
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
- * @version 2.0.3
+ * @package bootstrap.components
+ * @version 2.1.0
  */
 
 /**
@@ -39,7 +40,7 @@ class Bootstrap extends CApplicationComponent
 	 */
 	public $forceCopyAssets = false;
 
-	protected $_assetsUrl;
+	private $_assetsUrl;
 
 	/**
 	 * Registers the Bootstrap CSS.
@@ -47,7 +48,7 @@ class Bootstrap extends CApplicationComponent
 	public function registerCoreCss()
 	{
 		$filename = YII_DEBUG ? 'bootstrap.css' : 'bootstrap.min.css';
-		Yii::app()->clientScript->registerCssFile($this->getAssetsUrl().'/css/'.$filename);
+		Yii::app()->clientScript->registerCssFile($this->getYbAssetsUrl().'/css/'.$filename);
 	}
 
 	/**
@@ -60,7 +61,7 @@ class Bootstrap extends CApplicationComponent
 		$cs = Yii::app()->getClientScript();
 		$cs->registerMetaTag('width=device-width, initial-scale=1.0', 'viewport');
 		$filename = YII_DEBUG ? 'bootstrap-responsive.css' : 'bootstrap-responsive.min.css';
-		$cs->registerCssFile($this->getAssetsUrl().'/css/'.$filename);
+		$cs->registerCssFile($this->getYbAssetsUrl().'/css/'.$filename);
 	}
 
 	/**
@@ -69,7 +70,7 @@ class Bootstrap extends CApplicationComponent
 	 */
 	public function registerYiiCss()
 	{
-		Yii::app()->clientScript->registerCssFile($this->getAssetsUrl().'/css/yii.css');
+		Yii::app()->clientScript->registerCssFile($this->getYbAssetsUrl().'/css/yii.css');
 	}
 
 	/**
@@ -103,7 +104,7 @@ class Bootstrap extends CApplicationComponent
 		$cs = Yii::app()->getClientScript();
 		$cs->registerCoreScript('jquery');
 		$filename = YII_DEBUG ? 'bootstrap.js' : 'bootstrap.min.js';
-		$cs->registerScriptFile($this->getAssetsUrl().'/js/'.$filename, $position);
+		$cs->registerScriptFile($this->getYbAssetsUrl().'/js/'.$filename, $position);
 	}
 
 	/**
@@ -296,7 +297,7 @@ class Bootstrap extends CApplicationComponent
 	* Returns the URL to the published assets folder.
 	* @return string the URL
 	*/
-	protected function getAssetsUrl()
+	protected function getYbAssetsUrl()
 	{
 		if (isset($this->_assetsUrl))
 			return $this->_assetsUrl;
@@ -314,6 +315,6 @@ class Bootstrap extends CApplicationComponent
      */
     public function getVersion()
     {
-        return '2.0.3';
+        return '2.1.0';
     }
 }

@@ -1,0 +1,35 @@
+.auth-module h1 {
+    margin: 0 0 30px;
+}
+
+.auth-module h3 {
+    line-height: 100%;
+}
+
+.auth-module small {
+    color: #888;
+}
+
+.auth-module .title-row .btn-group {
+    margin-bottom: 12px;
+}
+
+.auth-module .detail-view .null {
+    color: #888;
+}
+
+.auth-module .disabled {
+    color: #888;
+}
+
+.auth-module .item-description-column {
+    width: 65%;
+}
+
+.auth-module .actions-column {
+    width: 30px;
+}
+
+.auth-module .assignment-items-column {
+    width: 580px;
+}

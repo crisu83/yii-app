@@ -6,7 +6,7 @@ $params = require(__DIR__ . '/params.php');
 // application configuration
 return array(
 	'basePath' => __DIR__ . '/..',
-	'name' => 'My Web Application',
+	'name' => $params['app.name'],
 
 	// application language
 	'language' => 'en',
@@ -26,7 +26,12 @@ return array(
 	),
 
 	// application modules
-	'modules' => array(// uncomment the following to enable the Gii tool
+	'modules' => array(
+		// uncomment the following to enable the Auth module
+		/*
+		'auth',
+		*/
+		// uncomment the following to enable the Gii tool
 		/*
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
@@ -39,6 +44,21 @@ return array(
 
 	// application components
 	'components' => array(
+		// uncomment the following if you enable the Auth module
+		/*
+		'authManager'=>array(
+			'class'=>'auth.components.CachedDbAuthManager',
+			'itemTable'=>'authitem',
+			'itemChildTable'=>'authitemchild',
+			'assignmentTable'=>'authassignment',
+			'behaviors'=>array(
+				'auth'=>array(
+					'class'=>'auth.components.AuthBehavior',
+					'admins'=>array('admin'),
+				),
+			),
+		),
+		*/
 		'bootstrap' => array(
 			'class' => 'bootstrap.components.Bootstrap',
 		),
@@ -51,6 +71,10 @@ return array(
 		),
 		'errorHandler' => array(
 			'errorAction' => 'site/error',
+		),
+		'image' => array(
+			'class' => 'ext.image.components.ImageManager',
+			'versions' => $params['image.versions'],
 		),
 		'less' => array(
 			'class' => 'ext.less.components.Less',
@@ -79,6 +103,10 @@ return array(
 			'rules' => $params['url.rules'],
 		),
 		'user' => array(
+			// uncomment the following if you enable the Auth module
+			/*
+			'class'=>'auth.components.AuthWebUser',
+			*/
 			'allowAutoLogin' => true,
 		),
 	),

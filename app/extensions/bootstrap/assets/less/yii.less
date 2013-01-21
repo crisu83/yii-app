@@ -1,81 +1,75 @@
 /*
-	Imports
-*/
-
-@import "mixins.less";
-
-/*
 	Grid view
 */
 
 .grid-view {
-	padding-top: 20px;
+  padding-top: 20px;
 
-	table.items {
-		th a {
-			display: block;
-			position: relative;
+  table.items {
+    th a {
+      display: block;
+      position: relative;
 
-			.caret {
-				display: none;
-				position: absolute;
-				right: 5px;
-				top: 7px;
-			}
+      .caret {
+        display: none;
+        position: absolute;
+        right: 5px;
+        top: 7px;
+      }
 
-			&.asc .caret {
-				display: block;
-			}
+      &.asc .caret {
+        display: block;
+      }
 
-			&.desc .caret {
-				border-bottom: 4px solid #000;
-				border-top: none;
-				display: block;
-			}
-		}
+      &.desc .caret {
+        border-bottom: 4px solid #000;
+        border-top: none;
+        display: block;
+      }
+    }
 
-		tr.selected td {
-			background: #EEE;
-		}
-	}
+    tr.selected td {
+      background: #EEE;
+    }
+  }
 
-	.filters {
-		.filter-container {
-			padding: 0 15px 0 0;
-		}
+  .filters {
+    .filter-container {
+      padding: 0 15px 0 0;
+    }
 
-		input,
-		select {
-			margin-bottom: 0;
-			width: 100%;
-		}
-	}
+    input,
+    select {
+      margin-bottom: 0;
+      width: 100%;
+    }
+  }
 
-	.button-column {
-		text-align: center;
-		width: 50px;
-	}
+  .button-column {
+    text-align: center;
+    width: 50px;
+  }
 
-	.checkbox-column {
-		width: 15px;
-	}
+  .checkbox-column {
+    width: 15px;
+  }
 
-	.summary {
-		margin-bottom: 5px;
-		text-align: right;
-	}
+  .summary {
+    margin-bottom: 5px;
+    text-align: right;
+  }
 
-	.pager {
-		margin-top: 5px;
-	}
+  .pager {
+    margin-top: 5px;
+  }
 
-	.empty {
-		font-style: italic;
-	}
+  .empty {
+    font-style: italic;
+  }
 }
 
 .grid-view-loading {
-	background: url(../img/loading.gif) no-repeat;
+  background: url(../img/loading.gif) no-repeat;
 }
 
 /*
@@ -83,49 +77,49 @@
 */
 
 .list-view {
-    padding-top: 20px;
+  padding-top: 20px;
 
-	.summary {
-		margin-bottom: 5px;
-		text-align: right;
-	}
+  .summary {
+    margin-bottom: 5px;
+    text-align: right;
+  }
 
-	.pager {
-		margin-top: 5px;
-	}
+  .pager {
+    margin-top: 5px;
+  }
 
-	.sorter {
-		margin: 0 0 5px 0;
-		text-align: right;
+  .sorter {
+    margin: 0 0 5px 0;
+    text-align: right;
 
-		ul {
-			display: inline;
-			list-style: none outside none;
-			margin: 0;
-			padding: 0;
-		}
+    ul {
+      display: inline;
+      list-style: none outside none;
+      margin: 0;
+      padding: 0;
+    }
 
-		li {
-			display: inline;
-			margin: 0 0 0 5px;
-			padding: 0;
-		}
+    li {
+      display: inline;
+      margin: 0 0 0 5px;
+      padding: 0;
+    }
 
-		a .caret {
-			position: absolute;
-			right: 5px;
-			top: 7px;
+    a .caret {
+      position: absolute;
+      right: 5px;
+      top: 7px;
 
-			&.desc .caret {
-				border-bottom: 4px solid #000;
-				border-top: none;
-			}
-		}
-	}
+      &.desc .caret {
+        border-bottom: 4px solid #000;
+        border-top: none;
+      }
+    }
+  }
 }
 
 .list-view-loading {
-	background: url(../img/loading.gif) no-repeat;
+  background: url(../img/loading.gif) no-repeat;
 }
 
 /*
@@ -133,14 +127,14 @@
 */
 
 .detail-view {
-	.null {
-		color: #FFC0CB;
-	}
+  .null {
+    color: #FFC0CB;
+  }
 
-	th {
-		text-align: right;
-		width: 160px;
-	}
+  th {
+    text-align: right;
+    width: 160px;
+  }
 }
 
 /*
@@ -148,30 +142,30 @@
 */
 
 span.required {
-	color: #F00;
+  color: #F00;
 }
 
 .form-inline,
 .form-horizontal,
 .form-vertical {
-	label.error {
-		color: #B94A48;
-	}
+  label.error {
+    color: #B94A48;
+  }
 
-	select.error,
-	input.error,
-	textarea.error {
-		border-color: #B94A48;
-		color: #B94A48;
+  select.error,
+  input.error,
+  textarea.error {
+    border-color: #B94A48;
+    color: #B94A48;
 
-		&:focus {
-			border-color: #953B39;
-		    .box-shadow(0 0 6px #D59392);
-		}
-	}
+    &:focus {
+      border-color: #953B39;
+      .box-shadow(0 0 6px #D59392);
+    }
+  }
 
-	.help-block.error,
-	.help-inline.error {
-		color: #B94A48;
-	}
+  .help-block.error,
+  .help-inline.error {
+    color: #B94A48;
+  }
 }
