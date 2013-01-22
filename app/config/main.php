@@ -6,6 +6,8 @@ $params = require(__DIR__ . '/params.php');
 // application configuration
 return array(
 	'basePath' => __DIR__ . '/..',
+
+	// application name
 	'name' => $params['app.name'],
 
 	// application language
@@ -23,6 +25,24 @@ return array(
 	'import' => array(
 		'application.models.*',
 		'application.components.*',
+	),
+
+	'behaviors' => array(
+		// uncomment this if your application is multilingual
+		/*
+		'multilingual' => array(
+			'class' => 'MultilingualApp',
+			'languages' => array( // enabled languages (locale => language)
+				'en' => 'English',
+			),
+		),
+		*/
+	),
+
+	// external controllers
+	'controllerMap' => array(
+		// uncomment the following if you enable the image component
+		//'image' => array('class' => 'ext.image.controllers.ImageController'),
 	),
 
 	// application modules
@@ -72,10 +92,13 @@ return array(
 		'errorHandler' => array(
 			'errorAction' => 'site/error',
 		),
+		// uncomment the following to enable image versioning
+		/*
 		'image' => array(
 			'class' => 'ext.image.components.ImageManager',
 			'versions' => $params['image.versions'],
 		),
+		*/
 		'less' => array(
 			'class' => 'ext.less.components.Less',
 			'mode' => $params['less.mode'],
@@ -98,9 +121,11 @@ return array(
 			),
 		),
 		'urlManager' => array(
+			// uncomment the following if you application is multilingual
+			'class' => 'MultilingualUrlManager',
 			'urlFormat' => 'path',
 			'showScriptName' => false,
-			'rules' => $params['url.rules'],
+			'rules' => $params['urlManager.rules'],
 		),
 		'user' => array(
 			// uncomment the following if you enable the Auth module

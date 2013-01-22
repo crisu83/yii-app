@@ -9,7 +9,9 @@ return array(
 	'db.username' => 'root',
 	'db.password' => '',
 	// url rules
-	'url.rules' => array(
+	'urlManager.rules' => array(
+		// language rules
+		'<lang:([a-z]{2}(?:_[a-z]{2})?)>/<route:[\w\/]+>'=>'<route>',
 		// seo rules
 		'<controller:\w+>/<name>-<id:\d+>.html'=>'<controller>/view',
 		// default rules
