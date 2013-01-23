@@ -9,6 +9,7 @@ Base Yii application with the following extensions:
  * [less](http://www.yiiframework.com/extension/less) *LESS compiler*
  * [password](http://www.yiiframework.com/extension/yii-password-strategies/) *Password strategies*
  * [seo](http://www.yiiframework.com/extension/seo) *Search engine optimization*
+ * multilingual *Multilingual application*
 
 A great way to start building your web application.
 
