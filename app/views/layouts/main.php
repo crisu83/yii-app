@@ -30,7 +30,7 @@
 			// uncomment the following if your application is multilingual
 			/*
 			array(
-				'class'=>'LanguageMenu',
+				'class'=>'ext.multilingual.widgets.MlLanguageMenu',
 				'htmlOptions'=>array('class'=>'pull-right'),
 			),
 			*/

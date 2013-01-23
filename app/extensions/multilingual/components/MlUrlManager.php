@@ -1,6 +1,6 @@
 <?php
 
-class MultilingualUrlManager extends CUrlManager
+class MlUrlManager extends CUrlManager
 {
 	/**
 	 * Constructs a URL.

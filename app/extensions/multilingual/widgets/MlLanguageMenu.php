@@ -2,7 +2,7 @@
 
 Yii::import('bootstrap.widgets.TbMenu');
 
-class LanguageMenu extends TbMenu
+class MlLanguageMenu extends TbMenu
 {
 	/**
 	 * Initializes the widget.

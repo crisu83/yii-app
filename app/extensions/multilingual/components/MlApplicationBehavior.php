@@ -1,6 +1,6 @@
 <?php
 
-class MultilingualApp extends CBehavior
+class MlApplicationBehavior extends CBehavior
 {
 	/**
 	 * @var string the default locale.

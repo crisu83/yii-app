@@ -31,7 +31,7 @@ return array(
 		// uncomment this if your application is multilingual
 		/*
 		'multilingual' => array(
-			'class' => 'MultilingualApp',
+			'class' => 'ext.multilingual.components.MlApplicationBehavior',
 			'languages' => array( // enabled languages (locale => language)
 				'en' => 'English',
 			),
@@ -122,16 +122,14 @@ return array(
 		),
 		'urlManager' => array(
 			// uncomment the following if you application is multilingual
-			'class' => 'MultilingualUrlManager',
+			//'class' => 'ext.multilingual.components.MlUrlManager',
 			'urlFormat' => 'path',
 			'showScriptName' => false,
 			'rules' => $params['urlManager.rules'],
 		),
 		'user' => array(
 			// uncomment the following if you enable the Auth module
-			/*
-			'class'=>'auth.components.AuthWebUser',
-			*/
+			//'class'=>'auth.components.AuthWebUser',
 			'allowAutoLogin' => true,
 		),
 	),
