@@ -47,7 +47,7 @@ class SiteController extends Controller
 	}
 
 	/**
-	 * Displays the contact page
+	 * Displays the contact page.
 	 */
 	public function actionContact()
 	{
@@ -73,7 +73,7 @@ class SiteController extends Controller
 	}
 
 	/**
-	 * Displays the login page
+	 * Displays the login page.
 	 */
 	public function actionLogin()
 	{
@@ -108,4 +108,15 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+    /**
+     * Changes the application language.
+     * @param string $locale locale ID.
+     */
+    public function actionChangeLanguage($locale)
+    {
+        if (in_array($locale, array_keys(Yii::app()->languages)))
+            Yii::app()->user->setState('__locale', $locale);
+        $this->redirect(array('index', 'language'=>$locale));
+    }
 }
