@@ -5,13 +5,13 @@
  */
 
 CREATE TABLE `image` (
-	`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-	`name` varchar(255) NOT NULL,
-	`path` varchar(255) NULL DEFAULT NULL,
-	`extension` varchar(255) NOT NULL,
-	`filename` varchar(255) NOT NULL,
-	`mimeType` varchar(255) NOT NULL,
-	`byteSize` int(10) unsigned NOT NULL,
-	`createTime` datetime NOT NULL,
+	`id` BIGINT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(255) NOT NULL,
+	`path` VARCHAR(255) NULL DEFAULT NULL,
+	`extension` VARCHAR(4) NOT NULL,
+	`filename` VARCHAR(255) NOT NULL,
+	`mimeType` VARCHAR(255) NOT NULL,
+	`byteSize` INT(10) UNSIGNED NOT NULL,
+	`createTime` DATETIME NOT NULL,
 	PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) COLLATE='utf8_general_ci' ENGINE=InnoDB;;
