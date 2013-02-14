@@ -5,6 +5,7 @@ Base Yii application with the following extensions:
 
  * [Auth](http://www.yiiframework.com/extension/auth) *Access control*
  * Email *Creation and sending of emails*
+ * [Debug Toolbar](https://github.com/malyshev/yii-debug-toolbar) *Debugging*
  * [Image](http://www.yiiframework.com/extension/img) *Creation, manipulation and versioning of images*
  * [Less](http://www.yiiframework.com/extension/less) *LESS compiler*
  * [Password](http://www.yiiframework.com/extension/yii-password-strategies/) *Password strategies*
