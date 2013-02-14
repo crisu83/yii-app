@@ -3,13 +3,14 @@ yii-app
 
 Base Yii application with the following extensions:
 
- * [auth](http://www.yiiframework.com/extension/auth) *Access control*
- * [bootstrap](http://www.yiiframework.com/extension/bootstrap) *Twitter Bootstrap widgets*
- * [image](http://www.yiiframework.com/extension/img) *Image versioning*
- * [less](http://www.yiiframework.com/extension/less) *LESS compiler*
- * [password](http://www.yiiframework.com/extension/yii-password-strategies/) *Password strategies*
- * [seo](http://www.yiiframework.com/extension/seo) *Search engine optimization*
- * multilingual *Multilingual application*
+ * [Auth](http://www.yiiframework.com/extension/auth) *Access control*
+ * Email *Creation and sending of emails*
+ * [Image](http://www.yiiframework.com/extension/img) *Creation, manipulation and versioning of images*
+ * [Less](http://www.yiiframework.com/extension/less) *LESS compiler*
+ * [Password](http://www.yiiframework.com/extension/yii-password-strategies/) *Password strategies*
+ * [Seo](http://www.yiiframework.com/extension/seo) *Search engine optimization*
+ * Multilingual *Multilingual application*
+ * [Yiistrap](http://www.yiiframework.com/extension/bootstrap) *Twitter Bootstrap for Yii*
 
 A great way to start building your web application.
 
