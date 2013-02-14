@@ -11,22 +11,14 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 
 	<div class="login-form">
 
-		<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
-			'id'=>'login-form',
-		)); ?>
+		<?php $form=$this->beginWidget('bootstrap.widgets.TbActiveForm'); ?>
 
-			<fieldset>
-				<?php echo $form->textFieldRow($model,'username',array('class'=>'input-block-level','label'=>false,'placeholder'=>'Username')); ?>
-				<?php echo $form->passwordFieldRow($model,'password',array('class'=>'input-block-level','label'=>false,'placeholder'=>'Password')); ?>
-			</fieldset>
+		<fieldset>
+			<?php echo $form->textFieldRow($model,'username',array('block'=>true,'label'=>false,'placeholder'=>'Username')); ?>
+			<?php echo $form->passwordFieldRow($model,'password',array('block'=>true,'label'=>false,'placeholder'=>'Password')); ?>
+		</fieldset>
 
-			<?php $this->widget('bootstrap.widgets.TbButton', array(
-				'buttonType'=>'submit',
-				'type'=>'primary',
-				'size'=>'large',
-				'block'=>true,
-				'label'=>'Login',
-			)); ?>
+		<?php echo Html::submitButton('Login',array('style'=>Html::STYLE_PRIMARY,'size'=>Html::SIZE_LARGE,'block'=>true)); ?>
 
 		<?php $this->endWidget(); ?>
 

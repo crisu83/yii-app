@@ -7,9 +7,7 @@
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
-	<?php Yii::app()->bootstrap->registerYiiCss(); ?>
 	<?php Yii::app()->bootstrap->registerCoreScripts(); ?>
-
 	<?php Yii::app()->less->register(); ?>
 </head>
 

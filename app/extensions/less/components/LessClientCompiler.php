@@ -43,7 +43,7 @@ class LessClientCompiler extends LessCompiler
 	/**
 	 * @var boolean whether the watch mode should be enabled.
 	 */
-	public $watch = true;
+	public $watch = false;
 	/**
 	 * @var boolean whether assets should be republished on every request.
 	 */

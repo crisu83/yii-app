@@ -7,9 +7,7 @@
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
-	<?php Yii::app()->bootstrap->registerYiiCss(); ?>
-	<?php Yii::app()->bootstrap->registerCoreScripts(); ?>
-
+	<?php //Yii::app()->bootstrap->registerCoreScripts(); ?>
 	<?php Yii::app()->less->register(); ?>
 </head>
 
@@ -18,13 +16,13 @@
 		'collapse'=>true,
 		'items'=>array(
 			array(
-				'class'=>'bootstrap.widgets.TbMenu',
+				'class'=>'bootstrap.widgets.TbNav',
 				'items'=>array(
-					array('label'=>'Home', 'url'=>array('/site/index')),
-					array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-					array('label'=>'Contact', 'url'=>array('/site/contact')),
-					array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-					array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+					array('label'=>'Home','url'=>array('/site/index')),
+					array('label'=>'About','url'=>array('/site/page','view'=>'about')),
+					array('label'=>'Contact','url'=>array('/site/contact')),
+					array('label'=>'Login','url'=>array('/site/login'),'visible'=>Yii::app()->user->isGuest),
+					array('label'=>'Logout ('.Yii::app()->user->name.')','url'=>array('/site/logout'),'visible'=>!Yii::app()->user->isGuest)
 				),
 			),
 			// uncomment the following if your application is multilingual
@@ -39,10 +37,10 @@
 
 	<div class="container" id="page">
 
-		<?php if(isset($this->breadcrumbs)):?>
-			<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
-				'links'=>$this->breadcrumbs,
-			)); ?><!-- breadcrumbs -->
+		<?php if(!empty($this->breadcrumbs)):?>
+		<?php $this->widget('bootstrap.widgets.TbBreadcrumb', array(
+			'links'=>$this->breadcrumbs,
+		)); ?>
 		<?php endif?>
 
 		<?php echo $content; ?>

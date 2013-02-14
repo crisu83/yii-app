@@ -15,7 +15,7 @@ return array(
 
 	// path aliases
 	'aliases' => array(
-		'bootstrap' => 'ext.bootstrap',
+		'bootstrap' => 'ext.yiistrap',
 	),
 
 	// components to preload
@@ -23,6 +23,7 @@ return array(
 
 	// paths to import
 	'import' => array(
+		'application.helpers.*',
 		'application.models.*',
 		'application.components.*',
 	),
@@ -80,7 +81,7 @@ return array(
 		),
 		*/
 		'bootstrap' => array(
-			'class' => 'bootstrap.components.Bootstrap',
+			'class' => 'bootstrap.components.TbApi',
 		),
 		'db' => array(
 			'connectionString' => $params['db.connectionString'],
@@ -122,9 +123,12 @@ return array(
 		),
 		'urlManager' => array(
 			// uncomment the following if you application is multilingual
-			//'class' => 'ext.multilingual.components.MlUrlManager',
+			//'class' => 'ext.multilingual.components.MlUrlManager','
+			// uncomment the following if you have enabled Apache's Rewrite module.
+			/*
 			'urlFormat' => 'path',
 			'showScriptName' => false,
+			*/
 			'rules' => $params['urlManager.rules'],
 		),
 		'user' => array(
