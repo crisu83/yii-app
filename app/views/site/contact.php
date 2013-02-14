@@ -46,18 +46,8 @@ If you have business inquiries or other questions, please fill out the following
 
     <?php echo $form->textAreaRow($model,'body',array('rows'=>6, 'class'=>'span8')); ?>
 
-	<?php if(CCaptcha::checkRequirements()): ?>
-		<?php echo $form->captchaRow($model,'verifyCode',array(
-            'hint'=>'Please enter the letters as they are shown in the image above.<br/>Letters are not case-sensitive.',
-        )); ?>
-	<?php endif; ?>
-
 	<div class="form-actions">
-		<?php $this->widget('bootstrap.widgets.TbButton',array(
-            'buttonType'=>'submit',
-            'type'=>'primary',
-            'label'=>'Submit',
-        )); ?>
+		<?php echo Html::submitButton('Submit',array('style'=>TbHtml::STYLE_PRIMARY)); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

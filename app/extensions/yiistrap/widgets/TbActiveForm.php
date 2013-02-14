@@ -632,7 +632,7 @@ class TbActiveForm extends CActiveForm
 	}
 
 	/**
-	 * Helper method to display different input types for the different complain bootstrap forms wrapped with their
+	 * Helper method to display different input types for the different complain bootstrap form wrapped with their
 	 * labels, help and error messages. This method is a replacement of the old 'typeRow' methods from Yii-Bootstrap
 	 * extension. Example:
 	 * <pre>

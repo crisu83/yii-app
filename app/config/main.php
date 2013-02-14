@@ -24,7 +24,8 @@ return array(
 	// paths to import
 	'import' => array(
 		'application.helpers.*',
-		'application.models.*',
+		'application.models.ar.*',
+		'application.models.form.*',
 		'application.components.*',
 	),
 
@@ -48,7 +49,7 @@ return array(
 
 	// application modules
 	'modules' => array(
-		// uncomment the following to enable the Auth module
+		// uncomment the following to enable the auth module
 		/*
 		'auth',
 		*/
@@ -65,7 +66,7 @@ return array(
 
 	// application components
 	'components' => array(
-		// uncomment the following if you enable the Auth module
+		// uncomment the following if you enable the auth module
 		/*
 		'authManager'=>array(
 			'class'=>'auth.components.CachedDbAuthManager',
@@ -83,17 +84,25 @@ return array(
 		'bootstrap' => array(
 			'class' => 'bootstrap.components.TbApi',
 		),
+		// uncomment the following to enable the email extension
+		/*
+		'email' => array(
+			'class' => 'ext.email.components.Emailer',
+			'templates' => $params['email.templates'],
+		),
+		*/
 		'db' => array(
 			'connectionString' => $params['db.connectionString'],
 			'username' => $params['db.username'],
 			'password' => $params['db.password'],
+			'enableProfiling' => YII_DEBUG,
 			'enableParamLogging' => YII_DEBUG,
 			'charset' => 'utf8',
 		),
 		'errorHandler' => array(
 			'errorAction' => 'site/error',
 		),
-		// uncomment the following to enable image versioning
+		// uncomment the following to enable the image extension
 		/*
 		'image' => array(
 			'class' => 'ext.image.components.ImageManager',
@@ -112,6 +121,10 @@ return array(
 				array(
 					'class' => 'CFileLogRoute',
 					'levels' => 'error, warning',
+				),
+				array(
+					'class'=>'ext.debugtoolbar.YiiDebugToolbarRoute',
+					'ipFilters'=>array('127.0.0.1', '::1'),
 				),
 				// uncomment the following to show log messages on web pages
 				/*

@@ -267,7 +267,7 @@ class TbHtml extends CHtml
 	}
 
 	// Tables
-	// http://twitter.github.com/bootstrap/base-css.html#forms
+	// http://twitter.github.com/bootstrap/base-css.html#form
 	// --------------------------------------------------
 
 	// todo: create table methods here.
@@ -895,7 +895,7 @@ EOD;
 		$help = self::getHelp($htmlOptions);
 
 		ob_start();
-		self::tag('textarea', $htmlOptions, isset($htmlOptions['encode']) && !$htmlOptions['encode'] ? $text : self::encode($text));
+		echo self::tag('textarea', $htmlOptions, isset($htmlOptions['encode']) && !$htmlOptions['encode'] ? $text : self::encode($text));
 		echo $help;
 		return ob_get_clean();
 	}
@@ -1301,7 +1301,7 @@ EOD;
 	 * </li>
 	 * </ul>
 	 * @return string the generated form.
-	 * @see http://twitter.github.com/bootstrap/base-css.html#forms
+	 * @see http://twitter.github.com/bootstrap/base-css.html#form
 	 */
 	public static function searchForm($action, $method = 'post', $htmlOptions = array())
 	{

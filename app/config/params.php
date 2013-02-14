@@ -4,11 +4,11 @@
 return array(
 	'app.name' => 'Application',
 	// database configurations
-	'db.name' => '',
+	'db.name' => 'yii_app',
 	'db.connectionString' => 'mysql:host=localhost;dbname=yii_app',
 	'db.username' => 'root',
 	'db.password' => '',
-	// url rules
+	// url rewrite rules
 	'urlManager.rules' => array(
 		// language rules
 		'<lang:([a-z]{2}(?:_[a-z]{2})?)>/<route:[\w\/]+>'=>'<route>',
@@ -27,7 +27,12 @@ return array(
 	),
 	'less.files' => array(
 		'less/styles.less' => 'css/styles.css',
+		'less/responsive.less' => 'css/responsive.css', // should be compiled separately
 	),
+	// email templates
+	'email.templates' => array(
+	),
+	// image versions
 	'image.versions' => array(
 	),
 	// this is used in contact page
