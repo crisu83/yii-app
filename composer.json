@@ -15,17 +15,12 @@
             "homepage": "http://www.cniska.net"
 		}
 	],
-	"repositories": [
-		{
-			"packagist": false
-		}, {
-			"type":"composer",
-			"url": "http://packages.phundament.com"
-		}
-	],
 	"require": {
 		"php": ">=5.3.2",
-		"yiisoft/yii": "1.1.*"
+		"yiisoft/yii": "1.1.13",
+		"crisu83/yii-auth": "dev-master",
+		"crisu83/yii-less": "dev-master",
+        "yii-twbs/yiistrap": "dev-master"
 	},
 	"autoload": {
 		"psr-0": {

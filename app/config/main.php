@@ -15,7 +15,8 @@ return array(
 
 	// path aliases
 	'aliases' => array(
-		'bootstrap' => 'ext.yiistrap',
+		'vendor' => 'application.vendor',
+		'bootstrap' => 'vendor.yii-twbs.yiistrap',
 	),
 
 	// components to preload
@@ -51,15 +52,16 @@ return array(
 	'modules' => array(
 		// uncomment the following to enable the auth module
 		/*
-		'auth',
+		'auth' => array(
+			'class' => 'vendor.crisu83.yii-auth.AuthModule',
+		),
 		*/
 		// uncomment the following to enable the Gii tool
 		/*
-		'gii'=>array(
-			'class'=>'system.gii.GiiModule',
-			'password'=>'Enter Your Password Here',
-			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+		'gii' = >array(
+			'class' => 'system.gii.GiiModule',
+			'password' => 'Enter Your Password Here',
+			'ipFilters' => array('127.0.0.1','::1'),
 		),
 		*/
 	),
@@ -110,7 +112,7 @@ return array(
 		),
 		*/
 		'less' => array(
-			'class' => 'ext.less.components.Less',
+			'class' => 'vendor.crisu83.yii-less.components.Less',
 			'mode' => $params['less.mode'],
 			'options' => $params['less.options'],
 			'files' => $params['less.files'],
