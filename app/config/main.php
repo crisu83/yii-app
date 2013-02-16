@@ -34,7 +34,7 @@ return array(
 		// uncomment this if your application is multilingual
 		/*
 		'multilingual' => array(
-			'class' => 'ext.multilingual.components.MlApplicationBehavior',
+			'class' => 'vendor.crisu83.yii-multilingual.components.MlApplicationBehavior',
 			'languages' => array( // enabled languages (locale => language)
 				'en' => 'English',
 			),
@@ -45,7 +45,7 @@ return array(
 	// external controllers
 	'controllerMap' => array(
 		// uncomment the following if you enable the image component
-		//'image' => array('class' => 'ext.image.controllers.ImageController'),
+		//'image' => array('class' => 'vendor.crisu83.yii-image.controllers.ImageController'),
 	),
 
 	// application modules
@@ -107,7 +107,7 @@ return array(
 		// uncomment the following to enable the image extension
 		/*
 		'image' => array(
-			'class' => 'ext.image.components.ImageManager',
+			'class' => 'vendor.crisu83.yii-image.components.ImageManager',
 			'versions' => $params['image.versions'],
 		),
 		*/
@@ -138,7 +138,7 @@ return array(
 		),
 		'urlManager' => array(
 			// uncomment the following if you application is multilingual
-			//'class' => 'ext.multilingual.components.MlUrlManager','
+			//'class' => 'vendor.crisu83.yii-multilingual.components.MlUrlManager','
 			// uncomment the following if you have enabled Apache's Rewrite module.
 			/*
 			'urlFormat' => 'path',

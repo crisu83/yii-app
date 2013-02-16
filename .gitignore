@@ -2,5 +2,4 @@
 app/runtime/*
 app/vendor/*
 web/assets/*
-composer.phar
-composer.lock
+composer*
