@@ -1,7 +1,7 @@
 <?php
 
 // change the following paths if necessary
-$yii = __DIR__ . '/../yii/yii.php';
+$yii = __DIR__ . '/../app/vendor/yiisoft/yii/framework/yii.php';
 $config = __DIR__ . '/../app/config/main.php';
 
 // remove the following lines when in production mode

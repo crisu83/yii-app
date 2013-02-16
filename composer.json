@@ -1,0 +1,35 @@
+{
+	"name": "crisu83/yii-app",
+	"description": "A great way to start building your web application with Yii PHP framework.",
+	"keywords": ["yii", "application"],
+	"homepage": "https://github.com/Crisu83/yii-app",
+	"type": "library",
+	"license": "BSD-3-Clause",
+	"config": {
+		"vendor-dir": "app/vendor"
+	},
+	"authors": [
+		{
+			"name": "Christoffer Niska",
+            "email": "christoffer.niska@gmail.com",
+            "homepage": "http://www.cniska.net"
+		}
+	],
+	"repositories": [
+		{
+			"packagist": false
+		}, {
+			"type":"composer",
+			"url": "http://packages.phundament.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.2",
+		"yiisoft/yii": "1.1.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"config": "./app"
+		}
+	}
+}

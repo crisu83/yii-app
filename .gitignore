@@ -1,4 +1,6 @@
 .idea/*
 app/runtime/*
-yii/*
+app/vendor/*
 web/assets/*
+composer.phar
+composer.lock
