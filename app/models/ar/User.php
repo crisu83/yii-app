@@ -37,7 +37,7 @@ class User extends ActiveRecord
 
 	public function behaviors()
 	{
-		Yii::import('ext.password.*');
+		Yii::import('vendor.phpnode.yiipassword.*');
 
 		return array(
 			'password' => array(
