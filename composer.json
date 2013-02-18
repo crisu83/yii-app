@@ -29,7 +29,7 @@
 		"crisu83/yii-less": "dev-master",
 		"crisu83/yii-multilingual": "dev-master",
 		"crisu83/yii-seo": "dev-master",
-        "phpnode/yiipassword": "dev-master",
+		"phpnode/yiipassword": "dev-master",
 		"yii-twbs/yiistrap": "dev-master"
 	},
 	"autoload": {
