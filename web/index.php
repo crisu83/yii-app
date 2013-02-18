@@ -2,6 +2,7 @@
 
 // change the following paths if necessary
 $yii = __DIR__ . '/../app/vendor/yiisoft/yii/framework/yii.php';
+$global = __DIR__ . '/../app/global.php';
 $config = __DIR__ . '/../app/config/main.php';
 
 // remove the following lines when in production mode
@@ -10,4 +11,5 @@ defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 3);
 
 require_once($yii);
+require_once($global);
 Yii::createWebApplication($config)->run();
