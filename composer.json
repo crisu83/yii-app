@@ -26,6 +26,7 @@
 		"yiisoft/yii": "1.1.13",
 		"crisu83/yii-auth": "dev-master",
 		"crisu83/yii-image": "dev-master",
+		"crisu83/yii-globals": "dev-master",
 		"crisu83/yii-less": "dev-master",
 		"crisu83/yii-multilingual": "dev-master",
 		"crisu83/yii-seo": "dev-master",
