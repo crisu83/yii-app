@@ -19,13 +19,14 @@ For more information about using Composer please see its [documentation](http://
 The following extensions are part of yii-app:
 
  * Email *Soon on GitHub*
- * Debug Toolbar [https://github.com/malyshev/yii-debug-toolbar](https://github.com/malyshev/yii-debug-toolbar)
- * Image [https://github.com/Crisu83/yii-image](https://github.com/Crisu83/yii-image)
- * Less [https://github.com/Crisu83/yii-less](https://github.com/Crisu83/yii-less)
- * Multilingual [https://github.com/Crisu83/yii-multilingual](https://github.com/Crisu83/yii-multilingual)
- * Password [https://github.com/phpnode/YiiPassword](https://github.com/phpnode/YiiPassword)
- * Seo [https://github.com/Crisu83/yii-seo](https://github.com/Crisu83/yii-seo)
- * Yiistrap [https://github.com/yii-twbs/yiistrap](https://github.com/yii-twbs/yiistrap)
+ * Debug Toolbar https://github.com/malyshev/yii-debug-toolbar
+ * Image https://github.com/Crisu83/yii-image
+ * Globals https://github.com/Crisu83/yii-globals
+ * Less https://github.com/Crisu83/yii-less
+ * Multilingual https://github.com/Crisu83/yii-multilingual
+ * Password https://github.com/phpnode/YiiPassword
+ * Seo https://github.com/Crisu83/yii-seo
+ * Yiistrap https://github.com/yii-twbs/yiistrap
 
 Please consult the extension documentation for further information.
 
