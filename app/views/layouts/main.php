@@ -5,10 +5,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<title><?php echo e($this->pageTitle); ?></title>
 
-	<?php //Yii::app()->bootstrap->registerCoreScripts(); ?>
-	<?php Yii::app()->less->register(); ?>
+	<?php app()->bootstrap->registerCoreScripts(); ?>
+	<?php app()->less->register(); ?>
 </head>
 
 <body>
@@ -21,8 +21,8 @@
 					array('label'=>'Home','url'=>array('/site/index')),
 					array('label'=>'About','url'=>array('/site/page','view'=>'about')),
 					array('label'=>'Contact','url'=>array('/site/contact')),
-					array('label'=>'Login','url'=>array('/site/login'),'visible'=>Yii::app()->user->isGuest),
-					array('label'=>'Logout ('.Yii::app()->user->name.')','url'=>array('/site/logout'),'visible'=>!Yii::app()->user->isGuest)
+					array('label'=>'Login','url'=>array('/site/login'),'visible'=>user()->isGuest),
+					array('label'=>'Logout ('.user()->name.')','url'=>array('/site/logout'),'visible'=>!user()->isGuest)
 				),
 			),
 			// uncomment the following if your application is multilingual

@@ -3,11 +3,11 @@
 /* @var $model LoginForm */
 /* @var $form TbActiveForm  */
 
-$this->pageTitle=Yii::app()->name . ' - Login';
+$this->pageTitle=app()->name.' - Login';
 ?>
 <div class="site-login">
 
-	<h1><?php echo Yii::app()->name; ?></h1>
+	<h1><?php echo app()->name; ?></h1>
 
 	<div class="login-form">
 
@@ -18,7 +18,7 @@ $this->pageTitle=Yii::app()->name . ' - Login';
 			<?php echo $form->passwordFieldRow($model,'password',array('block'=>true,'label'=>false,'placeholder'=>'Password')); ?>
 		</fieldset>
 
-		<?php echo Html::submitButton('Login',array('style'=>Html::STYLE_PRIMARY,'size'=>Html::SIZE_LARGE,'block'=>true)); ?>
+		<?php echo Html::submitButton('Login',array('style'=>TbHtml::STYLE_PRIMARY,'size'=>TbHtml::SIZE_LARGE,'block'=>true)); ?>
 
 		<?php $this->endWidget(); ?>
 

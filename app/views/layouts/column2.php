@@ -4,7 +4,7 @@
     <div class="span9">
         <div id="content">
             <?php echo $content; ?>
-        </div><!-- content -->
+        </div>
     </div>
     <div class="span3">
         <div id="sidebar">
@@ -18,7 +18,7 @@
             ));
             $this->endWidget();
         ?>
-        </div><!-- sidebar -->
+        </div>
     </div>
 </div>
 <?php $this->endContent(); ?>

@@ -1,10 +1,11 @@
 <?php
+/**
+ * Html class file.
+ * Helper that contains logic for rendering of HTML elements.
+ */
 
 Yii::import('bootstrap.helpers.TbHtml');
 
-/**
- * Class Html
- */
 class Html extends TbHtml
 {
 }

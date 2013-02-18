@@ -5,10 +5,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
 
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+	<title><?php echo e($this->pageTitle); ?></title>
 
-	<?php Yii::app()->bootstrap->registerCoreScripts(); ?>
-	<?php Yii::app()->less->register(); ?>
+	<?php app()->bootstrap->registerCoreScripts(); ?>
+	<?php app()->less->register(); ?>
 </head>
 
 <body>

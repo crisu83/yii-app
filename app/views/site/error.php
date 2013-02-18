@@ -1,10 +1,11 @@
 <?php
 /* @var $this SiteController */
 /* @var $error array */
+/* @var $code integer */
 
-$this->pageTitle=Yii::app()->name . ' - Error';
+$this->pageTitle=app()->name.' - Error';
 ?>
 <div class="site-error">
 	<h1>Error <?php echo $code; ?></h1>
-	<p><?php echo CHtml::encode($message); ?></p>
+	<p><?php echo e($message); ?></p>
 </div>

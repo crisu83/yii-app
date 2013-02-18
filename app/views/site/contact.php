@@ -3,7 +3,7 @@
 /* @var $model ContactForm */
 /* @var $form TbActiveForm */
 
-$this->pageTitle=Yii::app()->name . ' - Contact Us';
+$this->pageTitle=app()->name.' - Contact Us';
 $this->breadcrumbs=array(
 	'Contact',
 );
@@ -11,12 +11,8 @@ $this->breadcrumbs=array(
 
 <h1>Contact Us</h1>
 
-<?php if(Yii::app()->user->hasFlash('contact')): ?>
-
-    <?php $this->widget('bootstrap.widgets.TbAlert', array(
-        'alerts'=>array('contact'),
-    )); ?>
-
+<?php if(user()->hasFlash('contact')): ?>
+<?php $this->widget('bootstrap.widgets.TbAlert', array('alerts'=>array('contact'))); ?>
 <?php else: ?>
 
 <p>
@@ -52,6 +48,6 @@ If you have business inquiries or other questions, please fill out the following
 
 <?php $this->endWidget(); ?>
 
-</div><!-- form -->
+</div>
 
 <?php endif; ?>
