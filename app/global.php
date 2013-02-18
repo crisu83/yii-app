@@ -95,9 +95,8 @@ function t($category, $message, $params = array(), $source = null, $language = n
 function bu($url = '')
 {
 	static $baseUrl;
-	if (!isset($baseUrl)) {
+	if (!isset($baseUrl))
 		$baseUrl = Yii::app()->request->baseUrl;
-	}
 	return $baseUrl . '/' . ltrim($url, '/');
 }
 
@@ -131,9 +130,8 @@ function e($text)
 function purify($text)
 {
 	static $purifier;
-	if (!isset($purifier)) {
+	if (!isset($purifier))
 		$purifier = new CHtmlPurifier;
-	}
 	return $purifier->purify($text);
 }
 
@@ -145,9 +143,8 @@ function purify($text)
 function md($text)
 {
 	static $parser;
-	if ($parser === null) {
+	if (!isset($parser))
 		$parser = new MarkdownParser;
-	}
 	return $parser->safeTransform($text);
 }
 
@@ -194,30 +191,33 @@ function url($route, $params = array(), $ampersand = '&')
  * @param string $ampersand
  * @return mixed
  */
-function absUrl($route, $params = array(), $ampersand = '&')
+function aurl($route, $params = array(), $ampersand = '&')
 {
 	return Yii::app()->urlManager->createAbsoluteUrl($route, $params, $ampersand);
 }
 
 /**
- * Encodes the given object using CJSON::encode().
- * @param $var
+ * Encodes the given object using json_encode().
+ * @param mixed $value
+ * @param integer $options
  * @return string
  */
-function je($var)
+function je($value, $options = 0)
 {
-	return CJSON::encode($var);
+	return json_encode($value, $options);
 }
 
 /**
- * Decodes the given JSON string using CJSON::decode().
- * @param $str
- * @param bool $useArray
+ * Decodes the given JSON string using json_decode().
+ * @param $string
+ * @param boolean $assoc
+ * @param integer $depth
+ * @param integer $options
  * @return mixed
  */
-function jd($str, $useArray = true)
+function jd($string, $assoc = true, $depth = 512, $options = 0)
 {
-	return CJSON::decode($str, $useArray);
+	return json_decode($string, $assoc, $depth, $options);
 }
 
 /**
