@@ -15,12 +15,12 @@
 			"homepage": "http://www.cniska.net"
 		}
 	],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://packages.phundament.com"
-        }
-    ],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://packages.phundament.com"
+		}
+	],
 	"require": {
 		"php": ">=5.3.2",
 		"yiisoft/yii": "1.1.13",
