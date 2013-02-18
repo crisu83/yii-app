@@ -2,7 +2,7 @@
 
 $app = __DIR__ . '/../app';
 $yii = $app . '/vendor/yiisoft/yii/framework/yii.php';
-$globals = $app . '/vendor/crisu83/yii-globals/globals.php';
+$globals = $app . '/globals.php';
 $config = $app . '/config/main.php';
 
 // remove the following lines when in production mode
