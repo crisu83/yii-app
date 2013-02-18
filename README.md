@@ -21,7 +21,6 @@ The following extensions are part of yii-app:
  * Email *Soon on GitHub*
  * Debug Toolbar https://github.com/malyshev/yii-debug-toolbar
  * Image https://github.com/Crisu83/yii-image
- * Globals https://github.com/Crisu83/yii-globals
  * Less https://github.com/Crisu83/yii-less
  * Multilingual https://github.com/Crisu83/yii-multilingual
  * Password https://github.com/phpnode/YiiPassword
