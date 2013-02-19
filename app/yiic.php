@@ -1,7 +1,7 @@
 <?php
 
 $yiic = __DIR__ . '/vendor/yiisoft/yii/framework/yiic.php';
-$builder = __DIR__ . '/helpers/ConfigBuilder.php';
+$builder = __DIR__ . '/vendor/crisu83/yii-configbuilder/ConfigBuilder.php';
 
 require_once($builder);
 

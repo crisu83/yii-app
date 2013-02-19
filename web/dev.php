@@ -13,7 +13,7 @@ if (!in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1')))
 
 $yii = __DIR__ . '/../app/vendor/yiisoft/yii/framework/yii.php';
 $global = __DIR__ . '/../app/helpers/global.php';
-$builder = __DIR__ . '/../app/helpers/ConfigBuilder.php';
+$builder = __DIR__ . '/../app/vendor/crisu83/yii-configbuilder/ConfigBuilder.php';
 
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 3);

@@ -5,7 +5,7 @@
 
 $yii = __DIR__ . '/../app/vendor/yiisoft/yii/framework/yii.php';
 $global = __DIR__ . '/../app/helpers/global.php';
-$builder = __DIR__ . '/../app/helpers/ConfigBuilder.php';
+$builder = __DIR__ . '/../app/vendor/crisu83/yii-configbuilder/ConfigBuilder.php';
 
 require_once($yii);
 require_once($global);
