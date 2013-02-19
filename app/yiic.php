@@ -1,7 +1,14 @@
 <?php
 
-// change the following paths if necessary
-$yiic=dirname(__FILE__).'/../yii/yiic.php';
-$config=dirname(__FILE__).'/config/console.php';
+$yiic = __DIR__ . '/vendor/yiisoft/yii/framework/yiic.php';
+$builder = __DIR__ . '/helpers/ConfigBuilder.php';
+
+require_once($builder);
+
+$config = ConfigBuilder::build(array(
+	__DIR__ . '/config/common.php',
+	__DIR__ . '/config/console.php',
+	__DIR__ . '/config/local.php',
+));
 
 require_once($yiic);

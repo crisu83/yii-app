@@ -4,9 +4,18 @@
  */
 
 $yii = __DIR__ . '/../app/vendor/yiisoft/yii/framework/yii.php';
-$globals = __DIR__ . '/../app/helpers/globals.php';
-$config = __DIR__ . '/../app/config/main.php';
+$global = __DIR__ . '/../app/helpers/global.php';
+$builder = __DIR__ . '/../app/helpers/ConfigBuilder.php';
 
 require_once($yii);
-require_once($globals);
+require_once($global);
+require_once($builder);
+
+$config = ConfigBuilder::build(array(
+	__DIR__ . '/../app/config/common.php',
+	__DIR__ . '/../app/config/web.php',
+	__DIR__ . '/../app/config/main.php',
+	__DIR__ . '/../app/config/local.php',
+));
+
 Yii::createWebApplication($config)->run();

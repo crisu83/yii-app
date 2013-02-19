@@ -1,6 +1,6 @@
 <?php
 /**
- * globals.php file.
+ * global.php file.
  * Global shorthand functions for commonly used Yii methods.
  * @author Christoffer Niska <christoffer.niska@gmail.com>
  * @copyright Copyright &copy; Christoffer Niska 2013-

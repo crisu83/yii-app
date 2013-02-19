@@ -4,14 +4,20 @@
  * This file should be removed when the application is deployed for production.
  */
 
-// change the following paths if necessary
 $yii = __DIR__ . '/../app/vendor/yiisoft/yii/framework/yii.php';
-$globals = __DIR__ . '/../app/helpers/globals.php';
-$config = __DIR__ . '/../app/config/test.php';
+$global = __DIR__ . '/../app/helpers/global.php';
+$builder = __DIR__ . '/../app/helpers/ConfigBuilder.php';
 
-// remove the following line when in production mode
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 require_once($yii);
-require_once($globals);
+require_once($global);
+require_once($builder);
+
+$config = ConfigBuilder::build(array(
+	__DIR__ . '/../app/config/common.php',
+	__DIR__ . '/../app/config/test.php',
+	__DIR__ . '/../app/config/local.php',
+));
+
 Yii::createWebApplication($config)->run();
