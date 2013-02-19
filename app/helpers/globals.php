@@ -29,15 +29,6 @@ function param($name)
 }
 
 /**
- * Returns the web user instance for the logged in user.
- * @return CWebUser
- */
-function user()
-{
-	return Yii::app()->getUser();
-}
-
-/**
  * Returns the client script instance.
  * @return CClientScript
  */
@@ -56,6 +47,15 @@ function db()
 }
 
 /**
+ * Returns the formatter instance.
+ * @return CFormat
+ */
+function format()
+{
+	return Yii::app()->getFormat();
+}
+
+/**
  * Returns the request instance.
  * @return CHttpRequest
  */
@@ -65,12 +65,21 @@ function request()
 }
 
 /**
- * Returns the formatter instance.
- * @return CFormat
+ * Returns the session instance.
+ * @return CHttpSession
  */
-function format()
+function session()
 {
-	return Yii::app()->getFormat();
+	return Yii::app()->getSession();
+}
+
+/**
+ * Returns the web user instance for the logged in user.
+ * @return CWebUser
+ */
+function user()
+{
+	return Yii::app()->getUser();
 }
 
 /**
@@ -101,18 +110,6 @@ function baseUrl($url = '')
 }
 
 /**
- * Returns whether the logged in user has access to the given operation.
- * @param $operation
- * @param array $params
- * @param bool $allowCaching
- * @return mixed
- */
-function checkAccess($operation, $params = array(), $allowCaching = true)
-{
-	return Yii::app()->user->checkAccess($operation, $params, $allowCaching);
-}
-
-/**
  * Escapes the given string using CHtml::encode().
  * @param $text
  * @return string
@@ -127,7 +124,7 @@ function e($text)
  * @param $text
  * @return string
  */
-function ph($text)
+function purify($text)
 {
 	static $purifier;
 	if (!isset($purifier))
@@ -140,7 +137,7 @@ function ph($text)
  * @param $text
  * @return string
  */
-function md($text)
+function markdown($text)
 {
 	static $parser;
 	if (!isset($parser))
@@ -182,18 +179,6 @@ function l($text, $url = '#', $htmlOptions = array())
 function url($route, $params = array(), $ampersand = '&')
 {
 	return Yii::app()->urlManager->createUrl($route, $params, $ampersand);
-}
-
-/**
- * Creates an absolute URL using CUrlManager::createAbsoluteUrl().
- * @param $route
- * @param array $params
- * @param string $ampersand
- * @return mixed
- */
-function absoluteUrl($route, $params = array(), $ampersand = '&')
-{
-	return Yii::app()->urlManager->createAbsoluteUrl($route, $params, $ampersand);
 }
 
 /**
