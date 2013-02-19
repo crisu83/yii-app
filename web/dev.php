@@ -18,6 +18,9 @@ $builder = __DIR__ . '/../app/vendor/crisu83/yii-configbuilder/ConfigBuilder.php
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL', 3);
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 require_once($yii);
 require_once($global);
 require_once($builder);
