@@ -6,7 +6,7 @@
 
 // change the following paths if necessary
 $yii = __DIR__ . '/../app/vendor/yiisoft/yii/framework/yii.php';
-$globals = __DIR__ . '/../app/globals.php';
+$globals = __DIR__ . '/../app/helpers/globals.php';
 $config = __DIR__ . '/../app/config/test.php';
 
 // remove the following line when in production mode
