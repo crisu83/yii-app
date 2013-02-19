@@ -7,7 +7,7 @@
 
 	<title><?php echo e($this->pageTitle); ?></title>
 
-	<?php app()->bootstrap->registerCoreScripts(); ?>
+	<?php //app()->bootstrap->registerCoreScripts(); ?>
 	<?php app()->less->register(); ?>
 </head>
 
