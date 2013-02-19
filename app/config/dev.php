@@ -2,6 +2,7 @@
 
 return CMap::mergeArray(
 	require(__DIR__ . '/web.php'),
+	// development environment configuration
 	array(
 		'modules' => array(
 			'gii' => array(

@@ -1,4 +1,7 @@
 <?php
+/**
+ * This is the bootstrap file for the production environment.
+ */
 
 $yii = __DIR__ . '/../app/vendor/yiisoft/yii/framework/yii.php';
 $globals = __DIR__ . '/../app/globals.php';

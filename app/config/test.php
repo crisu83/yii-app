@@ -2,6 +2,7 @@
 
 return CMap::mergeArray(
 	require(__DIR__ . '/common.php'),
+	// test application configuration
 	array(
 		'components'=>array(
 			'fixture'=>array(

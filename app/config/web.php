@@ -2,6 +2,7 @@
 
 return CMap::mergeArray(
 	require(__DIR__ . '/common.php'),
+	// web application configuration
 	array(
 		// path aliases
 		'aliases' => array(
