@@ -5,11 +5,13 @@
  */
 
 // change the following paths if necessary
-$yii = __DIR__ . '/../yii/yii.php';
+$yii = __DIR__ . '/../app/vendor/yiisoft/yii/framework/yii.php';
+$globals = __DIR__ . '/../app/globals.php';
 $config = __DIR__ . '/../app/config/test.php';
 
 // remove the following line when in production mode
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 require_once($yii);
+require_once($globals);
 Yii::createWebApplication($config)->run();
