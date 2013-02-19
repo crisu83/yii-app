@@ -9,7 +9,7 @@ A great way to start building your web application with the Yii PHP framework.
  * Download and install Composer by following the instructions [here](http://getcomposer.org/download/).
  * Browse through the `composer.json` and remove the dependencies you don't need.
  * Run `composer install` to download all the dependencies.
- * Change the application config in `app/config/main.php` to suit your needs.
+ * Update the configurations in `app/config/` to suit your needs.
  * You're done!
 
 For more information about using Composer please see its [documentation](http://getcomposer.org/doc/).
