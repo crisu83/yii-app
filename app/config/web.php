@@ -64,17 +64,6 @@ return array(
 			),
 		),
 		*/
-		'less' => array(
-			'class' => 'vendor.crisu83.yii-less.components.Less',
-			'mode' => 'client',
-			'options' => array(
-				'env' => 'development',
-			),
-			'files' => array(
-				'less/main.less' => 'css/main.css',
-				'less/responsive.less' => 'css/responsive.css', // should be compiled separately
-			),
-		),
 		'urlManager' => array(
 			// uncomment the following if you application is multilingual
 			//'class' => 'vendor.crisu83.yii-multilingual.components.MlUrlManager','
@@ -84,8 +73,8 @@ return array(
 			'showScriptName' => false,
 			*/
 			'rules' => array(
-				// language rules
-				'<lang:([a-z]{2}(?:_[a-z]{2})?)>/<route:[\w\/]+>'=>'<route>',
+				// language rules, uncomment the following if your application is multilingual
+				//'<lang:([a-z]{2}(?:_[a-z]{2})?)>/<route:[\w\/]+>'=>'<route>',
 				// seo rules
 				'<controller:\w+>/<name>-<id:\d+>.html'=>'<controller>/view',
 				// default rules
@@ -101,15 +90,6 @@ return array(
 		),
 		'errorHandler' => array(
 			'errorAction' => 'site/error',
-		),
-		'log' => array(
-			'class' => 'CLogRouter',
-			'routes' => array(
-				array(
-					'class' => 'ext.debugtoolbar.YiiDebugToolbarRoute',
-					'ipFilters' => array('127.0.0.1', '::1'),
-				),
-			),
 		),
 	),
 );

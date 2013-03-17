@@ -5,9 +5,6 @@
 	"homepage": "https://github.com/Crisu83/yii-app",
 	"type": "library",
 	"license": "BSD-3-Clause",
-	"config": {
-		"vendor-dir": "app/vendor"
-	},
 	"authors": [
 		{
 			"name": "Christoffer Niska",
@@ -27,7 +24,6 @@
 		"crisu83/yii-auth": "dev-master",
 		"crisu83/yii-image": "dev-master",
 		"crisu83/yii-configbuilder": "dev-master",
-		"crisu83/yii-less": "dev-master",
 		"crisu83/yii-multilingual": "dev-master",
 		"crisu83/yii-seo": "dev-master",
 		"phpnode/yiipassword": "dev-master",

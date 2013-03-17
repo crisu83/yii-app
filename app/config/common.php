@@ -12,7 +12,7 @@ return array(
 
 	// path aliases
 	'aliases' => array(
-		'vendor' => 'application.vendor',
+		'vendor' => '../vendor',
 	),
 
 	// components to preload

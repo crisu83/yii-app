@@ -9,4 +9,15 @@ return array(
 			'ipFilters' => array('127.0.0.1','::1'),
 		),
 	),
+	'components' => array(
+		'log' => array(
+			'class' => 'CLogRouter',
+			'routes' => array(
+				array(
+					'class' => 'ext.debugtoolbar.YiiDebugToolbarRoute',
+					'ipFilters' => array('127.0.0.1', '::1'),
+				),
+			),
+		),
+	),
 );

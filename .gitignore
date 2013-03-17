@@ -1,5 +1,15 @@
+# phpstorm project directory
 .idea/*
+
+# yii runtime directories
 app/runtime/*
-app/vendor/*
 web/assets/*
+
+# composer
+vendor/*
 composer*
+
+# npm
+node_modules/*
+web/css/*
+web/js/*

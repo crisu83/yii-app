@@ -110,6 +110,26 @@ function baseUrl($url = '')
 }
 
 /**
+ * Registers the given CSS file.
+ * @param $url
+ * @param string $media
+ */
+function css($url, $media = '')
+{
+	Yii::app()->clientScript->registerCssFile(baseUrl($url), $media);
+}
+
+/**
+ * Registers the given JavaScript file.
+ * @param $url
+ * @param null $position
+ */
+function js($url, $position = null)
+{
+	Yii::app()->clientScript->registerScriptFile(baseUrl($url), $position);
+}
+
+/**
  * Escapes the given string using CHtml::encode().
  * @param $text
  * @return string
@@ -117,6 +137,18 @@ function baseUrl($url = '')
 function e($text)
 {
 	return CHtml::encode($text);
+}
+
+/**
+ * Returns the escaped value of a model attribute.
+ * @param $model
+ * @param $attribute
+ * @param null $defaultValue
+ * @return string
+ */
+function v($model, $attribute, $defaultValue = null)
+{
+	return CHtml::encode(CHtml::value($model, $attribute, $defaultValue));
 }
 
 /**

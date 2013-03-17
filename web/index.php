@@ -3,9 +3,9 @@
  * This is the bootstrap file for the production environment.
  */
 
-$yii = __DIR__ . '/../app/vendor/yiisoft/yii/framework/yii.php';
+$yii = __DIR__ . '/../vendor/yiisoft/yii/framework/yii.php';
 $global = __DIR__ . '/../app/helpers/global.php';
-$builder = __DIR__ . '/../app/vendor/crisu83/yii-configbuilder/ConfigBuilder.php';
+$builder = __DIR__ . '/../vendor/crisu83/yii-configbuilder/ConfigBuilder.php';
 
 require_once($yii);
 require_once($global);
