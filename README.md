@@ -17,8 +17,8 @@ A great way to start building your web application with the Yii PHP framework.
 
 For more information on Composer and Grunt:
 
-* [Composer](http://getcomposer.org/doc/)
-* [Grunt](http://gruntjs.com/getting-started)
+* [Composer documentation](http://getcomposer.org/doc/)
+* [Grunt documentation](http://gruntjs.com/getting-started)
 
 ## Extensions
 
