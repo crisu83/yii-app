@@ -15,7 +15,10 @@ A great way to start building your web application with the Yii PHP framework.
  * Start Grunt by running `grunt` and it will compile your LESS and deploy your JavaScript files.
  * You're done! Navigate to `web/dev.php` or `web/index.php` to see your application.
 
-For more information about using Composer please see its [documentation](http://getcomposer.org/doc/).
+For more information on Composer and Grunt:
+
+* [Composer](http://getcomposer.org/doc/)
+* [Grunt](http://gruntjs.com/getting-started)
 
 ## Extensions
 
