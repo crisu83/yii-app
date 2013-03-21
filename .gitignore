@@ -16,3 +16,6 @@ web/js/*
 
 # local configuration
 app/config/environments/local.php
+
+# env file
+app/config/environments/env
