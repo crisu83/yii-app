@@ -56,6 +56,10 @@ return array(
 		'bootstrap' => array(
 			'class' => 'bootstrap.components.TbApi',
 		),
+		'db' => array(
+			'enableProfiling' => YII_DEBUG,
+			'enableParamLogging' => YII_DEBUG,
+		),
 		// uncomment the following to enable the image extension
 		/*
 		'image' => array(

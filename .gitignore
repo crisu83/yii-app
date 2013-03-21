@@ -13,3 +13,6 @@ composer*
 node_modules/*
 web/css/*
 web/js/*
+
+# local configuration
+app/config/environments/local.php

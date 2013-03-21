@@ -6,7 +6,7 @@
 
 $yii = __DIR__ . '/../app/vendor/yiisoft/yii/framework/yii.php';
 $global = __DIR__ . '/../app/helpers/global.php';
-$builder = __DIR__ . '/../app/vendor/crisu83/yii-configbuilder/ConfigBuilder.php';
+$builder = __DIR__ . '/../app/vendor/crisu83/yii-configbuilder/helpers/ConfigBuilder.php';
 
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 
@@ -15,9 +15,8 @@ require_once($global);
 require_once($builder);
 
 $config = ConfigBuilder::build(array(
-	__DIR__ . '/../app/config/common.php',
+	__DIR__ . '/../app/config/main.php',
 	__DIR__ . '/../app/config/test.php',
-	__DIR__ . '/../app/config/local.php',
 ));
 
 Yii::createWebApplication($config)->run();
