@@ -14,6 +14,8 @@ require_once($builder);
 $config = EnvConfigBuilder::build(array(
 	__DIR__ . '/../app/config/main.php',
 	__DIR__ . '/../app/config/web.php',
-), __DIR__ . '/../app/config/environments');
+	__DIR__ . '/../app/config/environments/{environment}.php',
+	__DIR__ . '/../app/config/local.php',
+), __DIR__ . '/../app/runtime/environment');
 
 Yii::createWebApplication($config)->run();
