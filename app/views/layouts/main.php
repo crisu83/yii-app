@@ -10,6 +10,8 @@
 	<?php css('css/main.css'); ?>
 	<?php css('css/responsive.css'); ?>
 
+	<?php app()->bootstrap->registerAllScripts(); ?>
+
 	<?php if (YII_DEBUG): ?>
 		<?php js('js/main.js'); ?>
 	<?php else: ?>
@@ -17,7 +19,7 @@
 	<?php endif; ?>
 </head>
 
-<body>
+<body class="layout-main">
 	<?php $this->widget('bootstrap.widgets.TbNavbar',array(
 		'collapse'=>true,
 		'items'=>array(
@@ -34,7 +36,7 @@
 			// uncomment the following if your application is multilingual
 			/*
 			array(
-				'class'=>'ext.multilingual.widgets.MlLanguageMenu',
+				'class'=>'vendor.crisu83.yii-multilingual.widgets.MlLanguageMenu',
 				'htmlOptions'=>array('class'=>'pull-right'),
 			),
 			*/

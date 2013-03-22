@@ -12,7 +12,7 @@ return array(
 		// uncomment this if your application is multilingual
 		/*
 		'multilingual' => array(
-			'class' => 'vendor.crisu83.yii-multilingual.components.MlApplicationBehavior',
+			'class' => 'vendor.crisu83.yii-multilingual.behaviors.MlApplicationBehavior',
 			'languages' => array( // enabled languages (locale => language)
 				'en' => 'English',
 			),

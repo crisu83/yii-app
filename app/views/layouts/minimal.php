@@ -7,11 +7,13 @@
 
 	<title><?php echo e($this->pageTitle); ?></title>
 
+	<?php app()->bootstrap->registerAllScripts(); ?>
+
 	<?php css('css/main.css'); ?>
 	<?php css('css/responsive.css'); ?>
 </head>
 
-<body>
+<body class="layout-minimal">
 
 	<div class="container">
 		<?php echo $content; ?>
