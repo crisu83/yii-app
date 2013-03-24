@@ -1,5 +1,5 @@
 <?php
-
+// test configuration.
 return array(
 	'components'=>array(
 		'fixture'=>array(

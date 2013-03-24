@@ -1,5 +1,4 @@
 <?php
-
 // web application configuration
 return array(
 	// path aliases

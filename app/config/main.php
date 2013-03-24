@@ -1,5 +1,4 @@
 <?php
-
 // shared application configuration
 return array(
 	'basePath' => realpath(__DIR__ . '/..'),

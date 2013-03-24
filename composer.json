@@ -24,6 +24,7 @@
 		"crisu83/yii-auth": "dev-master",
 		"crisu83/yii-image": "dev-master",
 		"crisu83/yii-configbuilder": "dev-master",
+		"crisu83/yii-debug": "dev-master",
 		"crisu83/yii-multilingual": "dev-master",
 		"crisu83/yii-seo": "dev-master",
 		"phpnode/yiipassword": "dev-master",
