@@ -27,6 +27,8 @@ For more information on Composer and Grunt:
 The following extensions are part of yii-app:
 
  * Email *Soon on GitHub*
+ * Config builder https://github.com/Crisu83/yii-configbuilder
+ * Debug https://github.com/Crisu83/yii-debug
  * Debug Toolbar https://github.com/malyshev/yii-debug-toolbar
  * Image https://github.com/Crisu83/yii-image
  * Less https://github.com/Crisu83/yii-less
