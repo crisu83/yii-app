@@ -11,8 +11,10 @@ A great way to start building your web application with the Yii PHP framework.
  * Run `composer install` to download Composer dependencies.
  * Download and install Node.js by follwoing the instructions here [here](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
  * Run `npm install` to download  Node.js dependencies.
- * Update the configurations in `app/config/` to suit your needs.
+ * Update the configurations in `app/config` to suit your needs.
  * Start Grunt by running `grunt` and it will compile your LESS and deploy your JavaScript files.
+ * Run `yiic env dev` to activate the development environment.
+ * Run `yiic debug on` to enable the debugging mode.
  * You're done! Navigate to `web/index.php` to see your application.
 
 For more information on Composer and Grunt:
@@ -34,6 +36,3 @@ The following extensions are part of yii-app:
  * Yiistrap https://github.com/yii-twbs/yiistrap
 
 Please consult the extension documentation for further information.
-
-
-
