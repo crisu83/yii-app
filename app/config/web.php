@@ -4,6 +4,7 @@ return array(
 	// path aliases
 	'aliases' => array(
 		'bootstrap' => 'vendor.yii-twbs.yiistrap',
+		'yiiwheels' => 'vendor.2amigos.yiiwheels',
 	),
 
 	// application behaviors
@@ -55,10 +56,6 @@ return array(
 		'bootstrap' => array(
 			'class' => 'bootstrap.components.TbApi',
 		),
-		'db' => array(
-			'enableProfiling' => YII_DEBUG,
-			'enableParamLogging' => YII_DEBUG,
-		),
 		// uncomment the following to enable the image extension
 		/*
 		'image' => array(
@@ -67,6 +64,14 @@ return array(
 			),
 		),
 		*/
+		'log' => array(
+			'routes' => array(
+				array(
+					'class' => 'vendor.malyshev.yii-debug-toolbar.yii-debug-toolbar.YiiDebugToolbarRoute',
+					'ipFilters' => array('127.0.0.1', '::1'),
+				),
+			),
+		),
 		'urlManager' => array(
 			// uncomment the following if you application is multilingual
 			//'class' => 'vendor.crisu83.yii-multilingual.components.MlUrlManager','

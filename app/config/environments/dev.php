@@ -9,14 +9,9 @@ return array(
 		),
 	),
 	'components' => array(
-		'log' => array(
-			'class' => 'CLogRouter',
-			'routes' => array(
-				array(
-					'class' => 'ext.debugtoolbar.YiiDebugToolbarRoute',
-					'ipFilters' => array('127.0.0.1', '::1'),
-				),
-			),
+		'db' => array(
+			'enableProfiling' => true,
+			'enableParamLogging' => true,
 		),
 	),
 );

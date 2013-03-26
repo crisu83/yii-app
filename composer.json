@@ -30,7 +30,8 @@
 		"crisu83/yii-seo": "dev-master",
 		"malyshev/yii-debug-toolbar": "dev-master",
 		"phpnode/yiipassword": "dev-master",
-		"yii-twbs/yiistrap": "dev-master"
+		"yii-twbs/yiistrap": "dev-master",
+		"2amigos/yiiwheels": "dev-master"
 	},
 	"autoload": {
 		"psr-0": {
