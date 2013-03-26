@@ -7,10 +7,11 @@ return array(
 	'name' => 'Application',
 
 	// application language
-	'language' => 'en',
+	'language' => 'en_gb',
 
 	// path aliases
 	'aliases' => array(
+		'app' => 'application',
 		'vendor' => '../vendor',
 	),
 

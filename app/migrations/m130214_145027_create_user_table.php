@@ -11,10 +11,9 @@ class m130214_145027_create_user_table extends CDbMigration
 			`password` VARCHAR(255) NOT NULL,
 			`passwordStrategy` VARCHAR(255) NOT NULL,
 			`requiresNewPassword` TINYINT(1) UNSIGNED NOT NULL DEFAULT '0',
-			`createId` INT UNSIGNED NOT NULL,
-			`createTime` DATETIME NOT NULL,
-			`updateId` INT UNSIGNED NOT NULL,
-			`updateTime` DATETIME NOT NULL,
+			`createdAt` DATETIME NOT NULL,
+			`updatedAt` DATETIME NULL DEFAULT NULL,
+			`deletedAt` DATETIME NULL DEFAULT NULL,
 			`status` INT NOT NULL DEFAULT '0',
 			PRIMARY KEY (`id`)
 		) COLLATE='utf8_general_ci' ENGINE=InnoDB;");

@@ -7,6 +7,10 @@ return array(
 		),
 		'env' => array(
 			'class' => 'vendor.crisu83.yii-configbuilder.commands.EnvCommand',
-		)
+		),
+		'migrate' => array(
+			'class' => 'system.cli.commands.MigrateCommand',
+			'migrationTable' => 'migration',
+		),
 	)
 );

@@ -35,11 +35,22 @@ class User extends ActiveRecord
 		return 'user';
 	}
 
+
+	/**
+	 * Returns a list of behaviors that this model should behave as.
+	 * @return array the behavior configurations (behavior name=>behavior configuration)
+	 */
 	public function behaviors()
 	{
 		Yii::import('vendor.phpnode.yiipassword.*');
 
-		return array(
+		return CMap::mergeArray(parent::behaviors(), array(
+			'formatter' => array(
+				'class' => 'vendor.crisu83.yii-formatter.behaviors.FormatterBehavior',
+				'formatters' => array(
+					'dateTime' => array('dateWidth' => 'short', 'timeWidth' => 'short'),
+				),
+			),
 			'password' => array(
 				'class' => 'APasswordBehavior',
 				'defaultStrategyName' => 'bcrypt',
@@ -50,7 +61,7 @@ class User extends ActiveRecord
 					),
 				),
 			),
-		);
+		));
 	}
 
 	/**
