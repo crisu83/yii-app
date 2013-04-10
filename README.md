@@ -29,6 +29,7 @@ The following extensions are part of yii-app:
  * Config builder https://github.com/Crisu83/yii-configbuilder
  * Debug https://github.com/Crisu83/yii-debug
  * Debug toolbar https://github.com/malyshev/yii-debug-toolbar
+ * Emailer https://github.com/nordsoftware/yii-emailer
  * Formatter https://github.com/Crisu83/yii-formatter
  * Image https://github.com/Crisu83/yii-image
  * Less https://github.com/Crisu83/yii-less
