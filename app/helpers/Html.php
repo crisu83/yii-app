@@ -4,8 +4,6 @@
  * Helper that contains logic for rendering of HTML elements.
  */
 
-Yii::import('bootstrap.helpers.TbHtml');
-
-class Html extends TbHtml
+class Html extends CHtml
 {
 }

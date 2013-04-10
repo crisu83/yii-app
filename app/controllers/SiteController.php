@@ -37,7 +37,8 @@ class SiteController extends Controller
 	 */
 	public function actionError()
 	{
-		if ($error = app()->errorHandler->error) {
+		if ($error = app()->errorHandler->error)
+		{
 			if (request()->isAjaxRequest)
 				echo $error['message'];
 			else
@@ -106,16 +107,5 @@ class SiteController extends Controller
 	{
 		user()->logout();
 		$this->redirect(app()->homeUrl);
-	}
-
-	/**
-	 * Changes the application language.
-	 * @param string $locale locale ID.
-	 */
-	public function actionChangeLanguage($locale)
-	{
-		if (in_array($locale, array_keys(app()->languages)))
-			user()->setState('__locale', $locale);
-		$this->redirect(array('index', 'language' => $locale));
 	}
 }

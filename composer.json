@@ -18,6 +18,7 @@
 			"url": "http://packages.phundament.com"
 		}
 	],
+	"minimum-stability": "dev",
 	"require": {
 		"php": ">=5.3.2",
 		"yiisoft/yii": "1.1.13",
@@ -29,6 +30,7 @@
 		"crisu83/yii-multilingual": "dev-master",
 		"crisu83/yii-seo": "dev-master",
 		"malyshev/yii-debug-toolbar": "dev-master",
+		"nordsoftware/yii-emailer": "dev-master",
 		"phpnode/yiipassword": "dev-master",
 		"yii-twbs/yiistrap": "dev-master",
 		"2amigos/yiiwheels": "dev-master"

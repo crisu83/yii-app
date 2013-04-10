@@ -22,6 +22,8 @@ return array(
 
 	// controllers mappings
 	'controllerMap' => array(
+		// uncomment the following if you enable the emailer component
+		//'email' => array('class' => 'vendor.nordsoftware.yii-emailer.controllers.EmailController'),
 		// uncomment the following if you enable the image component
 		//'image' => array('class' => 'vendor.crisu83.yii-image.controllers.ImageController'),
 	),
