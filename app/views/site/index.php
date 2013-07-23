@@ -1,12 +1,15 @@
 <?php
 /* @var $this SiteController */
 
-$this->pageTitle=app()->name;
+$this->pageTitle = app()->name;
 ?>
 
-<?php $this->beginWidget('bootstrap.widgets.TbHeroUnit',array(
-    'heading'=>'Welcome to '.e(Yii::app()->name),
-)); ?>
+<?php $this->beginWidget(
+    'bootstrap.widgets.TbHeroUnit',
+    array(
+        'heading' => 'Welcome to ' . e(Yii::app()->name),
+    )
+); ?>
 
 <p>Congratulations! You have successfully created your Yii application.</p>
 

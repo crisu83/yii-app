@@ -1,9 +1,9 @@
 {
 	"name": "crisu83/yii-app",
 	"description": "A great way to start building your web application with Yii PHP framework.",
-	"keywords": ["yii", "application"],
+	"keywords": ["yii", "application", "application-template"],
 	"homepage": "https://github.com/Crisu83/yii-app",
-	"type": "library",
+	"type": "project",
 	"license": "BSD-3-Clause",
 	"authors": [
 		{
@@ -20,24 +20,35 @@
 	],
 	"minimum-stability": "dev",
 	"require": {
-		"php": ">=5.3.2",
-		"yiisoft/yii": "1.1.13",
-		"crisu83/yii-auth": "dev-master",
-		"crisu83/yii-image": "dev-master",
-		"crisu83/yii-configbuilder": "dev-master",
-		"crisu83/yii-debug": "dev-master",
-		"crisu83/yii-formatter": "dev-master",
-		"crisu83/yii-multilingual": "dev-master",
-		"crisu83/yii-seo": "dev-master",
-		"malyshev/yii-debug-toolbar": "dev-master",
-		"nordsoftware/yii-emailer": "dev-master",
-		"phpnode/yiipassword": "dev-master",
-		"yii-twbs/yiistrap": "dev-master",
-		"2amigos/yiiwheels": "dev-master"
-	},
+		"php": ">=5.3.0",
+        "crisu83/closurecompiler-bin": "dev-master",
+        "crisu83/yii-auth": "dev-master",
+        "crisu83/yii-imagemanager": "dev-master",
+        "crisu83/yii-deploymenttools": "dev-master",
+        "crisu83/yii-formatter": "dev-master",
+        "crisu83/yii-livereload": "dev-master",
+        "crisu83/yii-multilingual": "dev-master",
+        "crisu83/yii-seo": "dev-master",
+        "crisu83/yiistrap": "dev-master",
+        "malyshev/yii-debug-toolbar": "dev-master",
+        "nordsoftware/yii-emailer": "dev-master",
+        "phpnode/yiipassword": "dev-master",
+        "yiisoft/yii": "1.1.13"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\InstallHandler::setPermissions"
+        ]
+    },
+    "extra": {
+        "yii-install-writable": [
+            "app/runtime",
+            "app/www/assets"
+        ]
+    },
 	"autoload": {
 		"psr-0": {
-			"config": "./app"
+			"app": "./app"
 		}
 	}
 }

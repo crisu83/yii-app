@@ -1,6 +1,6 @@
 <?php
 
-defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('YII_DEBUG') or define('YII_DEBUG', false);
 
 defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
 

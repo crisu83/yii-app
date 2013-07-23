@@ -15,7 +15,7 @@ defined('DS') or define('DS', DIRECTORY_SEPARATOR);
  */
 function app()
 {
-	return Yii::app();
+    return Yii::app();
 }
 
 /**
@@ -25,7 +25,7 @@ function app()
  */
 function param($name)
 {
-	return isset(Yii::app()->params[$name]) ? Yii::app()->params[$name] : null;
+    return isset(Yii::app()->params[$name]) ? Yii::app()->params[$name] : null;
 }
 
 /**
@@ -34,7 +34,7 @@ function param($name)
  */
 function cs()
 {
-	return Yii::app()->getClientScript();
+    return Yii::app()->getClientScript();
 }
 
 /**
@@ -43,7 +43,7 @@ function cs()
  */
 function db()
 {
-	return Yii::app()->getDb();
+    return Yii::app()->getDb();
 }
 
 /**
@@ -52,7 +52,7 @@ function db()
  */
 function format()
 {
-	return Yii::app()->getFormat();
+    return Yii::app()->getFormat();
 }
 
 /**
@@ -61,7 +61,7 @@ function format()
  */
 function request()
 {
-	return Yii::app()->getRequest();
+    return Yii::app()->getRequest();
 }
 
 /**
@@ -70,7 +70,7 @@ function request()
  */
 function session()
 {
-	return Yii::app()->getSession();
+    return Yii::app()->getSession();
 }
 
 /**
@@ -79,7 +79,7 @@ function session()
  */
 function user()
 {
-	return Yii::app()->getUser();
+    return Yii::app()->getUser();
 }
 
 /**
@@ -93,7 +93,7 @@ function user()
  */
 function t($category, $message, $params = array(), $source = null, $language = null)
 {
-	return Yii::t($category, $message, $params, $source, $language);
+    return Yii::t($category, $message, $params, $source, $language);
 }
 
 /**
@@ -103,10 +103,11 @@ function t($category, $message, $params = array(), $source = null, $language = n
  */
 function baseUrl($url = '')
 {
-	static $baseUrl;
-	if (!isset($baseUrl))
-		$baseUrl = Yii::app()->request->baseUrl;
-	return $baseUrl . '/' . ltrim($url, '/');
+    static $baseUrl;
+    if (!isset($baseUrl)) {
+        $baseUrl = Yii::app()->request->baseUrl;
+    }
+    return $baseUrl . '/' . ltrim($url, '/');
 }
 
 /**
@@ -116,7 +117,7 @@ function baseUrl($url = '')
  */
 function css($url, $media = '')
 {
-	Yii::app()->clientScript->registerCssFile(baseUrl($url), $media);
+    Yii::app()->clientScript->registerCssFile(baseUrl($url), $media);
 }
 
 /**
@@ -126,7 +127,7 @@ function css($url, $media = '')
  */
 function js($url, $position = null)
 {
-	Yii::app()->clientScript->registerScriptFile(baseUrl($url), $position);
+    Yii::app()->clientScript->registerScriptFile(baseUrl($url), $position);
 }
 
 /**
@@ -136,7 +137,7 @@ function js($url, $position = null)
  */
 function e($text)
 {
-	return CHtml::encode($text);
+    return CHtml::encode($text);
 }
 
 /**
@@ -148,7 +149,7 @@ function e($text)
  */
 function v($model, $attribute, $defaultValue = null)
 {
-	return CHtml::encode(CHtml::value($model, $attribute, $defaultValue));
+    return CHtml::encode(CHtml::value($model, $attribute, $defaultValue));
 }
 
 /**
@@ -158,10 +159,11 @@ function v($model, $attribute, $defaultValue = null)
  */
 function purify($text)
 {
-	static $purifier;
-	if (!isset($purifier))
-		$purifier = new CHtmlPurifier;
-	return $purifier->purify($text);
+    static $purifier;
+    if (!isset($purifier)) {
+        $purifier = new CHtmlPurifier;
+    }
+    return $purifier->purify($text);
 }
 
 /**
@@ -171,10 +173,11 @@ function purify($text)
  */
 function markdown($text)
 {
-	static $parser;
-	if (!isset($parser))
-		$parser = new MarkdownParser;
-	return $parser->safeTransform($text);
+    static $parser;
+    if (!isset($parser)) {
+        $parser = new MarkdownParser;
+    }
+    return $parser->safeTransform($text);
 }
 
 /**
@@ -186,7 +189,7 @@ function markdown($text)
  */
 function img($src, $alt = '', $htmlOptions = array())
 {
-	return CHtml::image(baseUrl($src), $alt, $htmlOptions);
+    return CHtml::image(baseUrl($src), $alt, $htmlOptions);
 }
 
 /**
@@ -198,7 +201,7 @@ function img($src, $alt = '', $htmlOptions = array())
  */
 function l($text, $url = '#', $htmlOptions = array())
 {
-	return CHtml::link($text, $url, $htmlOptions);
+    return CHtml::link($text, $url, $htmlOptions);
 }
 
 /**
@@ -210,7 +213,7 @@ function l($text, $url = '#', $htmlOptions = array())
  */
 function url($route, $params = array(), $ampersand = '&')
 {
-	return Yii::app()->urlManager->createUrl($route, $params, $ampersand);
+    return Yii::app()->urlManager->createUrl($route, $params, $ampersand);
 }
 
 /**
@@ -221,7 +224,7 @@ function url($route, $params = array(), $ampersand = '&')
  */
 function je($value, $options = 0)
 {
-	return json_encode($value, $options);
+    return json_encode($value, $options);
 }
 
 /**
@@ -234,7 +237,7 @@ function je($value, $options = 0)
  */
 function jd($string, $assoc = true, $depth = 512, $options = 0)
 {
-	return json_decode($string, $assoc, $depth, $options);
+    return json_decode($string, $assoc, $depth, $options);
 }
 
 /**
@@ -245,5 +248,5 @@ function jd($string, $assoc = true, $depth = 512, $options = 0)
  */
 function dump($var, $depth = 10, $highlight = true)
 {
-	echo CVarDumper::dumpAsString($var, $depth, $highlight);
+    echo CVarDumper::dumpAsString($var, $depth, $highlight);
 }

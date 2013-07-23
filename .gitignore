@@ -14,8 +14,9 @@ node_modules/*
 web/css/*
 web/js/*
 
-# local configuration
-app/config/environments/local.php
-
-# env file
-app/config/environments/env
+# environment files
+app/config/environment.php
+web/css/*
+web/js/*
+web/index.php
+web/test.php

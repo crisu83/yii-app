@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v2.2.2
+ * @{bootstrapDir} v2.2.2
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -8,57 +8,60 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
+@bootstrapDir: "../../vendor/crisu83/yiistrap/assets/less";
+
 // CSS Reset
-@import "bootstrap/reset";
+@import "@{bootstrapDir}/reset";
 
 // Core variables and mixins
-@import "bootstrap/variables";
+@import "@{bootstrapDir}/variables";
 @import "variables"; // local variable overrides
-@import "bootstrap/mixins";
+@import "@{bootstrapDir}/mixins";
+
 
 // Grid system and page structure
-@import "bootstrap/scaffolding";
-@import "bootstrap/grid";
-@import "bootstrap/layouts";
+@import "@{bootstrapDir}/scaffolding";
+@import "@{bootstrapDir}/grid";
+@import "@{bootstrapDir}/layouts";
 
 // Base CSS
-@import "bootstrap/type";
-@import "bootstrap/code";
-@import "bootstrap/forms";
-@import "bootstrap/tables";
+@import "@{bootstrapDir}/type";
+@import "@{bootstrapDir}/code";
+@import "@{bootstrapDir}/forms";
+@import "@{bootstrapDir}/tables";
 
 // Components: common
-@import "bootstrap/sprites";
-@import "bootstrap/dropdowns";
-@import "bootstrap/wells";
-@import "bootstrap/component-animations";
-@import "bootstrap/close";
+@import "@{bootstrapDir}/sprites";
+@import "@{bootstrapDir}/dropdowns";
+@import "@{bootstrapDir}/wells";
+@import "@{bootstrapDir}/component-animations";
+@import "@{bootstrapDir}/close";
 
 // Components: Buttons & Alerts
-@import "bootstrap/buttons";
-@import "bootstrap/button-groups";
-@import "bootstrap/alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+@import "@{bootstrapDir}/buttons";
+@import "@{bootstrapDir}/button-groups";
+@import "@{bootstrapDir}/alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
 
 // Components: Nav
-@import "bootstrap/navs";
-@import "bootstrap/navbar";
-@import "bootstrap/breadcrumbs";
-@import "bootstrap/pagination";
-@import "bootstrap/pager";
+@import "@{bootstrapDir}/navs";
+@import "@{bootstrapDir}/navbar";
+@import "@{bootstrapDir}/breadcrumbs";
+@import "@{bootstrapDir}/pagination";
+@import "@{bootstrapDir}/pager";
 
 // Components: Popovers
-@import "bootstrap/modals";
-@import "bootstrap/tooltip";
-@import "bootstrap/popovers";
+@import "@{bootstrapDir}/modals";
+@import "@{bootstrapDir}/tooltip";
+@import "@{bootstrapDir}/popovers";
 
 // Components: Misc
-@import "bootstrap/thumbnails";
-@import "bootstrap/media";
-@import "bootstrap/labels-badges";
-@import "bootstrap/progress-bars";
-@import "bootstrap/accordion";
-@import "bootstrap/carousel";
-@import "bootstrap/hero-unit";
+@import "@{bootstrapDir}/thumbnails";
+@import "@{bootstrapDir}/media";
+@import "@{bootstrapDir}/labels-badges";
+@import "@{bootstrapDir}/progress-bars";
+@import "@{bootstrapDir}/accordion";
+@import "@{bootstrapDir}/carousel";
+@import "@{bootstrapDir}/hero-unit";
 
 // Utility classes
-@import "bootstrap/utilities"; // Has to be last to override when necessary
+@import "@{bootstrapDir}/utilities"; // Has to be last to override when necessary
