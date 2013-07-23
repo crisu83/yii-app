@@ -7,7 +7,7 @@ defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
 require(__DIR__ . '/../vendor/yiisoft/yii/framework/yii.php');
 require(__DIR__ . '/../vendor/crisu83/yii-deploymenttools/helpers/ConfigHelper.php');
 
-$config = ConfigHelper::build(
+$config = ConfigHelper::merge(
     array(
         __DIR__ . '/config/main.php',
         __DIR__ . '/config/console.php',

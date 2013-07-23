@@ -2,8 +2,8 @@
 // console application configuration
 return array(
     'commandMap' => array(
-        'env' => array(
-            'class' => 'ext.yii-deploymenttools.commands.EnvCommand',
+        'environment' => array(
+            'class' => 'vendor.crisu83.yii-deploymenttools.commands.EnvironmentCommand',
             'basePath' => __DIR__ . '/../../',
             'permissions' => array(
                 'app/runtime' => array('mode' => 0777),

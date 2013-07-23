@@ -99,6 +99,6 @@ module.exports = function(grunt) {
 
 	// Define tasks
 	grunt.registerTask('default', ['watch']);
-	grunt.registerTask('compile-js', ['closure-compiler']);
+	grunt.registerTask('compile-js', ['closure-compiler', 'copy']);
 
 };
