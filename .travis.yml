@@ -12,6 +12,8 @@ before_script:
   #- app/yiic migrate --interactive=0
   #- php -S localhost:31415 -t www/ &
 
+script: phpunit --configuration app/tests/phpunit.xml --coverage-text
+
 branches:
   only:
     - master
