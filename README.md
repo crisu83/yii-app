@@ -13,7 +13,7 @@ A great way to start building your web application with the Yii PHP framework.
  * Run `npm install` to download  Node.js dependencies.
  * Update the configurations in `app/config` to suit your needs.
  * Start Grunt by running `grunt` and it will compile your LESS and deploy your JavaScript files.
- * Run `yiic env activate dev` to activate the development environment.
+ * Run `yiic environment change dev` to activate the development environment.
  * You're done! Navigate to `web/index.php` to see your application.
 
 For more information on Composer and Grunt:
