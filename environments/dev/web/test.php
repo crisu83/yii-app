@@ -13,6 +13,7 @@ require(__DIR__ . '/../vendor/crisu83/yii-deploymenttools/helpers/ConfigHelper.p
 $config = ConfigHelper::merge(
     array(
         __DIR__ . '/../app/config/main.php',
+        __DIR__ . '/../app/config/web.php',
         __DIR__ . '/../app/config/test.php',
     )
 );
