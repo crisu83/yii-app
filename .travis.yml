@@ -9,10 +9,8 @@ before_script:
   - chmod +x app/yiic
   - app/yiic permissions
   - app/yiic environment change dev
-  #- app/yiic migrate --interactive=0
-  #- php -S localhost:31415 -t www/ &
 
-script: phpunit --configuration app/tests/phpunit.xml --coverage-text
+script: vendor/bin/codecept run
 
 branches:
   only:

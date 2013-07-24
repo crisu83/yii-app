@@ -1,26 +1,26 @@
 {
-	"name": "crisu83/yii-app",
-	"description": "A great way to start building your web application with Yii PHP framework.",
-	"keywords": ["yii", "application", "application-template"],
-	"homepage": "https://github.com/Crisu83/yii-app",
-	"type": "project",
-	"license": "BSD-3-Clause",
-	"authors": [
-		{
-			"name": "Christoffer Niska",
-			"email": "christoffer.niska@gmail.com",
-			"homepage": "http://www.cniska.net"
-		}
-	],
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "http://packages.phundament.com"
-		}
-	],
-	"minimum-stability": "dev",
-	"require": {
-		"php": ">=5.3.0",
+    "name": "crisu83/yii-app",
+    "description": "A great way to start building your web application with Yii PHP framework.",
+    "keywords": ["yii", "application", "application-template"],
+    "homepage": "https://github.com/Crisu83/yii-app",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Christoffer Niska",
+            "email": "christoffer.niska@gmail.com",
+            "homepage": "http://www.cniska.net"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.phundament.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
         "crisu83/closurecompiler-bin": "dev-master",
         "crisu83/yii-auth": "dev-master",
         "crisu83/yii-imagemanager": "dev-master",
@@ -33,22 +33,12 @@
         "malyshev/yii-debug-toolbar": "dev-master",
         "nordsoftware/yii-emailer": "dev-master",
         "phpnode/yiipassword": "dev-master",
-        "yiisoft/yii": "1.1.13"
+        "yiisoft/yii": "1.1.13",
+        "codeception/codeception": "@stable"
     },
-    "scripts": {
-        "post-create-project-cmd": [
-            "yii\\composer\\InstallHandler::setPermissions"
-        ]
-    },
-    "extra": {
-        "yii-install-writable": [
-            "app/runtime",
-            "app/www/assets"
-        ]
-    },
-	"autoload": {
-		"psr-0": {
-			"app": "./app"
-		}
-	}
+    "autoload": {
+        "psr-0": {
+            "app": "./app"
+        }
+    }
 }

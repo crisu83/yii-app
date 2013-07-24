@@ -1,24 +1,24 @@
 {
-	"name": "yii-app",
-	"version": "1.0.0",
-	"author": "Christoffer Niska <christoffer.niska@gmail.com>",
-	"description": "A great way to start building your web application with the Yii PHP framework.",
-	"contributors": [
-		{
-			"name": "Christoffer Niska",
-			"email": "christoffer.niska@gmail.com"
-		}
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Crisu83/yii-app.git"
-	},
-	"keywords": [
-		"yii",
-		"application",
+    "name": "yii-app",
+    "version": "1.0.0",
+    "author": "Christoffer Niska <christoffer.niska@gmail.com>",
+    "description": "A great way to start building your web application with the Yii PHP framework.",
+    "contributors": [
+        {
+            "name": "Christoffer Niska",
+            "email": "christoffer.niska@gmail.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Crisu83/yii-app.git"
+    },
+    "keywords": [
+        "yii",
+        "application",
         "application-template"
-	],
-	"license": "New BSD License",
+    ],
+    "license": "New BSD License",
     "devDependencies": {
         "grunt": "~0.4.1",
         "grunt-closure-compiler": "~0.0.18",
