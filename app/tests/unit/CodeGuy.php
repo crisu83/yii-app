@@ -21,10 +21,10 @@ use Codeception\Module\CodeHelper;
  * @method void offsetSet($offset, $value)
  * @method void offsetExists($offset)
  * @method void offsetUnset($offset)
-*/
+ */
 
 class CodeGuy extends \Codeception\AbstractGuy
 {
-    
+
 }
 

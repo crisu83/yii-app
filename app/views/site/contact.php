@@ -12,7 +12,7 @@ $this->breadcrumbs = array(
     <h1>Contact</h1>
 
     <?php if (user()->hasFlash('contact')): ?>
-        <?php $this->widget('bootstrap.widgets.TbAlert', array('alerts' => array('contact'))); ?>
+        <?php $this->widget('bootstrap.widgets.TbAlert', array('alerts' => array('contact' => array()))); ?>
     <?php else: ?>
 
     <p>
