@@ -19,11 +19,11 @@ $I->submitForm('#contact-form', array(
         'ContactForm[body]' => 'test content',
         //'ContactForm[verifyCode]' => 'testme',
     ));
-$I->dontSee('Name cannot be blank', '.help-inline');
+$I->dontSee('Name cannot be blank', '.help-block');
 $I->see('Email is not a valid email address.');
-$I->dontSee('Subject cannot be blank', '.help-inline');
-$I->dontSee('Body cannot be blank', '.help-inline');
-//$I->dontSee('The verification code is incorrect', '.help-inline');
+$I->dontSee('Subject cannot be blank', '.help-block');
+$I->dontSee('Body cannot be blank', '.help-block');
+//$I->dontSee('The verification code is incorrect', '.help-block');
 
 $I->submitForm('#contact-form', array(
         'ContactForm[name]' => 'tester',
