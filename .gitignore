@@ -9,6 +9,9 @@ web/assets/*
 vendor/*
 composer*
 
+# codeception
+codecept.phar
+
 # npm
 node_modules/*
 web/css/*
