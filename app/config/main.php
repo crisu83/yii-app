@@ -9,7 +9,7 @@ return array(
     // path aliases
     'aliases' => array(
         'app' => 'application',
-        'vendor' => '../vendor',
+        'vendor' => realpath(__DIR__ . '/../../vendor'),
     ),
     // components to preload
     'preload' => array('log'),
