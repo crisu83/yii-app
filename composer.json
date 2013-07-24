@@ -38,7 +38,7 @@
         "codeception/codeception": "@stable"
     },
     "scripts": {
-        "post-create-project-cmd": [
+        "post-install-cmd": [
             "Crisu83\\YiiComposer\\InstallHandler::setPermissions"
         ]
     },

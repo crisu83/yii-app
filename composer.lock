@@ -504,12 +504,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-composer.git",
-                "reference": "ac1a8206905bada26d03883229ca45fd81adc8bd"
+                "reference": "a67f98d8208107b70f66c27ff33a1359811d9a45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-composer/zipball/ac1a8206905bada26d03883229ca45fd81adc8bd",
-                "reference": "ac1a8206905bada26d03883229ca45fd81adc8bd",
+                "url": "https://api.github.com/repos/Crisu83/yii-composer/zipball/a67f98d8208107b70f66c27ff33a1359811d9a45",
+                "reference": "a67f98d8208107b70f66c27ff33a1359811d9a45",
                 "shasum": ""
             },
             "require": {
@@ -538,7 +538,7 @@
                 "configuration",
                 "yii"
             ],
-            "time": "2013-07-24 20:17:42"
+            "time": "2013-07-24 20:27:24"
         },
         {
             "name": "crisu83/yii-deploymenttools",
