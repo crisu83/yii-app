@@ -22,10 +22,10 @@ $I->submitForm(
         //'ContactForm[verifyCode]' => 'testme',
     )
 );
-$I->dontSee('Name cannot be blank');
+//$I->dontSee('Name cannot be blank.');
 $I->see('Email is not a valid email address.');
-$I->dontSee('Subject cannot be blank');
-$I->dontSee('Body cannot be blank');
+//$I->dontSee('Subject cannot be blank.');
+//$I->dontSee('Body cannot be blank.');
 //$I->dontSee('The verification code is incorrect');
 
 $I->submitForm(
