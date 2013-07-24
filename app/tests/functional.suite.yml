@@ -8,4 +8,7 @@
 
 class_name: TestGuy
 modules:
-    enabled: [Filesystem, TestHelper]
+    enabled: [PhpBrowser, TestHelper]
+    config:
+          PhpBrowser:
+                url: 'http://localhost:31415/test.php'
