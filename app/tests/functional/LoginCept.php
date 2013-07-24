@@ -2,7 +2,7 @@
 $I = new TestGuy($scenario);
 $I->wantTo('ensure that login works');
 $I->amOnPage('?r=site/login');
-$I->see('Login', 'h1');
+$I->see('Application', 'h1');
 
 $I->submitForm('#login-form', array());
 $I->dontSee('Logout (admin)');

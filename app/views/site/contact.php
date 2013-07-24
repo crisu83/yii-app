@@ -3,17 +3,17 @@
 /* @var $model ContactForm */
 /* @var $form TbActiveForm */
 
-$this->pageTitle = app()->name . ' - Contact Us';
+$this->pageTitle = app()->name . ' - Contact';
 $this->breadcrumbs = array(
     'Contact',
 );
 ?>
 
-    <h1>Contact Us</h1>
+    <h1>Contact</h1>
 
-<?php if (user()->hasFlash('contact')): ?>
-    <?php $this->widget('bootstrap.widgets.TbAlert', array('alerts' => array('contact'))); ?>
-<?php else: ?>
+    <?php if (user()->hasFlash('contact')): ?>
+        <?php $this->widget('bootstrap.widgets.TbAlert', array('alerts' => array('contact'))); ?>
+    <?php else: ?>
 
     <p>
         If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
@@ -25,7 +25,7 @@ $this->breadcrumbs = array(
             'bootstrap.widgets.TbActiveForm',
             array(
                 'id' => 'contact-form',
-                'type' => 'horizontal',
+                'layout' => TbHtml::FORM_LAYOUT_HORIZONTAL,
                 'enableClientValidation' => true,
                 'clientOptions' => array(
                     'validateOnSubmit' => true,
@@ -37,16 +37,16 @@ $this->breadcrumbs = array(
 
         <?php echo $form->errorSummary($model); ?>
 
-        <?php echo $form->textFieldRow($model, 'name'); ?>
+        <?php echo $form->textFieldControlGroup($model, 'name'); ?>
 
-        <?php echo $form->textFieldRow($model, 'email'); ?>
+        <?php echo $form->textFieldControlGroup($model, 'email'); ?>
 
-        <?php echo $form->textFieldRow($model, 'subject', array('size' => 60, 'maxlength' => 128)); ?>
+        <?php echo $form->textFieldControlGroup($model, 'subject', array('size' => 60, 'maxlength' => 128)); ?>
 
-        <?php echo $form->textAreaRow($model, 'body', array('rows' => 6, 'class' => 'span8')); ?>
+        <?php echo $form->textAreaControlGroup($model, 'body', array('rows' => 6, 'class' => 'span8')); ?>
 
         <div class="form-actions">
-            <?php echo Html::submitButton('Submit', array('color' => TbHtml::BUTTON_COLOR_PRIMARY)); ?>
+            <?php echo TbHtml::submitButton('Submit', array('color' => TbHtml::BUTTON_COLOR_PRIMARY)); ?>
         </div>
 
         <?php $this->endWidget(); ?>

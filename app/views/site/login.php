@@ -14,19 +14,19 @@ $this->pageTitle = app()->name . ' - Login';
         <?php $form = $this->beginWidget('bootstrap.widgets.TbActiveForm'); ?>
 
         <fieldset>
-            <?php echo $form->textFieldRow(
+            <?php echo $form->textFieldControlGroup(
                 $model,
                 'username',
                 array('block' => true, 'label' => false, 'placeholder' => 'Username')
             ); ?>
-            <?php echo $form->passwordFieldRow(
+            <?php echo $form->passwordFieldControlGroup(
                 $model,
                 'password',
                 array('block' => true, 'label' => false, 'placeholder' => 'Password')
             ); ?>
         </fieldset>
 
-        <?php echo Html::submitButton(
+        <?php echo TbHtml::submitButton(
             'Login',
             array('color' => TbHtml::BUTTON_COLOR_PRIMARY, 'size' => TbHtml::BUTTON_SIZE_LARGE, 'block' => true)
         ); ?>

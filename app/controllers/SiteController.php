@@ -62,7 +62,7 @@ class SiteController extends Controller
                     "MIME-Version: 1.0\r\n" .
                     "Content-type: text/plain; charset=UTF-8";
 
-                mail(param('adminEmail'), $subject, $model->body, $headers);
+                //mail(param('adminEmail'), $subject, $model->body, $headers);
                 user()->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
                 $this->refresh();
             }
