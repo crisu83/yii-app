@@ -7,7 +7,7 @@ web/assets/*
 
 # composer
 vendor/*
-composer*
+composer.phar
 
 # codeception
 codecept.phar

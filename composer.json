@@ -21,6 +21,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.0",
+        "crisu83/yii-composer": "dev-master",
         "crisu83/closurecompiler-bin": "dev-master",
         "crisu83/yii-auth": "dev-master",
         "crisu83/yii-imagemanager": "dev-master",
@@ -36,9 +37,18 @@
         "yiisoft/yii": "1.1.13",
         "codeception/codeception": "@stable"
     },
-    "autoload": {
-        "psr-0": {
-            "app": "./app"
-        }
+    "scripts": {
+        "post-create-project-cmd": [
+            "Crisu83\\YiiComposer\\InstallHandler::setPermissions"
+        ]
+    },
+    "extra": {
+        "yii-install-writable": [
+            "app/runtime",
+            "web/assets"
+        ],
+        "yii-install-executable": [
+            "app/yiic"
+        ]
     }
 }
