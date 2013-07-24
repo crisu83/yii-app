@@ -11,7 +11,12 @@ $this->pageTitle = app()->name . ' - Login';
 
     <div class="login-form">
 
-        <?php $form = $this->beginWidget('bootstrap.widgets.TbActiveForm'); ?>
+        <?php $form = $this->beginWidget(
+            'bootstrap.widgets.TbActiveForm',
+            array(
+                'id' => 'login-form',
+            )
+        ); ?>
 
         <fieldset>
             <?php echo $form->textFieldControlGroup(
