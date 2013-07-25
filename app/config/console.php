@@ -2,6 +2,12 @@
 // console application configuration
 return array(
     'commandMap' => array(
+        'dump' => array(
+            'class' => 'vendor.crisu83.yii-deploymenttools.commands.MysqldumpCommand',
+            'basePath' => __DIR__ . '/../../',
+            'binPath' => 'C:\"Program Files"\wamp\bin\mysql\mysql5.5.24\bin\mysqldump',
+            'dumpPath' => 'app/tests/_data',
+        ),
         'environment' => array(
             'class' => 'vendor.crisu83.yii-deploymenttools.commands.EnvironmentCommand',
             'basePath' => __DIR__ . '/../../',
@@ -15,16 +21,6 @@ return array(
         'migrate' => array(
             'class' => 'system.cli.commands.MigrateCommand',
             'migrationTable' => 'migration',
-        ),
-        'permissions' => array(
-            'class' => 'vendor.crisu83.yii-deploymenttools.commands.PermissionsCommand',
-            'basePath' => __DIR__ . '/../../',
-            'permissions' => array(
-                'app/runtime' => array('mode' => 0777),
-                'app/tests/_log' => array('mode' => 0777),
-                'app/yiic' => array('mode' => 0755),
-                'web/assets' => array('mode' => 0777),
-            ),
         ),
     )
 );

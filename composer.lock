@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2c856662328549060f58c8f158d6b6f2",
+    "hash": "0408b2830cab47d887008cfa4a8e2122",
     "packages": [
         {
             "name": "alexandresalome/php-selenium",
@@ -504,12 +504,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-composer.git",
-                "reference": "a67f98d8208107b70f66c27ff33a1359811d9a45"
+                "reference": "b2f25593f6e28ce99ad96913d3cdd8807e528444"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-composer/zipball/a67f98d8208107b70f66c27ff33a1359811d9a45",
-                "reference": "a67f98d8208107b70f66c27ff33a1359811d9a45",
+                "url": "https://api.github.com/repos/Crisu83/yii-composer/zipball/b2f25593f6e28ce99ad96913d3cdd8807e528444",
+                "reference": "b2f25593f6e28ce99ad96913d3cdd8807e528444",
                 "shasum": ""
             },
             "require": {
@@ -519,7 +519,7 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Crisu83": "./src"
+                    "Crisu83": "/src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -535,10 +535,10 @@
             ],
             "description": "Composer callbacks for the Yii PHP framework.",
             "keywords": [
-                "configuration",
+                "composer",
                 "yii"
             ],
-            "time": "2013-07-24 20:27:24"
+            "time": "2013-07-24 21:09:23"
         },
         {
             "name": "crisu83/yii-deploymenttools",
@@ -546,12 +546,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-deploymenttools.git",
-                "reference": "89f639690cc4a0c605b8a261124e228629f9c764"
+                "reference": "dfc0b8820da61f957dbd78d750137408cdda1375"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-deploymenttools/zipball/89f639690cc4a0c605b8a261124e228629f9c764",
-                "reference": "89f639690cc4a0c605b8a261124e228629f9c764",
+                "url": "https://api.github.com/repos/Crisu83/yii-deploymenttools/zipball/dfc0b8820da61f957dbd78d750137408cdda1375",
+                "reference": "dfc0b8820da61f957dbd78d750137408cdda1375",
                 "shasum": ""
             },
             "type": "yii-extension",
@@ -571,7 +571,7 @@
                 "configuration",
                 "yii"
             ],
-            "time": "2013-07-24 13:36:05"
+            "time": "2013-07-25 20:49:08"
         },
         {
             "name": "crisu83/yii-extension",

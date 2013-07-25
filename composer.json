@@ -45,6 +45,7 @@
     "extra": {
         "yii-install-writable": [
             "app/runtime",
+            "app/tests/_log",
             "web/assets"
         ],
         "yii-install-executable": [
