@@ -1,7 +1,7 @@
 {
     "name": "crisu83/yii-app",
     "description": "A great way to start building your web application with Yii PHP framework.",
-    "keywords": ["yii", "application", "application-template"],
+    "keywords": ["yii", "application-template"],
     "homepage": "https://github.com/Crisu83/yii-app",
     "type": "project",
     "license": "BSD-3-Clause",
