@@ -1,9 +1,10 @@
 # phpstorm project directory
 .idea/*
 
-# yii runtime directories
+# runtime directories
 app/runtime/*
 web/assets/*
+web/files/*
 
 # local configurations
 app/config/*-local.php

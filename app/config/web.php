@@ -6,7 +6,8 @@ return array(
         'bootstrap' => 'vendor.crisu83.yiistrap',
     ),
     // application behaviors
-    'behaviors' => array(// uncomment this if your application is multilingual
+    'behaviors' => array(
+        // uncomment this if your application is multilingual
         /*
         'multilingual' => array(
             'class' => 'vendor.crisu83.yii-multilingual.behaviors.MlApplicationBehavior',
@@ -17,13 +18,15 @@ return array(
         */
     ),
     // controllers mappings
-    'controllerMap' => array(// uncomment the following if you enable the emailer component
+    'controllerMap' => array(
+        // uncomment the following if you enable the emailer component
         //'email' => array('class' => 'vendor.nordsoftware.yii-emailer.controllers.EmailController'),
-        // uncomment the following if you enable the image component
+        // uncomment the following if you enable the imagemanager extension
         //'image' => array('class' => 'vendor.crisu83.yii-imagemanager.controllers.ImageController'),
     ),
     // application modules
-    'modules' => array(// uncomment the following to enable the auth module
+    'modules' => array(
+        // uncomment the following to enable the auth module
         /*
         'auth' => array(
             'class' => 'vendor.crisu83.yii-auth.AuthModule',
@@ -50,14 +53,6 @@ return array(
         'bootstrap' => array(
             'class' => 'bootstrap.components.TbApi',
         ),
-        // uncomment the following to enable the image extension
-        /*
-        'image' => array(
-            'class' => 'vendor.crisu83.yii-imagemanager.components.ImageManager',
-            'presets' => array(
-            ),
-        ),
-        */
         'livereload' => array(
             'class' => 'vendor.crisu83.yii-livereload.components.LiveReload',
         ),

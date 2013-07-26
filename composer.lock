@@ -546,12 +546,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-consoletools.git",
-                "reference": "08fa2e31515dab8c9a6bd24bb8544fa93b3b1f5c"
+                "reference": "b24b473c151810a844f597a0b9ced0e43ec0d42b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-consoletools/zipball/08fa2e31515dab8c9a6bd24bb8544fa93b3b1f5c",
-                "reference": "08fa2e31515dab8c9a6bd24bb8544fa93b3b1f5c",
+                "url": "https://api.github.com/repos/Crisu83/yii-consoletools/zipball/b24b473c151810a844f597a0b9ced0e43ec0d42b",
+                "reference": "b24b473c151810a844f597a0b9ced0e43ec0d42b",
                 "shasum": ""
             },
             "type": "library",
@@ -572,7 +572,7 @@
                 "tools",
                 "yii"
             ],
-            "time": "2013-07-26 12:54:38"
+            "time": "2013-07-26 17:36:37"
         },
         {
             "name": "crisu83/yii-extension",
@@ -671,12 +671,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-imagemanager.git",
-                "reference": "9c07bc9865c9cf34fc350c91ca21d48af7c7fc65"
+                "reference": "e0073b64e4e264fea9192eeb32c708e86158a48a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-imagemanager/zipball/9c07bc9865c9cf34fc350c91ca21d48af7c7fc65",
-                "reference": "9c07bc9865c9cf34fc350c91ca21d48af7c7fc65",
+                "url": "https://api.github.com/repos/Crisu83/yii-imagemanager/zipball/e0073b64e4e264fea9192eeb32c708e86158a48a",
+                "reference": "e0073b64e4e264fea9192eeb32c708e86158a48a",
                 "shasum": ""
             },
             "require": {
@@ -696,7 +696,7 @@
                 }
             ],
             "description": "Image manager for the Yii PHP framework.",
-            "time": "2013-07-22 10:24:07"
+            "time": "2013-07-26 19:54:05"
         },
         {
             "name": "crisu83/yii-livereload",

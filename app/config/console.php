@@ -17,6 +17,12 @@ return array(
                 'web/js',
             ),
         ),
+        // uncomment the following if you enable the imagemanager extension.
+        /*
+        'image' => array(
+            'class' => 'vendor.crisu83.yii-imagemanager.commands.ImageCommand',
+        ),
+        */
         'migrate' => array(
             'class' => 'system.cli.commands.MigrateCommand',
             'migrationTable' => 'migration',

@@ -50,6 +50,14 @@ return array(
             'class' => 'vendor.crisu83.yii-formatter.components.Formatter',
             'formatters' => array(),
         ),
+        // uncomment the following to enable the imagemanager extension
+        /*
+        'imageManager' => array(
+            'class' => 'vendor.crisu83.yii-imagemanager.components.ImageManager',
+            'presets' => array(
+            ),
+        ),
+        */
         'log' => array(
             'class' => 'CLogRouter',
             'routes' => array(
