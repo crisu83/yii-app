@@ -25,7 +25,7 @@
         "crisu83/closurecompiler-bin": "dev-master",
         "crisu83/yii-auth": "dev-master",
         "crisu83/yii-imagemanager": "dev-master",
-        "crisu83/yii-deploymenttools": "dev-master",
+        "crisu83/yii-consoletools": "dev-master",
         "crisu83/yii-formatter": "dev-master",
         "crisu83/yii-livereload": "dev-master",
         "crisu83/yii-multilingual": "dev-master",

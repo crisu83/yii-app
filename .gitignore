@@ -5,6 +5,9 @@
 app/runtime/*
 web/assets/*
 
+# local configurations
+app/config/*-local.php
+
 # composer
 vendor/*
 composer.phar

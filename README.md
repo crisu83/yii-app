@@ -13,9 +13,7 @@ A great way to start building your web application with the Yii PHP framework.
  * Run `npm install` to download  Node.js dependencies.
  * Update the configurations in `app/config` to suit your needs.
  * Start Grunt by running `grunt` and it will compile your LESS and deploy your JavaScript files.
- * Run `chmod +x app/yiic.php` to allow yiic to be executed.
- * Run `yiic permissions` to set the correct permissions for files and directories.
- * Run `yiic environment change dev` to activate the development environment.
+ * Run `yiic environment dev` to activate the development environment.
  * You're done! Navigate to `web/index.php` to see your application.
 
 For more information on Composer and Grunt:
@@ -29,7 +27,7 @@ The following extensions are part of yii-app:
 
  * Auth https://github.com/Crisu83/yii-auth
  * Debug toolbar https://github.com/malyshev/yii-debug-toolbar
- * Deployment tools https://github.com/Crisu83/yii-deploymenttools
+ * Console tools https://github.com/Crisu83/yii-consoletools
  * Emailer https://github.com/nordsoftware/yii-emailer
  * Extension https://github.com/Crisu83/yii-extension
  * File manager https://github.com/Crisu83/yii-filemanager

@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0408b2830cab47d887008cfa4a8e2122",
+    "hash": "0aac4923ed4b6f080d8ef53ecce156b7",
     "packages": [
         {
             "name": "alexandresalome/php-selenium",
@@ -541,20 +541,20 @@
             "time": "2013-07-24 21:09:23"
         },
         {
-            "name": "crisu83/yii-deploymenttools",
+            "name": "crisu83/yii-consoletools",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Crisu83/yii-deploymenttools.git",
-                "reference": "dfc0b8820da61f957dbd78d750137408cdda1375"
+                "url": "https://github.com/Crisu83/yii-consoletools.git",
+                "reference": "dcc0a0986d7f82111b78ca919e679addf9faacaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-deploymenttools/zipball/dfc0b8820da61f957dbd78d750137408cdda1375",
-                "reference": "dfc0b8820da61f957dbd78d750137408cdda1375",
+                "url": "https://api.github.com/repos/Crisu83/yii-consoletools/zipball/dcc0a0986d7f82111b78ca919e679addf9faacaf",
+                "reference": "dcc0a0986d7f82111b78ca919e679addf9faacaf",
                 "shasum": ""
             },
-            "type": "yii-extension",
+            "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -566,12 +566,13 @@
                     "homepage": "http://www.cniska.net/"
                 }
             ],
-            "description": "A collection of tools for deploying Yii applications.",
+            "description": "A collection of tools for developing console commands for Yii.",
             "keywords": [
-                "configuration",
+                "console",
+                "tools",
                 "yii"
             ],
-            "time": "2013-07-25 20:49:08"
+            "time": "2013-07-26 12:49:09"
         },
         {
             "name": "crisu83/yii-extension",
@@ -2340,7 +2341,7 @@
         "crisu83/closurecompiler-bin": 20,
         "crisu83/yii-auth": 20,
         "crisu83/yii-imagemanager": 20,
-        "crisu83/yii-deploymenttools": 20,
+        "crisu83/yii-consoletools": 20,
         "crisu83/yii-formatter": 20,
         "crisu83/yii-livereload": 20,
         "crisu83/yii-multilingual": 20,
