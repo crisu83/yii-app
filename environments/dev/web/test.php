@@ -7,6 +7,7 @@
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 require(__DIR__ . '/../vendor/yiisoft/yii/framework/yii.php');
+require(__DIR__ . '/../app/components/WebApplication.php');
 require(__DIR__ . '/../app/helpers/global.php');
 require(__DIR__ . '/../vendor/crisu83/yii-consoletools/helpers/ConfigHelper.php');
 
