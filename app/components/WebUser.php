@@ -37,9 +37,10 @@ class WebUser extends CWebUser
     public function updateLastActiveAt()
     {
         if (!$this->isGuest) {
-            $model = $this->loadModel();
-            $model->lastActiveAt = sqlDateTime();
-            return $model->save(true, array('lastActiveAt'));
+            if (($model = $this->loadModel()) !== null) {
+                $model->lastActiveAt = sqlDateTime();
+                return $model->save(true, array('lastActiveAt'));
+            }
         }
         return false;
     }
@@ -51,9 +52,10 @@ class WebUser extends CWebUser
     public function updateLastLoginAt()
     {
         if (!$this->isGuest) {
-            $model = $this->loadModel();
-            $model->lastLoginAt = sqlDateTime();
-            return $model->save(true, array('lastLoginAt'));
+            if (($model = $this->loadModel()) !== null) {
+                $model->lastLoginAt = sqlDateTime();
+                return $model->save(true, array('lastLoginAt'));
+            }
         }
         return false;
     }
