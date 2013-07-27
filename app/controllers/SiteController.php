@@ -76,24 +76,20 @@ class SiteController extends Controller
     public function actionLogin()
     {
         $this->layout = 'minimal';
-
         $model = new LoginForm;
-
-        // if it is ajax validation request
-        if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
-            echo CActiveForm::validate($model);
-            app()->end();
-        }
-
-        // collect user input data
-        if (isset($_POST['LoginForm'])) {
-            $model->attributes = $_POST['LoginForm'];
-            // validate user input and redirect to the previous page if valid
-            if ($model->validate() && $model->login()) {
-                $this->redirect(user()->returnUrl);
+        $this->performAjaxValidation($model, 'login-form');
+        $request = request();
+        if ($request->isPostRequest)
+        {
+            $model->attributes = $request->getPost('LoginForm');
+            if ($model->validate() && $model->login())
+            {
+                /* @var $user WebUser */
+                $user = user();
+                $user->updateLastLoginAt();
+                $this->redirect($user->returnUrl);
             }
         }
-        // display the login form
         $this->render('login', array('model' => $model));
     }
 

@@ -26,7 +26,8 @@ class WebUser extends CWebUser
             if ($this->isGuest) {
                 return null;
             }
-            return $this->_model = User::model()->findByPk($this->id);
+            return null; // todo: fix this in the build by adding a fixture.
+            //return $this->_model = User::model()->findByPk($this->id);
         }
     }
 
