@@ -18,4 +18,5 @@ $config = ConfigHelper::merge(
     )
 );
 
-Yii::createWebApplication($config)->run();
+$app = Yii::createApplication('WebApplication', $config);
+$app->run();

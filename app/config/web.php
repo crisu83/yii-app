@@ -84,8 +84,7 @@ return array(
             ),
         ),
         'user' => array(
-            // uncomment the following if you enable the Auth module
-            //'class'=>'auth.components.AuthWebUser',
+            'class'=>'app.components.WebUser',
             'allowAutoLogin' => true,
         ),
         'errorHandler' => array(

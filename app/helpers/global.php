@@ -11,7 +11,7 @@ defined('DS') or define('DS', DIRECTORY_SEPARATOR);
 
 /**
  * Returns the application instance.
- * @return CWebApplication
+ * @return WebApplication
  */
 function app()
 {
@@ -32,7 +32,7 @@ function param($name)
  * Returns the client script instance.
  * @return CClientScript
  */
-function cs()
+function clientScript()
 {
     return Yii::app()->getClientScript();
 }
@@ -48,11 +48,29 @@ function db()
 
 /**
  * Returns the formatter instance.
- * @return CFormat
+ * @return Formatter
  */
 function format()
 {
-    return Yii::app()->getFormat();
+    return Yii::app()->getComponent('format');
+}
+
+/**
+ * Returns the date formatter instance.
+ * @return CDateFormatter
+ */
+function dateFormatter()
+{
+    return Yii::app()->getDateFormatter();
+}
+
+/**
+ * Returns the date formatter instance.
+ * @return CDateFormatter
+ */
+function numberFormatter()
+{
+    return Yii::app()->getNumberFormatter();
 }
 
 /**
@@ -222,7 +240,7 @@ function url($route, $params = array(), $ampersand = '&')
  * @param integer $options
  * @return string
  */
-function je($value, $options = 0)
+function jsonEncode($value, $options = 0)
 {
     return json_encode($value, $options);
 }
@@ -235,9 +253,35 @@ function je($value, $options = 0)
  * @param integer $options
  * @return mixed
  */
-function jd($string, $assoc = true, $depth = 512, $options = 0)
+function jsonDecode($string, $assoc = true, $depth = 512, $options = 0)
 {
     return json_decode($string, $assoc, $depth, $options);
+}
+
+/**
+ * Returns the current time as a MySQL date.
+ * @param integer $timestamp the timestamp.
+ * @return string the date.
+ */
+function sqlDate($timestamp = null)
+{
+    if ($timestamp === null) {
+        $timestamp = time();
+    }
+    return date('Y-m-d', $timestamp);
+}
+
+/**
+ * Returns the current time as a MySQL date time.
+ * @param integer $timestamp the timestamp.
+ * @return string the date time.
+ */
+function sqlDateTime($timestamp = null)
+{
+    if ($timestamp === null) {
+        $timestamp = time();
+    }
+    return date('Y-m-d H:i:s', $timestamp);
 }
 
 /**

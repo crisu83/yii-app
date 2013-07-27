@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "00a18e00a33176eff75d4bc440add1e4",
+    "hash": "be2653d5caed406c48168e621c07cfc7",
     "packages": [
         {
             "name": "alexandresalome/php-selenium",
@@ -671,12 +671,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-imagemanager.git",
-                "reference": "e0073b64e4e264fea9192eeb32c708e86158a48a"
+                "reference": "5cf50c0d8e3d84b818018d9dce77ee082cc130b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-imagemanager/zipball/e0073b64e4e264fea9192eeb32c708e86158a48a",
-                "reference": "e0073b64e4e264fea9192eeb32c708e86158a48a",
+                "url": "https://api.github.com/repos/Crisu83/yii-imagemanager/zipball/5cf50c0d8e3d84b818018d9dce77ee082cc130b7",
+                "reference": "5cf50c0d8e3d84b818018d9dce77ee082cc130b7",
                 "shasum": ""
             },
             "require": {
@@ -696,7 +696,7 @@
                 }
             ],
             "description": "Image manager for the Yii PHP framework.",
-            "time": "2013-07-26 19:54:05"
+            "time": "2013-07-26 19:55:10"
         },
         {
             "name": "crisu83/yii-livereload",
@@ -1322,6 +1322,34 @@
                 "psr-3"
             ],
             "time": "2013-07-17 16:11:27"
+        },
+        {
+            "name": "nordsoftware/yii-audit",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nordsoftware/yii-audit.git",
+                "reference": "fc078944c0930ed20c90cce2ff5ca596220e7c87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nordsoftware/yii-audit/zipball/fc078944c0930ed20c90cce2ff5ca596220e7c87",
+                "reference": "fc078944c0930ed20c90cce2ff5ca596220e7c87",
+                "shasum": ""
+            },
+            "type": "yii-extension",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Christoffer Niska",
+                    "email": "ChristofferNiska@gmail.com"
+                }
+            ],
+            "description": "Extension for collecting active records audit data for the Yii PHP framework.",
+            "time": "2013-07-01 22:19:28"
         },
         {
             "name": "nordsoftware/yii-emailer",
@@ -2348,6 +2376,7 @@
         "crisu83/yii-seo": 20,
         "crisu83/yiistrap": 20,
         "malyshev/yii-debug-toolbar": 20,
+        "nordsoftware/yii-audit": 20,
         "nordsoftware/yii-emailer": 20,
         "phpnode/yiipassword": 20,
         "codeception/codeception": 0
