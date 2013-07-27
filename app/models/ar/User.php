@@ -1,5 +1,7 @@
 <?php
 
+Yii::import('vendor.phpnode.yiipassword.*');
+
 /**
  * This is the model class for table "user".
  *
@@ -10,10 +12,8 @@
  * @property string $password
  * @property string $passwordStrategy
  * @property boolean $requiresNewPassword
- * @property integer $creatorId
- * @property string $createTime
- * @property integer $updaterId
- * @property string $updateTime
+ * @property string $lastLoginAt
+ * @property string $lastActiveAt
  */
 class User extends ActiveRecord
 {
@@ -35,36 +35,36 @@ class User extends ActiveRecord
         return 'user';
     }
 
-
     /**
-     * Returns a list of behaviors that this model should behave as.
      * @return array the behavior configurations (behavior name=>behavior configuration)
      */
     public function behaviors()
     {
-        Yii::import('vendor.phpnode.yiipassword.*');
-
-        return CMap::mergeArray(
-            parent::behaviors(),
-            array(
-                'formatter' => array(
-                    'class' => 'vendor.crisu83.yii-formatter.behaviors.FormatterBehavior',
-                    'formatters' => array(
-                        'dateTime' => array('dateWidth' => 'short', 'timeWidth' => 'short'),
+        return array_merge(parent::behaviors(), array(
+            'password' => array(
+                'class' => 'APasswordBehavior',
+                'defaultStrategyName' => 'bcrypt',
+                'strategies' => array(
+                    'bcrypt' => array(
+                        'class' => 'ABcryptPasswordStrategy',
+                        'workFactor' => 12,
                     ),
                 ),
-                'password' => array(
-                    'class' => 'APasswordBehavior',
-                    'defaultStrategyName' => 'bcrypt',
-                    'strategies' => array(
-                        'bcrypt' => array(
-                            'class' => 'ABcryptPasswordStrategy',
-                            'workFactor' => 12,
-                        ),
+            ),
+            'workflow' => array(
+                'class' => 'app.behaviors.WorkflowBehavior',
+                'defaultStatus' => self::STATUS_DEFAULT,
+                'statuses' => array(
+                    self::STATUS_DEFAULT => array(
+                        'label' => t('label', 'Default'),
+                        'transitions' => array(self::STATUS_DELETED),
+                    ),
+                    self::STATUS_DELETED => array(
+                        'label' => t('label', 'Deleted'),
                     ),
                 ),
-            )
-        );
+            ),
+        ));
     }
 
     /**
@@ -72,13 +72,13 @@ class User extends ActiveRecord
      */
     public function rules()
     {
-        return array(
+        return array_merge(parent::rules(), array(
             array('name', 'required'),
             array('requiresNewPassword', 'numerical', 'integerOnly' => true),
             array('name, salt, password, passwordStrategy', 'length', 'max' => 255),
             // The following rule is used by search().
-            array('id, name, creatorId, createTime, updaterId, updateTime', 'safe', 'on' => 'search'),
-        );
+            array('id, name, lastLoginAt, lastActiveAt', 'safe', 'on' => 'search'),
+        ));
     }
 
     /**
@@ -86,7 +86,8 @@ class User extends ActiveRecord
      */
     public function relations()
     {
-        return array();
+        return array_merge(parent::relations(), array(
+        ));
     }
 
     /**
@@ -94,31 +95,27 @@ class User extends ActiveRecord
      */
     public function attributeLabels()
     {
-        return array(
-            'id' => 'ID',
-            'name' => 'Name',
-            'password' => 'Password',
-            'creatorId' => 'Creator',
-            'createTime' => 'Created',
-            'updaterId' => 'Updater',
-            'updateTime' => 'Updated',
-        );
+        return array_merge(parent::attributeLabels(), array(
+            'id' => t('label', 'ID'),
+            'name' => t('label', 'Name'),
+            'password' => t('label', 'Password'),
+            'lastLoginAt' => t('label', 'Last login at'),
+            'lastActiveAt' => t('label', 'Last active at'),
+        ));
     }
 
     /**
      * Retrieves a list of models based on the current search/filter conditions.
-     * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+     * @return CActiveDataProvider the data provider.
      */
     public function search()
     {
         $criteria = new CDbCriteria;
 
-        $criteria->compare('id', $this->id);
-        $criteria->compare('name', $this->name, true);
-        $criteria->compare('creatorId', $this->creatorId);
-        $criteria->compare('createTime', $this->createTime, true);
-        $criteria->compare('updaterId', $this->updaterId);
-        $criteria->compare('updateTime', $this->updateTime, true);
+        $criteria->compare('t.id', $this->id);
+        $criteria->compare('t.name', $this->name, true);
+        $criteria->compare('t.lastLoginAt', $this->lastLoginAt, true);
+        $criteria->compare('t.lastActiveAt', $this->lastActiveAt, true);
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,

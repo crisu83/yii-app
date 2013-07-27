@@ -7,22 +7,9 @@
  */
 class ActiveRecord extends CActiveRecord
 {
-    // Active record statuses.
+    // Default active record statuses.
     const STATUS_DELETED = -1;
     const STATUS_DEFAULT = 0;
-
-    /**
-     * Returns a list of behaviors that this model should behave as.
-     * @return array the behavior configurations (behavior name=>behavior configuration)
-     */
-    public function behaviors()
-    {
-        return array(
-            'formatter' => array(
-                'class' => 'vendor.crisu83.yii-formatter.behaviors.FormatterBehavior',
-            ),
-        );
-    }
 
     /**
      * Returns the default named scope that should be implicitly applied to all queries for this model.
@@ -31,63 +18,43 @@ class ActiveRecord extends CActiveRecord
     public function defaultScope()
     {
         $scope = parent::defaultScope();
-        if ($this->hasAttribute('status')) {
-            $tableAlias = $this->getTableAlias(true, false /* do not check scopes */);
+        if ($this->hasAttribute('status'))
+        {
+            $tableAlias = $this->getTableAlias(true, false/* do not check scopes */);
             $condition = $tableAlias . '.status >= 0';
-            if (isset($scope['condition'])) {
-                if (strpos($scope['condition'], 'status') === false) {
+            if (isset($scope['condition']))
+            {
+                if (strpos($scope['condition'], 'status') === false)
                     $scope['condition'] = '(' . $scope['condition'] . ') AND (' . $condition . ')';
-                }
-            } else {
-                $scope['condition'] = $condition;
             }
+            else
+                $scope['condition'] = $condition;
         }
         return $scope;
     }
 
     /**
-     * This method is invoked before saving a record (after validation, if any).
-     * @return boolean whether the saving should be executed. Defaults to true.
+     * Deletes the row corresponding to this active record.
+     * @return boolean whether the deletion is successful.
+     * @throws CException if the record is new
      */
-    protected function beforeSave()
+    public function delete()
     {
-        if (parent::beforeSave()) {
-            $now = new CDbExpression('NOW()');
-
-            if ($this->isNewRecord) {
-                if ($this->hasAttribute('createdAt')) {
-                    $this->createdAt = $now;
-                }
-            } else {
-                unset($this->createdAt); // make sure we don't touch this.
-
-                if ($this->status !== self::STATUS_DELETED && $this->hasAttribute('updatedAt')) {
-                    $this->updatedAt = $now;
-                }
-            }
-            return true;
-        } else {
-            return false;
+        if ($this->asa('workflow') !== null)
+        {
+            $this->changeStatus(self::STATUS_DELETED);
+            return true; // prevents hard deletion
         }
+        return parent::delete();
     }
 
     /**
-     * This method is invoked before deleting a record.
-     * @return boolean whether the record should be deleted. Defaults to true.
+     * Hard deletes the record.
+     * @return boolean whether the deletion is successful.
      */
-    protected function beforeDelete()
+    public function hardDelete()
     {
-        if (parent::beforeDelete()) {
-            if ($this->hasAttribute('deletedAt')) {
-                $this->deletedAt = new CDbExpression('NOW()');
-            }
-            if ($this->hasAttribute('status')) {
-                $this->status = self::STATUS_DELETED;
-            }
-            $this->save(false);
-            return false; // prevent actual DELETE query from being run
-        }
-        return true;
+        return parent::delete();
     }
 }
 

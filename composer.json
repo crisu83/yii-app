@@ -32,6 +32,7 @@
         "crisu83/yii-seo": "dev-master",
         "crisu83/yiistrap": "dev-master",
         "malyshev/yii-debug-toolbar": "dev-master",
+        "nordsoftware/yii-audit": "dev-master",
         "nordsoftware/yii-emailer": "dev-master",
         "phpnode/yiipassword": "dev-master",
         "yiisoft/yii": "1.1.13",

@@ -28,6 +28,7 @@ For more information on Composer and Grunt:
 
 The following extensions are part of yii-app:
 
+ * Audit https://github.com/nordsoftware/yii-audit
  * Auth https://github.com/Crisu83/yii-auth
  * Debug toolbar https://github.com/malyshev/yii-debug-toolbar
  * Console tools https://github.com/Crisu83/yii-consoletools
