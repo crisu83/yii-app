@@ -10,7 +10,7 @@ A great way to start building your web application with the Yii PHP framework.
 
  * Set up Git by following the instructions [here](https://help.github.com/articles/set-up-git).
  * Download and install Composer by following the instructions [here](http://getcomposer.org/download/).
- * Run `composer create-project yii-app [APP-NAME]` and composer will create the project for you.
+ * Run `composer create-project crisu83/yii-app [APP-NAME]` and composer will create the project for you.
  * Browse through the `composer.json` and remove the dependencies you don't need.
  * Download and install Node.js by following the instructions here [here](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager).
  * Run `npm install` to download the Node.js dependencies.
