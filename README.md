@@ -19,10 +19,23 @@ A great way to start building your web application with the Yii PHP framework.
  * Run `yiic environment dev` to activate the development environment.
  * You're done! Navigate to `web/index.php` to see your application.
 
-For more information on Composer and Grunt:
+## Setup using Vagrant (optional)
+
+ * Download and install Vagrant by following the instructions [here](http://downloads.vagrantup.com/)
+ * Download VirtualBox 4.2.12 [here](http://download.virtualbox.org/virtualbox/4.2.12/) and run the installer
+ * If you are using Windows you need to run VirtualBox as an Administrator
+ * Set up Git by following the instructions [here](https://help.github.com/articles/set-up-git).
+ * Download and install Composer by following the instructions [here](http://getcomposer.org/download/).
+ * Run `composer create-project crisu83/yii-app [APP-NAME]` and composer will create the project for you.
+ * Run `vagrant up` to set up your development environment.
+ * You're done! Navigate to `http://localhost:4567/index.php` to see your application.
+
+
+For more information on Composer, Grunt and Vagrant:
 
 * [Composer documentation](http://getcomposer.org/doc/)
 * [Grunt documentation](http://gruntjs.com/getting-started)
+* [Vagrant documentation](http://docs.vagrantup.com/v2/)
 
 ## Extensions
 
