@@ -16,13 +16,17 @@ return array(
             ),
         ),
         */
+        'maintain' => array(
+            'class' => 'vendor.crisu83.yii-consoletools.behaviors.MaintainApplicationBehavior',
+            'maintainFile' => __DIR__ . '/../runtime/maintain',
+        ),
     ),
     // controllers mappings
     'controllerMap' => array(
         // uncomment the following if you enable the emailer component
         //'email' => array('class' => 'vendor.nordsoftware.yii-emailer.controllers.EmailController'),
         // uncomment the following if you enable the imagemanager extension
-        //'image' => array('class' => 'vendor.crisu83.yii-imagemanager.controllers.ImageController'),
+        'image' => array('class' => 'vendor.crisu83.yii-imagemanager.controllers.ImageController'),
     ),
     // application modules
     'modules' => array(
@@ -60,7 +64,7 @@ return array(
             'routes' => array(
                 array(
                     'class' => 'vendor.malyshev.yii-debug-toolbar.yii-debug-toolbar.YiiDebugToolbarRoute',
-                    'ipFilters' => array('127.0.0.1', '::1'),
+                    'ipFilters' => array('127.0.0.1', '10.0.2.2'/* Vagrant */, '::1'/* WAMP */),
                 ),
             ),
         ),

@@ -52,7 +52,7 @@ class User extends ActiveRecord
                 ),
             ),
             'workflow' => array(
-                'class' => 'app.behaviors.WorkflowBehavior',
+                'class' => 'vendor.crisu83.yii-workflow.behaviors.WorkflowBehavior',
                 'defaultStatus' => self::STATUS_DEFAULT,
                 'statuses' => array(
                     self::STATUS_DEFAULT => array(

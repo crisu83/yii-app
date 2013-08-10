@@ -3,482 +3,8 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "be2653d5caed406c48168e621c07cfc7",
+    "hash": "c3bddbc56e3baa3811e26317b20777ad",
     "packages": [
-        {
-            "name": "alexandresalome/php-selenium",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alexandresalome/PHP-Selenium.git",
-                "reference": "1.0.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/alexandresalome/PHP-Selenium/zipball/1.0.1",
-                "reference": "1.0.1",
-                "shasum": ""
-            },
-            "require-dev": {
-                "symfony/dom-crawler": "dev-master"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Selenium": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alexandre Salomé",
-                    "email": "alexandre.salome@gmail.com",
-                    "homepage": "http://alexandre-salome.fr/"
-                }
-            ],
-            "description": "PHP Library for Selenium",
-            "keywords": [
-                "selenium"
-            ],
-            "time": "2012-07-10 04:39:20"
-        },
-        {
-            "name": "behat/mink",
-            "version": "v1.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/Mink.git",
-                "reference": "v1.4.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Mink/zipball/v1.4.3",
-                "reference": "v1.4.3",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.1",
-                "symfony/css-selector": ">=2.0,<2.4-dev"
-            },
-            "suggest": {
-                "behat/mink-browserkit-driver": "extremely fast headless driver for Symfony\\Kernel-based apps (Sf2, Silex)",
-                "behat/mink-goutte-driver": "fast headless driver for any app without JS emulation",
-                "behat/mink-selenium2-driver": "slow, but JS-enabled driver for any app (requires Selenium2)",
-                "behat/mink-zombie-driver": "fast and JS-enabled headless driver for any app (requires node.js)"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "1.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Mink": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                }
-            ],
-            "description": "Web acceptance testing framework for PHP 5.3",
-            "homepage": "http://mink.behat.org/",
-            "keywords": [
-                "browser",
-                "testing",
-                "web"
-            ],
-            "time": "2013-03-02 15:53:18"
-        },
-        {
-            "name": "behat/mink-browserkit-driver",
-            "version": "v1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/MinkBrowserKitDriver.git",
-                "reference": "v1.0.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkBrowserKitDriver/zipball/v1.0.5",
-                "reference": "v1.0.5",
-                "shasum": ""
-            },
-            "require": {
-                "behat/mink": ">=1.4.3,<1.5",
-                "php": ">=5.3.1",
-                "symfony/browser-kit": ">=2.0,<3.0",
-                "symfony/dom-crawler": ">=2.0,<3.0"
-            },
-            "require-dev": {
-                "silex/silex": "@dev"
-            },
-            "type": "mink-driver",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Mink\\Driver": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                }
-            ],
-            "description": "Symfony2 BrowserKit driver for Mink framework",
-            "homepage": "http://mink.behat.org/",
-            "keywords": [
-                "Mink",
-                "Symfony2",
-                "browser",
-                "testing"
-            ],
-            "time": "2013-04-13 12:17:15"
-        },
-        {
-            "name": "behat/mink-goutte-driver",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/MinkGoutteDriver.git",
-                "reference": "v1.0.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkGoutteDriver/zipball/v1.0.9",
-                "reference": "v1.0.9",
-                "shasum": ""
-            },
-            "require": {
-                "behat/mink-browserkit-driver": ">=1.0.5,<1.2.0",
-                "fabpot/goutte": "~1.0.1",
-                "php": ">=5.3.1"
-            },
-            "type": "mink-driver",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Mink\\Driver": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                }
-            ],
-            "description": "Goutte driver for Mink framework",
-            "homepage": "http://mink.behat.org/",
-            "keywords": [
-                "browser",
-                "goutte",
-                "headless",
-                "testing"
-            ],
-            "time": "2013-07-03 18:43:54"
-        },
-        {
-            "name": "behat/mink-selenium-driver",
-            "version": "v1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/MinkSeleniumDriver.git",
-                "reference": "v1.0.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkSeleniumDriver/zipball/v1.0.5",
-                "reference": "v1.0.5",
-                "shasum": ""
-            },
-            "require": {
-                "alexandresalome/php-selenium": ">=1.0.1,<1.1",
-                "behat/mink": ">=1.4.3,<1.5",
-                "php": ">=5.3.1",
-                "symfony/dom-crawler": ">=2.0,<3.0"
-            },
-            "type": "mink-driver",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Mink\\Driver": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                }
-            ],
-            "description": "Selenium driver for Mink framework",
-            "homepage": "http://mink.behat.org/",
-            "keywords": [
-                "ajax",
-                "browser",
-                "javascript",
-                "selenium",
-                "testing"
-            ],
-            "time": "2013-03-08 10:15:49"
-        },
-        {
-            "name": "behat/mink-selenium2-driver",
-            "version": "v1.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/MinkSelenium2Driver.git",
-                "reference": "v1.0.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkSelenium2Driver/zipball/v1.0.6",
-                "reference": "v1.0.6",
-                "shasum": ""
-            },
-            "require": {
-                "behat/mink": ">=1.4.3,<1.5",
-                "instaclick/php-webdriver": ">=1.0.12.0,<1.1",
-                "php": ">=5.3.1"
-            },
-            "type": "mink-driver",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Mink\\Driver": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                },
-                {
-                    "name": "Pete Otaqui",
-                    "email": "pete@otaqui.com",
-                    "homepage": "https://github.com/pete-otaqui"
-                }
-            ],
-            "description": "Selenium2 (WebDriver) driver for Mink framework",
-            "homepage": "http://mink.behat.org/",
-            "keywords": [
-                "ajax",
-                "browser",
-                "javascript",
-                "selenium",
-                "testing",
-                "webdriver"
-            ],
-            "time": "2013-04-13 12:56:28"
-        },
-        {
-            "name": "behat/mink-zombie-driver",
-            "version": "v1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Behat/MinkZombieDriver.git",
-                "reference": "v1.0.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Behat/MinkZombieDriver/zipball/v1.0.4",
-                "reference": "v1.0.4",
-                "shasum": ""
-            },
-            "require": {
-                "behat/mink": ">=1.4.3,<1.5",
-                "php": ">=5.3.1",
-                "symfony/process": ">=2.1,<3.0"
-            },
-            "type": "mink-driver",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Behat\\Mink\\Driver": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                },
-                {
-                    "name": "Pascal Cremer",
-                    "email": "b00gizm@gmail.com",
-                    "homepage": "http://github.com/b00gizm"
-                }
-            ],
-            "description": "Zombie.js driver for Mink framework",
-            "homepage": "http://mink.behat.org/",
-            "keywords": [
-                "ajax",
-                "browser",
-                "headless",
-                "javascript",
-                "testing",
-                "zombie"
-            ],
-            "time": "2013-04-13 12:54:30"
-        },
-        {
-            "name": "codeception/codeception",
-            "version": "1.6.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "1.6.4.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/1.6.4.1",
-                "reference": "1.6.4.1",
-                "shasum": ""
-            },
-            "require": {
-                "behat/mink": "1.4.*",
-                "behat/mink-goutte-driver": "@dev",
-                "behat/mink-selenium-driver": "*",
-                "behat/mink-selenium2-driver": "*",
-                "behat/mink-zombie-driver": "*",
-                "fabpot/goutte": "*",
-                "facebook/php-sdk": "3.*",
-                "monolog/monolog": "*",
-                "php": ">=5.3.3",
-                "phpunit/phpunit": "3.7.*",
-                "symfony/console": "~2.3",
-                "symfony/event-dispatcher": "~2.3",
-                "symfony/finder": "~2.3",
-                "symfony/yaml": "~2.3",
-                "videlalvaro/php-amqplib": "*"
-            },
-            "bin": [
-                "codecept"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Codeception": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Bodnarchuk",
-                    "email": "davert@mail.ua",
-                    "homepage": "http://codegyre.com"
-                }
-            ],
-            "time": "2013-07-22 15:05:10"
-        },
-        {
-            "name": "crisu83/closurecompiler-bin",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Crisu83/closurecompiler-bin.git",
-                "reference": "5e2a31710f319642d8c04d03ce627d363e92445b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/closurecompiler-bin/zipball/5e2a31710f319642d8c04d03ce627d363e92445b",
-                "reference": "5e2a31710f319642d8c04d03ce627d363e92445b",
-                "shasum": ""
-            },
-            "bin": [
-                "build/compiler.jar"
-            ],
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Christoffer Niska",
-                    "email": "christoffer.niska@gmail.com",
-                    "homepage": "http://www.cniska.net"
-                },
-                {
-                    "name": "Package Maintainer",
-                    "email": "kaiwa@20minutemail.com",
-                    "role": "maintainer"
-                },
-                {
-                    "name": "Google Inc.",
-                    "homepage": "https://developers.google.com/closure/compiler/"
-                }
-            ],
-            "description": "The Closure Compiler is a tool for making JavaScript download and run faster. It is a true compiler for JavaScript. Instead of compiling from a source language to machine code, it compiles from JavaScript to better JavaScript. It parses your JavaScript, analyzes it, removes dead code and rewrites and minimizes what's left. It also checks syntax, variable references, and types, and warns about common JavaScript pitfalls. Packaged for composer.",
-            "keywords": [
-                "binary",
-                "closure",
-                "compiler",
-                "compress",
-                "google",
-                "javascript",
-                "minification",
-                "minify"
-            ],
-            "time": "2013-07-23 19:46:34"
-        },
         {
             "name": "crisu83/yii-auth",
             "version": "dev-master",
@@ -504,12 +30,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-composer.git",
-                "reference": "b2f25593f6e28ce99ad96913d3cdd8807e528444"
+                "reference": "9448e2765e8fd5e04fbc38c92932991331546acd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-composer/zipball/b2f25593f6e28ce99ad96913d3cdd8807e528444",
-                "reference": "b2f25593f6e28ce99ad96913d3cdd8807e528444",
+                "url": "https://api.github.com/repos/Crisu83/yii-composer/zipball/9448e2765e8fd5e04fbc38c92932991331546acd",
+                "reference": "9448e2765e8fd5e04fbc38c92932991331546acd",
                 "shasum": ""
             },
             "require": {
@@ -530,7 +56,7 @@
                 {
                     "name": "Christoffer Niska",
                     "email": "christoffer.niska@gmail.com",
-                    "homepage": "http://www.cniska.net/"
+                    "homepage": "http://www.cniska.net"
                 }
             ],
             "description": "Composer callbacks for the Yii PHP framework.",
@@ -538,7 +64,7 @@
                 "composer",
                 "yii"
             ],
-            "time": "2013-07-24 21:09:23"
+            "time": "2013-07-28 19:50:51"
         },
         {
             "name": "crisu83/yii-consoletools",
@@ -546,12 +72,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-consoletools.git",
-                "reference": "b24b473c151810a844f597a0b9ced0e43ec0d42b"
+                "reference": "c87f8af33f61dae6502dfa73c3d0b4068c703df6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-consoletools/zipball/b24b473c151810a844f597a0b9ced0e43ec0d42b",
-                "reference": "b24b473c151810a844f597a0b9ced0e43ec0d42b",
+                "url": "https://api.github.com/repos/Crisu83/yii-consoletools/zipball/c87f8af33f61dae6502dfa73c3d0b4068c703df6",
+                "reference": "c87f8af33f61dae6502dfa73c3d0b4068c703df6",
                 "shasum": ""
             },
             "type": "library",
@@ -563,7 +89,7 @@
                 {
                     "name": "Christoffer Niska",
                     "email": "christoffer.niska@gmail.com",
-                    "homepage": "http://www.cniska.net/"
+                    "homepage": "http://www.cniska.net"
                 }
             ],
             "description": "A collection of tools for developing console commands for Yii.",
@@ -572,7 +98,7 @@
                 "tools",
                 "yii"
             ],
-            "time": "2013-07-26 17:36:37"
+            "time": "2013-07-31 19:17:49"
         },
         {
             "name": "crisu83/yii-extension",
@@ -796,20 +322,65 @@
             "time": "2013-07-03 21:11:06"
         },
         {
+            "name": "crisu83/yii-workflow",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Crisu83/yii-workflow.git",
+                "reference": "c3e466fab6809de101fe0bf4ec2ebcd0ff6770c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Crisu83/yii-workflow/zipball/c3e466fab6809de101fe0bf4ec2ebcd0ff6770c1",
+                "reference": "c3e466fab6809de101fe0bf4ec2ebcd0ff6770c1",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Christoffer Niska",
+                    "email": "christoffer.niska@gmail.com",
+                    "homepage": "http://www.cniska.net/"
+                }
+            ],
+            "description": "Yii extension that allows active records to transition between statuses.",
+            "keywords": [
+                "Behavior",
+                "workflow",
+                "yii"
+            ],
+            "time": "2013-08-07 19:57:47"
+        },
+        {
             "name": "crisu83/yiistrap",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yiistrap.git",
-                "reference": "5dcbc3e87dbd665d5c99047b39854cee9674ec57"
+                "reference": "3afa81cb5edc30fe941cec03043279e5d23a7ee6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yiistrap/zipball/5dcbc3e87dbd665d5c99047b39854cee9674ec57",
-                "reference": "5dcbc3e87dbd665d5c99047b39854cee9674ec57",
+                "url": "https://api.github.com/repos/Crisu83/yiistrap/zipball/3afa81cb5edc30fe941cec03043279e5d23a7ee6",
+                "reference": "3afa81cb5edc30fe941cec03043279e5d23a7ee6",
                 "shasum": ""
             },
-            "type": "yii-extension",
+            "require-dev": {
+                "codeception/codeception": "@stable",
+                "crisu83/yii-composer": "dev-master",
+                "php": ">=5.3.0",
+                "yiisoft/yii": "1.1.13"
+            },
+            "type": "library",
+            "extra": {
+                "yii-install-writable": [
+                    "tests/_log"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -831,7 +402,743 @@
                 "bootstrap",
                 "yii"
             ],
-            "time": "2013-07-22 18:05:40"
+            "time": "2013-08-07 19:05:38"
+        },
+        {
+            "name": "imagine/imagine",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avalanche123/Imagine.git",
+                "reference": "0af397b3b96aac5b11593ca9136ca43a55869c5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/0af397b3b96aac5b11593ca9136ca43a55869c5f",
+                "reference": "0af397b3b96aac5b11593ca9136ca43a55869c5f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "sami/sami": "dev-master"
+            },
+            "suggest": {
+                "ext-gd": "to use the GD implementation",
+                "ext-gmagick": "to use the Gmagick implementation",
+                "ext-imagick": "to use the Imagick implementation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Imagine": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bulat Shakirzyanov",
+                    "email": "mallluhuct@gmail.com",
+                    "homepage": "http://avalanche123.com"
+                }
+            ],
+            "description": "Image processing for PHP 5.3",
+            "homepage": "http://imagine.readthedocs.org/",
+            "keywords": [
+                "drawing",
+                "graphics",
+                "image manipulation",
+                "image processing"
+            ],
+            "time": "2013-07-19 16:16:00"
+        },
+        {
+            "name": "malyshev/yii-debug-toolbar",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/malyshev/yii-debug-toolbar.git",
+                "reference": "9102ebaaf5a00a0d2deba73f1f4de3f4198511be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/malyshev/yii-debug-toolbar/archive/9102ebaaf5a00a0d2deba73f1f4de3f4198511be.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "yii-extension",
+            "description": "A configurable set of panels that display various debug information about the current request/response. ",
+            "homepage": "https://github.com/malyshev/yii-debug-toolbar",
+            "time": "2013-04-10 15:53:54"
+        },
+        {
+            "name": "nordsoftware/yii-audit",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nordsoftware/yii-audit.git",
+                "reference": "fc078944c0930ed20c90cce2ff5ca596220e7c87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nordsoftware/yii-audit/zipball/fc078944c0930ed20c90cce2ff5ca596220e7c87",
+                "reference": "fc078944c0930ed20c90cce2ff5ca596220e7c87",
+                "shasum": ""
+            },
+            "type": "yii-extension",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Christoffer Niska",
+                    "email": "ChristofferNiska@gmail.com"
+                }
+            ],
+            "description": "Extension for collecting active records audit data for the Yii PHP framework.",
+            "time": "2013-07-01 22:19:28"
+        },
+        {
+            "name": "nordsoftware/yii-emailer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nordsoftware/yii-emailer.git",
+                "reference": "f5e832e157b3b640429e530a99359d874b9e1537"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nordsoftware/yii-emailer/zipball/f5e832e157b3b640429e530a99359d874b9e1537",
+                "reference": "f5e832e157b3b640429e530a99359d874b9e1537",
+                "shasum": ""
+            },
+            "require": {
+                "crisu83/yii-formatter": "dev-master",
+                "nordsoftware/yii-utils": "dev-master",
+                "swiftmailer/swiftmailer": "4.3.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Christoffer Niska",
+                    "email": "christoffer.niska@nordsoftware.com"
+                },
+                {
+                    "name": "Kenneth Söderlund",
+                    "email": "kenneth.soderlund@nordsoftware.com"
+                }
+            ],
+            "description": "Extension for creating and sending emails for the Yii PHP framework.",
+            "time": "2013-08-07 05:34:07"
+        },
+        {
+            "name": "nordsoftware/yii-utils",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nordsoftware/yii-utils.git",
+                "reference": "c9eb69f53d2f3ba0acab169ab5bb9e7a2881cc13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nordsoftware/yii-utils/zipball/c9eb69f53d2f3ba0acab169ab5bb9e7a2881cc13",
+                "reference": "c9eb69f53d2f3ba0acab169ab5bb9e7a2881cc13",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Christoffer Niska",
+                    "email": "christoffer.niska@nordsoftware.com"
+                }
+            ],
+            "description": "Utility classes for the Yii PHP framework.",
+            "time": "2013-06-18 14:27:35"
+        },
+        {
+            "name": "phpnode/yiipassword",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpnode/YiiPassword.git",
+                "reference": "6947574bd2bd6ab9c1d6344b55ec7ae88158e30c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/phpnode/YiiPassword/archive/6947574bd2bd6ab9c1d6344b55ec7ae88158e30c.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "yii-extension",
+            "description": "Password strategies for Yii",
+            "homepage": "https://github.com/phpnode/YiiPassword",
+            "time": "2013-04-26 09:55:59"
+        },
+        {
+            "name": "swiftmailer/swiftmailer",
+            "version": "v4.3.0",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/swiftmailer/swiftmailer.git",
+                "reference": "v4.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/swiftmailer/swiftmailer/archive/v4.3.0.zip",
+                "reference": "v4.3.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/swift_required.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Chris Corbyn"
+                }
+            ],
+            "description": "Swiftmailer, free feature-rich PHP mailer",
+            "homepage": "http://swiftmailer.org",
+            "keywords": [
+                "mail",
+                "mailer"
+            ],
+            "time": "2013-01-08 15:50:34"
+        },
+        {
+            "name": "yiisoft/yii",
+            "version": "1.1.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii.git",
+                "reference": "e9e4a0d5be901d8bd48e516a2d9afe33d6fd05a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/yiisoft/yii/archive/e9e4a0d5be901d8bd48e516a2d9afe33d6fd05a6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library",
+            "description": "Yii PHP Framework",
+            "homepage": "https://github.com/yiisoft/yii"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "alexandresalome/php-selenium",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexandresalome/PHP-Selenium.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/alexandresalome/PHP-Selenium/zipball/1.0.1",
+                "reference": "1.0.1",
+                "shasum": ""
+            },
+            "require-dev": {
+                "symfony/dom-crawler": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Selenium": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexandre Salomé",
+                    "email": "alexandre.salome@gmail.com",
+                    "homepage": "http://alexandre-salome.fr/"
+                }
+            ],
+            "description": "PHP Library for Selenium",
+            "keywords": [
+                "selenium"
+            ],
+            "time": "2012-07-10 04:39:20"
+        },
+        {
+            "name": "behat/mink",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Behat/Mink.git",
+                "reference": "79b6cd328f34c298b720d68223db48c1a0ab4c6d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Behat/Mink/zipball/79b6cd328f34c298b720d68223db48c1a0ab4c6d",
+                "reference": "79b6cd328f34c298b720d68223db48c1a0ab4c6d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1",
+                "symfony/css-selector": "~2.0"
+            },
+            "suggest": {
+                "behat/mink-browserkit-driver": "extremely fast headless driver for Symfony\\Kernel-based apps (Sf2, Silex)",
+                "behat/mink-goutte-driver": "fast headless driver for any app without JS emulation",
+                "behat/mink-selenium2-driver": "slow, but JS-enabled driver for any app (requires Selenium2)",
+                "behat/mink-zombie-driver": "fast and JS-enabled headless driver for any app (requires node.js)"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Behat\\Mink": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
+                }
+            ],
+            "description": "Web acceptance testing framework for PHP 5.3",
+            "homepage": "http://mink.behat.org/",
+            "keywords": [
+                "browser",
+                "testing",
+                "web"
+            ],
+            "time": "2013-07-17 08:21:36"
+        },
+        {
+            "name": "behat/mink-browserkit-driver",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Behat/MinkBrowserKitDriver.git",
+                "reference": "c1b6d20b85280e19e774dc7e316225c61c833d7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Behat/MinkBrowserKitDriver/zipball/c1b6d20b85280e19e774dc7e316225c61c833d7d",
+                "reference": "c1b6d20b85280e19e774dc7e316225c61c833d7d",
+                "shasum": ""
+            },
+            "require": {
+                "behat/mink": "~1.5.0",
+                "php": ">=5.3.1",
+                "symfony/browser-kit": "~2.0",
+                "symfony/dom-crawler": "~2.0"
+            },
+            "require-dev": {
+                "silex/silex": "@dev"
+            },
+            "type": "mink-driver",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Behat\\Mink\\Driver": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
+                }
+            ],
+            "description": "Symfony2 BrowserKit driver for Mink framework",
+            "homepage": "http://mink.behat.org/",
+            "keywords": [
+                "Mink",
+                "Symfony2",
+                "browser",
+                "testing"
+            ],
+            "time": "2013-07-17 08:22:56"
+        },
+        {
+            "name": "behat/mink-goutte-driver",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Behat/MinkGoutteDriver.git",
+                "reference": "v1.0.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Behat/MinkGoutteDriver/zipball/v1.0.9",
+                "reference": "v1.0.9",
+                "shasum": ""
+            },
+            "require": {
+                "behat/mink-browserkit-driver": ">=1.0.5,<1.2.0",
+                "fabpot/goutte": "~1.0.1",
+                "php": ">=5.3.1"
+            },
+            "type": "mink-driver",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Behat\\Mink\\Driver": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
+                }
+            ],
+            "description": "Goutte driver for Mink framework",
+            "homepage": "http://mink.behat.org/",
+            "keywords": [
+                "browser",
+                "goutte",
+                "headless",
+                "testing"
+            ],
+            "time": "2013-07-03 18:43:54"
+        },
+        {
+            "name": "behat/mink-selenium-driver",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Behat/MinkSeleniumDriver.git",
+                "reference": "v1.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Behat/MinkSeleniumDriver/zipball/v1.1.0",
+                "reference": "v1.1.0",
+                "shasum": ""
+            },
+            "require": {
+                "alexandresalome/php-selenium": "~1.0.1",
+                "behat/mink": "~1.5.0",
+                "php": ">=5.3.1",
+                "symfony/dom-crawler": "~2.0"
+            },
+            "type": "mink-driver",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Behat\\Mink\\Driver": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
+                }
+            ],
+            "description": "Selenium driver for Mink framework",
+            "homepage": "http://mink.behat.org/",
+            "keywords": [
+                "ajax",
+                "browser",
+                "javascript",
+                "selenium",
+                "testing"
+            ],
+            "time": "2013-04-13 23:50:14"
+        },
+        {
+            "name": "behat/mink-selenium2-driver",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Behat/MinkSelenium2Driver.git",
+                "reference": "d385cbab655b175914e928032442131924ff6c89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Behat/MinkSelenium2Driver/zipball/d385cbab655b175914e928032442131924ff6c89",
+                "reference": "d385cbab655b175914e928032442131924ff6c89",
+                "shasum": ""
+            },
+            "require": {
+                "behat/mink": "~1.5.0",
+                "instaclick/php-webdriver": "~1.0.12",
+                "php": ">=5.3.1"
+            },
+            "type": "mink-driver",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Behat\\Mink\\Driver": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
+                },
+                {
+                    "name": "Pete Otaqui",
+                    "email": "pete@otaqui.com",
+                    "homepage": "https://github.com/pete-otaqui"
+                }
+            ],
+            "description": "Selenium2 (WebDriver) driver for Mink framework",
+            "homepage": "http://mink.behat.org/",
+            "keywords": [
+                "ajax",
+                "browser",
+                "javascript",
+                "selenium",
+                "testing",
+                "webdriver"
+            ],
+            "time": "2013-06-06 13:26:24"
+        },
+        {
+            "name": "behat/mink-zombie-driver",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Behat/MinkZombieDriver.git",
+                "reference": "d6c29789b79bbd6edfaecb66d822f3d208504892"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Behat/MinkZombieDriver/zipball/d6c29789b79bbd6edfaecb66d822f3d208504892",
+                "reference": "d6c29789b79bbd6edfaecb66d822f3d208504892",
+                "shasum": ""
+            },
+            "require": {
+                "behat/mink": "~1.5.0",
+                "php": ">=5.3.1",
+                "symfony/process": "~2.1"
+            },
+            "type": "mink-driver",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Behat\\Mink\\Driver": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
+                },
+                {
+                    "name": "Pascal Cremer",
+                    "email": "b00gizm@gmail.com",
+                    "homepage": "http://github.com/b00gizm"
+                }
+            ],
+            "description": "Zombie.js driver for Mink framework",
+            "homepage": "http://mink.behat.org/",
+            "keywords": [
+                "ajax",
+                "browser",
+                "headless",
+                "javascript",
+                "testing",
+                "zombie"
+            ],
+            "time": "2013-07-09 09:36:06"
+        },
+        {
+            "name": "codeception/codeception",
+            "version": "1.6.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Codeception/Codeception.git",
+                "reference": "1.6.4.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/1.6.4.2",
+                "reference": "1.6.4.2",
+                "shasum": ""
+            },
+            "require": {
+                "behat/mink": "1.5.*",
+                "behat/mink-goutte-driver": "1.0.*",
+                "behat/mink-selenium-driver": "1.1.*",
+                "behat/mink-selenium2-driver": "1.1.*",
+                "behat/mink-zombie-driver": "1.1.*",
+                "facebook/php-sdk": "3.*",
+                "monolog/monolog": "*",
+                "php": ">=5.3.3",
+                "phpunit/phpunit": "3.7.*",
+                "symfony/console": "~2.3",
+                "symfony/event-dispatcher": "~2.3",
+                "symfony/finder": "~2.3",
+                "symfony/yaml": "~2.3",
+                "videlalvaro/php-amqplib": "*"
+            },
+            "bin": [
+                "codecept"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Codeception": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Bodnarchuk",
+                    "email": "davert@mail.ua",
+                    "homepage": "http://codegyre.com"
+                }
+            ],
+            "description": "BDD-style testing framework",
+            "homepage": "http://codeception.com/",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "acceptance testing",
+                "functional testing",
+                "unit testing"
+            ],
+            "time": "2013-07-27 17:42:42"
+        },
+        {
+            "name": "crisu83/closurecompiler-bin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Crisu83/closurecompiler-bin.git",
+                "reference": "5e2a31710f319642d8c04d03ce627d363e92445b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Crisu83/closurecompiler-bin/zipball/5e2a31710f319642d8c04d03ce627d363e92445b",
+                "reference": "5e2a31710f319642d8c04d03ce627d363e92445b",
+                "shasum": ""
+            },
+            "bin": [
+                "build/compiler.jar"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Christoffer Niska",
+                    "email": "christoffer.niska@gmail.com",
+                    "homepage": "http://www.cniska.net"
+                },
+                {
+                    "name": "Package Maintainer",
+                    "email": "kaiwa@20minutemail.com",
+                    "role": "maintainer"
+                },
+                {
+                    "name": "Google Inc.",
+                    "homepage": "https://developers.google.com/closure/compiler/"
+                }
+            ],
+            "description": "The Closure Compiler is a tool for making JavaScript download and run faster. It is a true compiler for JavaScript. Instead of compiling from a source language to machine code, it compiles from JavaScript to better JavaScript. It parses your JavaScript, analyzes it, removes dead code and rewrites and minimizes what's left. It also checks syntax, variable references, and types, and warns about common JavaScript pitfalls. Packaged for composer.",
+            "keywords": [
+                "binary",
+                "closure",
+                "compiler",
+                "compress",
+                "google",
+                "javascript",
+                "minification",
+                "minify"
+            ],
+            "time": "2013-07-23 19:46:34"
         },
         {
             "name": "fabpot/goutte",
@@ -1131,63 +1438,6 @@
             "time": "2013-05-30 07:01:25"
         },
         {
-            "name": "imagine/imagine",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/avalanche123/Imagine.git",
-                "reference": "0af397b3b96aac5b11593ca9136ca43a55869c5f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/0af397b3b96aac5b11593ca9136ca43a55869c5f",
-                "reference": "0af397b3b96aac5b11593ca9136ca43a55869c5f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "sami/sami": "dev-master"
-            },
-            "suggest": {
-                "ext-gd": "to use the GD implementation",
-                "ext-gmagick": "to use the Gmagick implementation",
-                "ext-imagick": "to use the Imagick implementation"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-develop": "0.6-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Imagine": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bulat Shakirzyanov",
-                    "email": "mallluhuct@gmail.com",
-                    "homepage": "http://avalanche123.com"
-                }
-            ],
-            "description": "Image processing for PHP 5.3",
-            "homepage": "http://imagine.readthedocs.org/",
-            "keywords": [
-                "drawing",
-                "graphics",
-                "image manipulation",
-                "image processing"
-            ],
-            "time": "2013-07-19 16:16:00"
-        },
-        {
             "name": "instaclick/php-webdriver",
             "version": "dev-master",
             "source": {
@@ -1243,36 +1493,17 @@
             "time": "2013-06-19 13:54:29"
         },
         {
-            "name": "malyshev/yii-debug-toolbar",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/malyshev/yii-debug-toolbar.git",
-                "reference": "9102ebaaf5a00a0d2deba73f1f4de3f4198511be"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/malyshev/yii-debug-toolbar/archive/9102ebaaf5a00a0d2deba73f1f4de3f4198511be.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "yii-extension",
-            "description": "A configurable set of panels that display various debug information about the current request/response. ",
-            "homepage": "https://github.com/malyshev/yii-debug-toolbar",
-            "time": "2013-04-10 15:53:54"
-        },
-        {
             "name": "monolog/monolog",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "050bb52fd803e4184f43629cc61df1057cea74c4"
+                "reference": "a0101d1a7bd2d851c9a50ca6a4527b03e0d2d1b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/050bb52fd803e4184f43629cc61df1057cea74c4",
-                "reference": "050bb52fd803e4184f43629cc61df1057cea74c4",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a0101d1a7bd2d851c9a50ca6a4527b03e0d2d1b9",
+                "reference": "a0101d1a7bd2d851c9a50ca6a4527b03e0d2d1b9",
                 "shasum": ""
             },
             "require": {
@@ -1321,115 +1552,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-07-17 16:11:27"
-        },
-        {
-            "name": "nordsoftware/yii-audit",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nordsoftware/yii-audit.git",
-                "reference": "fc078944c0930ed20c90cce2ff5ca596220e7c87"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nordsoftware/yii-audit/zipball/fc078944c0930ed20c90cce2ff5ca596220e7c87",
-                "reference": "fc078944c0930ed20c90cce2ff5ca596220e7c87",
-                "shasum": ""
-            },
-            "type": "yii-extension",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Christoffer Niska",
-                    "email": "ChristofferNiska@gmail.com"
-                }
-            ],
-            "description": "Extension for collecting active records audit data for the Yii PHP framework.",
-            "time": "2013-07-01 22:19:28"
-        },
-        {
-            "name": "nordsoftware/yii-emailer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nordsoftware/yii-emailer.git",
-                "reference": "1.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nordsoftware/yii-emailer/zipball/1.0.0",
-                "reference": "1.0.0",
-                "shasum": ""
-            },
-            "require": {
-                "nordsoftware/yii-utils": "dev-master",
-                "swiftmailer/swiftmailer": "4.3.0"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Christoffer Niska",
-                    "email": "christoffer.niska@nordsoftware.com"
-                },
-                {
-                    "name": "Kenneth Söderlund",
-                    "email": "kenneth.soderlund@nordsoftware.com"
-                }
-            ],
-            "description": "Extension for creating and sending emails for the Yii PHP framework.",
-            "time": "2013-05-14 17:03:27"
-        },
-        {
-            "name": "nordsoftware/yii-utils",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nordsoftware/yii-utils.git",
-                "reference": "c9eb69f53d2f3ba0acab169ab5bb9e7a2881cc13"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nordsoftware/yii-utils/zipball/c9eb69f53d2f3ba0acab169ab5bb9e7a2881cc13",
-                "reference": "c9eb69f53d2f3ba0acab169ab5bb9e7a2881cc13",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Christoffer Niska",
-                    "email": "christoffer.niska@nordsoftware.com"
-                }
-            ],
-            "description": "Utility classes for the Yii PHP framework.",
-            "time": "2013-06-18 14:27:35"
-        },
-        {
-            "name": "phpnode/yiipassword",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpnode/YiiPassword.git",
-                "reference": "6947574bd2bd6ab9c1d6344b55ec7ae88158e30c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/phpnode/YiiPassword/archive/6947574bd2bd6ab9c1d6344b55ec7ae88158e30c.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "yii-extension",
-            "description": "Password strategies for Yii",
-            "homepage": "https://github.com/phpnode/YiiPassword",
-            "time": "2013-04-26 09:55:59"
+            "time": "2013-08-01 19:30:22"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1583,16 +1706,16 @@
         },
         {
             "name": "phpunit/php-timer",
-            "version": "1.0.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "ecf7920b27003a9412b07dad79dbb5ad1249e6c3"
+                "reference": "1.0.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/ecf7920b27003a9412b07dad79dbb5ad1249e6c3",
-                "reference": "ecf7920b27003a9412b07dad79dbb5ad1249e6c3",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/1.0.5",
+                "reference": "1.0.5",
                 "shasum": ""
             },
             "require": {
@@ -1623,7 +1746,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2013-01-30 06:08:51"
+            "time": "2013-08-02 07:42:54"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -1631,12 +1754,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "c25dd88e1592e66dee2553c99ef244203d5a1b98"
+                "reference": "1.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c25dd88e1592e66dee2553c99ef244203d5a1b98",
-                "reference": "c25dd88e1592e66dee2553c99ef244203d5a1b98",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/1.2.0",
+                "reference": "1.2.0",
                 "shasum": ""
             },
             "require": {
@@ -1644,6 +1767,11 @@
                 "php": ">=5.3.3"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "PHP/"
@@ -1668,7 +1796,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2013-01-07 10:56:35"
+            "time": "2013-08-04 05:57:48"
         },
         {
             "name": "phpunit/phpunit",
@@ -1676,12 +1804,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3.7.22"
+                "reference": "3.7.23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3.7.22",
-                "reference": "3.7.22",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3.7.23",
+                "reference": "3.7.23",
                 "shasum": ""
             },
             "require": {
@@ -1693,7 +1821,7 @@
                 "phpunit/php-code-coverage": "~1.2.1",
                 "phpunit/php-file-iterator": ">=1.3.1",
                 "phpunit/php-text-template": ">=1.1.1",
-                "phpunit/php-timer": "~1.0.2",
+                "phpunit/php-timer": ">=1.0.4",
                 "phpunit/phpunit-mock-objects": "~1.2.0",
                 "symfony/yaml": "~2.0"
             },
@@ -1742,7 +1870,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-07-06 06:29:15"
+            "time": "2013-08-02 19:14:44"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -1841,55 +1969,6 @@
             "time": "2012-12-21 11:40:51"
         },
         {
-            "name": "swiftmailer/swiftmailer",
-            "version": "v4.3.0",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/swiftmailer/swiftmailer.git",
-                "reference": "v4.3.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/swiftmailer/swiftmailer/archive/v4.3.0.zip",
-                "reference": "v4.3.0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.3-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "lib/swift_required.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Chris Corbyn"
-                }
-            ],
-            "description": "Swiftmailer, free feature-rich PHP mailer",
-            "homepage": "http://swiftmailer.org",
-            "keywords": [
-                "mail",
-                "mailer"
-            ],
-            "time": "2013-01-08 15:50:34"
-        },
-        {
             "name": "symfony/browser-kit",
             "version": "dev-master",
             "target-dir": "Symfony/Component/BrowserKit",
@@ -1951,12 +2030,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "470446b34c029c7cd1933a55c9bdd887b9f5ec0d"
+                "reference": "a315258a6b4b7540bd7f203b325e563038005d15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/470446b34c029c7cd1933a55c9bdd887b9f5ec0d",
-                "reference": "470446b34c029c7cd1933a55c9bdd887b9f5ec0d",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/a315258a6b4b7540bd7f203b325e563038005d15",
+                "reference": "a315258a6b4b7540bd7f203b325e563038005d15",
                 "shasum": ""
             },
             "require": {
@@ -1995,21 +2074,21 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-07-21 20:19:01"
+            "time": "2013-07-31 16:17:51"
         },
         {
             "name": "symfony/css-selector",
-            "version": "2.3.x-dev",
+            "version": "dev-master",
             "target-dir": "Symfony/Component/CssSelector",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/CssSelector.git",
-                "reference": "885544201cb24e79754da1dbd61bd779c2e4353e"
+                "reference": "92157d5b14c74a4c598d3f1327d58d61869cc710"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/885544201cb24e79754da1dbd61bd779c2e4353e",
-                "reference": "885544201cb24e79754da1dbd61bd779c2e4353e",
+                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/92157d5b14c74a4c598d3f1327d58d61869cc710",
+                "reference": "92157d5b14c74a4c598d3f1327d58d61869cc710",
                 "shasum": ""
             },
             "require": {
@@ -2018,7 +2097,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -2046,7 +2125,7 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "http://symfony.com",
-            "time": "2013-07-21 12:12:18"
+            "time": "2013-07-21 20:19:01"
         },
         {
             "name": "symfony/dom-crawler",
@@ -2209,12 +2288,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "808d38aba6063f7e04d1592d923bbf3a007ef54d"
+                "reference": "c40a7806f9433154d541b81ddfea100492c9d1d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/808d38aba6063f7e04d1592d923bbf3a007ef54d",
-                "reference": "808d38aba6063f7e04d1592d923bbf3a007ef54d",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/c40a7806f9433154d541b81ddfea100492c9d1d9",
+                "reference": "c40a7806f9433154d541b81ddfea100492c9d1d9",
                 "shasum": ""
             },
             "require": {
@@ -2247,7 +2326,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2013-07-21 20:19:01"
+            "time": "2013-08-03 06:07:42"
         },
         {
             "name": "symfony/yaml",
@@ -2302,12 +2381,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/videlalvaro/php-amqplib.git",
-                "reference": "v2.1.0"
+                "reference": "f88b97837ce43dbb9e697ec7f8795d6d20b28f57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/videlalvaro/php-amqplib/zipball/v2.1.0",
-                "reference": "v2.1.0",
+                "url": "https://api.github.com/repos/videlalvaro/php-amqplib/zipball/f88b97837ce43dbb9e697ec7f8795d6d20b28f57",
+                "reference": "f88b97837ce43dbb9e697ec7f8795d6d20b28f57",
                 "shasum": ""
             },
             "require": {
@@ -2336,29 +2415,8 @@
                 "queue",
                 "rabbitmq"
             ],
-            "time": "2013-06-17 19:25:27"
-        },
-        {
-            "name": "yiisoft/yii",
-            "version": "1.1.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii.git",
-                "reference": "e9e4a0d5be901d8bd48e516a2d9afe33d6fd05a6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/yiisoft/yii/archive/e9e4a0d5be901d8bd48e516a2d9afe33d6fd05a6.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library",
-            "description": "Yii PHP Framework",
-            "homepage": "https://github.com/yiisoft/yii"
+            "time": "2013-08-05 18:45:29"
         }
-    ],
-    "packages-dev": [
-
     ],
     "aliases": [
 
@@ -2366,7 +2424,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "crisu83/yii-composer": 20,
-        "crisu83/closurecompiler-bin": 20,
         "crisu83/yii-auth": 20,
         "crisu83/yii-imagemanager": 20,
         "crisu83/yii-consoletools": 20,
@@ -2374,12 +2431,14 @@
         "crisu83/yii-livereload": 20,
         "crisu83/yii-multilingual": 20,
         "crisu83/yii-seo": 20,
+        "crisu83/yii-workflow": 20,
         "crisu83/yiistrap": 20,
         "malyshev/yii-debug-toolbar": 20,
         "nordsoftware/yii-audit": 20,
         "nordsoftware/yii-emailer": 20,
         "phpnode/yiipassword": 20,
-        "codeception/codeception": 0
+        "codeception/codeception": 0,
+        "crisu83/closurecompiler-bin": 20
     },
     "platform": {
         "php": ">=5.3.0"

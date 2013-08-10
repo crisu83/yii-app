@@ -40,7 +40,7 @@ return array(
         'db' => array(
             'connectionString' => 'mysql:host=localhost;dbname=yii_app',
             'username' => 'root',
-            'password' => '',
+            'password' => 'vagrant',
             'charset' => 'utf8',
         ),
         'errorHandler' => array(

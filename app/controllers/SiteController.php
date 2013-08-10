@@ -71,6 +71,15 @@ class SiteController extends Controller
     }
 
     /**
+     * Displays the maintenance page.
+     */
+    public function actionDown()
+    {
+        $this->layout = 'minimal';
+        $this->render('down');
+    }
+
+    /**
      * Displays the login page.
      */
     public function actionLogin()

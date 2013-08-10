@@ -22,7 +22,6 @@
     "require": {
         "php": ">=5.3.0",
         "crisu83/yii-composer": "dev-master",
-        "crisu83/closurecompiler-bin": "dev-master",
         "crisu83/yii-auth": "dev-master",
         "crisu83/yii-imagemanager": "dev-master",
         "crisu83/yii-consoletools": "dev-master",
@@ -30,13 +29,18 @@
         "crisu83/yii-livereload": "dev-master",
         "crisu83/yii-multilingual": "dev-master",
         "crisu83/yii-seo": "dev-master",
+        "crisu83/yii-workflow": "dev-master",
         "crisu83/yiistrap": "dev-master",
         "malyshev/yii-debug-toolbar": "dev-master",
         "nordsoftware/yii-audit": "dev-master",
         "nordsoftware/yii-emailer": "dev-master",
         "phpnode/yiipassword": "dev-master",
-        "yiisoft/yii": "1.1.13",
-        "codeception/codeception": "@stable"
+        "yiisoft/yii": "1.1.13"
+
+    },
+    "require-dev": {
+        "codeception/codeception": "@stable",
+        "crisu83/closurecompiler-bin": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

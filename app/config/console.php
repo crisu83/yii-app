@@ -17,6 +17,16 @@ return array(
                 'web/js',
             ),
         ),
+        'maintain' => array(
+            'class' => 'vendor.crisu83.yii-consoletools.commands.MaintainCommand',
+            'basePath' => __DIR__ . '/../../',
+            'flushPaths' => array(
+                'app/runtime',
+                'web/assets',
+                'web/css',
+                'web/js',
+            ),
+        ),
         // uncomment the following if you enable the imagemanager extension.
         /*
         'image' => array(
