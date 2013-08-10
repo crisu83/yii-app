@@ -27,3 +27,6 @@ web/css/*
 web/js/*
 web/index.php
 web/test.php
+
+# vagrant
+.vagrant/

@@ -1,5 +1,5 @@
 /*!
- * @{bootstrapDir} v2.2.2
+ * Bootstrap v2.2.2
  *
  * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
@@ -5271,6 +5271,10 @@ a.badge:focus {
 .site-login .login-form {
   margin: auto;
   width: 220px;
+}
+.site-down {
+  margin: 80px 0;
+  text-align: center;
 }
 @media (min-width: 980px) {
   #page {
