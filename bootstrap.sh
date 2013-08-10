@@ -30,8 +30,9 @@ npm install
 # Install screen
 apt-get install -y screen
 
-# Apply Yii database migrations
+# Run various Yii console tasks
 php /vagrant/app/yiic migrate --interactive=false
+php /vagrant/app/yiic environment dev
 
 # Restart Apache
 service apache2 restart
