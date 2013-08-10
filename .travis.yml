@@ -5,7 +5,7 @@ php:
 
 before_script:
   - composer install --prefer-source
-  - app/yiic environment dev
+  - app/yiic environment travis
   - php -S localhost:31415 -t web/ &
 
 script: vendor/bin/codecept run

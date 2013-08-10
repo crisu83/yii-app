@@ -72,12 +72,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-consoletools.git",
-                "reference": "c87f8af33f61dae6502dfa73c3d0b4068c703df6"
+                "reference": "bcda67cc48fcbbb8dda89770acf049dc68dd6cea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-consoletools/zipball/c87f8af33f61dae6502dfa73c3d0b4068c703df6",
-                "reference": "c87f8af33f61dae6502dfa73c3d0b4068c703df6",
+                "url": "https://api.github.com/repos/Crisu83/yii-consoletools/zipball/bcda67cc48fcbbb8dda89770acf049dc68dd6cea",
+                "reference": "bcda67cc48fcbbb8dda89770acf049dc68dd6cea",
                 "shasum": ""
             },
             "type": "library",
@@ -89,7 +89,7 @@
                 {
                     "name": "Christoffer Niska",
                     "email": "christoffer.niska@gmail.com",
-                    "homepage": "http://www.cniska.net"
+                    "homepage": "http://www.cniska.net/"
                 }
             ],
             "description": "A collection of tools for developing console commands for Yii.",
@@ -98,7 +98,7 @@
                 "tools",
                 "yii"
             ],
-            "time": "2013-07-31 19:17:49"
+            "time": "2013-08-10 11:39:26"
         },
         {
             "name": "crisu83/yii-extension",
@@ -197,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-imagemanager.git",
-                "reference": "5cf50c0d8e3d84b818018d9dce77ee082cc130b7"
+                "reference": "493147fcaed0ddfbf9de712c4fd0f1ee94536bcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-imagemanager/zipball/5cf50c0d8e3d84b818018d9dce77ee082cc130b7",
-                "reference": "5cf50c0d8e3d84b818018d9dce77ee082cc130b7",
+                "url": "https://api.github.com/repos/Crisu83/yii-imagemanager/zipball/493147fcaed0ddfbf9de712c4fd0f1ee94536bcf",
+                "reference": "493147fcaed0ddfbf9de712c4fd0f1ee94536bcf",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +222,7 @@
                 }
             ],
             "description": "Image manager for the Yii PHP framework.",
-            "time": "2013-07-26 19:55:10"
+            "time": "2013-08-10 10:31:37"
         },
         {
             "name": "crisu83/yii-livereload",
@@ -361,12 +361,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yiistrap.git",
-                "reference": "3afa81cb5edc30fe941cec03043279e5d23a7ee6"
+                "reference": "588688af403b31e1655a4bc99eaa8df3b3f2fc90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yiistrap/zipball/3afa81cb5edc30fe941cec03043279e5d23a7ee6",
-                "reference": "3afa81cb5edc30fe941cec03043279e5d23a7ee6",
+                "url": "https://api.github.com/repos/Crisu83/yiistrap/zipball/588688af403b31e1655a4bc99eaa8df3b3f2fc90",
+                "reference": "588688af403b31e1655a4bc99eaa8df3b3f2fc90",
                 "shasum": ""
             },
             "require-dev": {
@@ -402,7 +402,7 @@
                 "bootstrap",
                 "yii"
             ],
-            "time": "2013-08-07 19:05:38"
+            "time": "2013-08-08 15:16:57"
         },
         {
             "name": "imagine/imagine",
@@ -1030,16 +1030,16 @@
         },
         {
             "name": "codeception/codeception",
-            "version": "1.6.4.2",
+            "version": "1.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "1.6.4.2"
+                "reference": "1.6.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/1.6.4.2",
-                "reference": "1.6.4.2",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/1.6.5",
+                "reference": "1.6.5",
                 "shasum": ""
             },
             "require": {
@@ -1087,7 +1087,7 @@
                 "functional testing",
                 "unit testing"
             ],
-            "time": "2013-07-27 17:42:42"
+            "time": "2013-08-09 03:01:50"
         },
         {
             "name": "crisu83/closurecompiler-bin",
@@ -1443,18 +1443,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/instaclick/php-webdriver.git",
-                "reference": "3af07b82598506e765cffdf4cf1385b117cf0a41"
+                "reference": "5ff757c6daf1cfc223928e860385952abbbdb531"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/3af07b82598506e765cffdf4cf1385b117cf0a41",
-                "reference": "3af07b82598506e765cffdf4cf1385b117cf0a41",
+                "url": "https://api.github.com/repos/instaclick/php-webdriver/zipball/5ff757c6daf1cfc223928e860385952abbbdb531",
+                "reference": "5ff757c6daf1cfc223928e860385952abbbdb531",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "php": ">=5.3.2"
             },
+            "bin": [
+                "bin/webunit"
+            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1483,14 +1486,14 @@
                 }
             ],
             "description": "PHP WebDriver for Selenium 2",
-            "homepage": "http://instaclick.com/torontotechjobs/",
+            "homepage": "http://instaclick.com/",
             "keywords": [
                 "browser",
                 "selenium",
                 "webdriver",
                 "webtest"
             ],
-            "time": "2013-06-19 13:54:29"
+            "time": "2013-08-08 14:22:54"
         },
         {
             "name": "monolog/monolog",
@@ -1498,12 +1501,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "a0101d1a7bd2d851c9a50ca6a4527b03e0d2d1b9"
+                "reference": "7a8844d4db868cf20040facb8c3413802dd0ec9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a0101d1a7bd2d851c9a50ca6a4527b03e0d2d1b9",
-                "reference": "a0101d1a7bd2d851c9a50ca6a4527b03e0d2d1b9",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/7a8844d4db868cf20040facb8c3413802dd0ec9b",
+                "reference": "7a8844d4db868cf20040facb8c3413802dd0ec9b",
                 "shasum": ""
             },
             "require": {
@@ -1552,7 +1555,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-08-01 19:30:22"
+            "time": "2013-08-09 12:12:38"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1804,12 +1807,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3.7.23"
+                "reference": "3.7.24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3.7.23",
-                "reference": "3.7.23",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3.7.24",
+                "reference": "3.7.24",
                 "shasum": ""
             },
             "require": {
@@ -1870,7 +1873,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-08-02 19:14:44"
+            "time": "2013-08-09 06:58:24"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2030,12 +2033,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "a315258a6b4b7540bd7f203b325e563038005d15"
+                "reference": "bf382b256067b3b6c6c6950f6ff3158854388584"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/a315258a6b4b7540bd7f203b325e563038005d15",
-                "reference": "a315258a6b4b7540bd7f203b325e563038005d15",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/bf382b256067b3b6c6c6950f6ff3158854388584",
+                "reference": "bf382b256067b3b6c6c6950f6ff3158854388584",
                 "shasum": ""
             },
             "require": {
@@ -2074,7 +2077,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-07-31 16:17:51"
+            "time": "2013-08-09 06:03:04"
         },
         {
             "name": "symfony/css-selector",
@@ -2288,12 +2291,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "c40a7806f9433154d541b81ddfea100492c9d1d9"
+                "reference": "723fe405fcc878ae75469babcb9507d292797ece"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/c40a7806f9433154d541b81ddfea100492c9d1d9",
-                "reference": "c40a7806f9433154d541b81ddfea100492c9d1d9",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/723fe405fcc878ae75469babcb9507d292797ece",
+                "reference": "723fe405fcc878ae75469babcb9507d292797ece",
                 "shasum": ""
             },
             "require": {
@@ -2326,7 +2329,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2013-08-03 06:07:42"
+            "time": "2013-08-09 07:03:52"
         },
         {
             "name": "symfony/yaml",
@@ -2381,12 +2384,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/videlalvaro/php-amqplib.git",
-                "reference": "f88b97837ce43dbb9e697ec7f8795d6d20b28f57"
+                "reference": "436baa0e0c350275f8ebd2f2c9f53753ecc7b7d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/videlalvaro/php-amqplib/zipball/f88b97837ce43dbb9e697ec7f8795d6d20b28f57",
-                "reference": "f88b97837ce43dbb9e697ec7f8795d6d20b28f57",
+                "url": "https://api.github.com/repos/videlalvaro/php-amqplib/zipball/436baa0e0c350275f8ebd2f2c9f53753ecc7b7d8",
+                "reference": "436baa0e0c350275f8ebd2f2c9f53753ecc7b7d8",
                 "shasum": ""
             },
             "require": {
@@ -2415,7 +2418,7 @@
                 "queue",
                 "rabbitmq"
             ],
-            "time": "2013-08-05 18:45:29"
+            "time": "2013-08-09 20:00:04"
         }
     ],
     "aliases": [

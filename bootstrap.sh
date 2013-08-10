@@ -4,7 +4,7 @@
 apt-get update
 apt-get install -y apache2 libapache2-mod-rewrite libapache2-mod-php5
 rm -rf /var/www
-ln -fs /vagrant /var/www
+ln -fs /vagrant/web /var/www
 a2enmod rewrite
 
 # Install PHP
