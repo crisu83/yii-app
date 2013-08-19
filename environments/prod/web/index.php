@@ -10,8 +10,9 @@ require(__DIR__ . '/../vendor/crisu83/yii-consoletools/helpers/ConfigHelper.php'
 $config = ConfigHelper::merge(
     array(
         __DIR__ . '/../app/config/main.php',
+        __DIR__ . '/../app/config/main-environment.php',
         __DIR__ . '/../app/config/web.php',
-        __DIR__ . '/../app/config/environment.php',
+        __DIR__ . '/../app/config/web-environment.php',
         __DIR__ . '/../app/config/main-local.php',
     )
 );

@@ -1,14 +1,23 @@
-# phpstorm project directory
+# project files
 .idea/*
+
+# environment files
+app/config/*-environment.php
+app/tests/acceptance.suite.yml
+app/tests/functional.suite.yml
+web/css/*
+web/js/*
+web/index.php
+web/test.php
+
+# local configurations
+app/config/*-local.php
 
 # runtime directories
 app/runtime/*
 app/tests/_log/*
 web/assets/*
 web/files/*
-
-# local configurations
-app/config/*-local.php
 
 # composer
 vendor/*
@@ -21,15 +30,6 @@ codecept.phar
 node_modules/*
 web/css/*
 web/js/*
-
-# environment files
-app/config/environment.php
-app/tests/acceptance.suite.yml
-app/tests/functional.suite.yml
-web/css/*
-web/js/*
-web/index.php
-web/test.php
 
 # vagrant
 .vagrant/
