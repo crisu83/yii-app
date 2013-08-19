@@ -1,38 +1,91 @@
 #!/usr/bin/env bash
 
-# Install Apache
-apt-get update
-apt-get install -y apache2 libapache2-mod-rewrite libapache2-mod-php5
-rm -rf /var/www
-ln -fs /vagrant/web /var/www
-a2enmod rewrite
+# download the package lists from the repositories
+sudo apt-get update
 
-# Install PHP
-apt-get install -y php5 php5-curl php5-gd php5-mcrypt php5-mysql
+# --- miscellaneous ----
 
-# Install MySQL
-echo mysql-server mysql-server/root_password select "vagrant" | debconf-set-selections
-echo mysql-server mysql-server/root_password_again select "vagrant" | debconf-set-selections
-apt-get install -y mysql-server-5.5 php5-mysql
-mysql -u root -p vagrant -e "CREATE DATABASE yii_app;"
+sudo apt-get install -y python-software-properties
+sudo apt-get install -y curl
+sudo apt-get install -y git-core
+sudo apt-get install -y screen
+sudo apt-get install -y vim
 
-# Install node.js
-apt-get install -y python-software-properties python g++ make
+# --- apache ---
+
+# install packages
+sudo apt-get install -y apache2
+sudo apt-get install -y libapache2-mod-rewrite
+sudo apt-get install -y libapache2-mod-php5
+
+# remove default webroot
+sudo rm -rf /var/www
+
+# symlink project as webroot
+sudo ln -fs /vagrant/web /var/www
+
+# setup hosts file
+VHOST=$(cat <<EOF
+<VirtualHost *:80>
+  DocumentRoot "/var/www"
+  ServerName localhost
+  <Directory "/var/www">
+    AllowOverride All
+  </Directory>
+</VirtualHost>
+EOF
+)
+echo "${VHOST}" > /etc/apache2/sites-enabled/default
+
+# enable apache rewrite module
+sudo a2enmod rewrite
+
+# --- php ---
+
+# install packages
+sudo apt-get install -y php5
+sudo apt-get install -y php5-curl
+sudo apt-get install -y php5-gd
+sudo apt-get install -y php5-mcrypt
+sudo apt-get install -y php5-mysql
+sudo apt-get install -y pdo-mysql
+
+# --- mysql ---
+
+# install packages
+echo mysql-server mysql-server/root_password select "yii_app" | debconf-set-selections
+echo mysql-server mysql-server/root_password_again select "yii_app" | debconf-set-selections
+sudo apt-get install -y mysql-server-5.5
+
+# create database
+mysql -u "root" -p "yii_app" -e "CREATE DATABASE yii_app;"
+
+# --- node.js ---
+
+# install node.js dependencies
+sudo apt-get install -y python g++ make
+
+# add node.js repository
 add-apt-repository ppa:chris-lea/node.js
-apt-get update
-apt-get install -y nodejs
+sudo apt-get update
 
-# Install Grunt CLI globally and required node modules
+# install packages
+sudo apt-get install -y nodejs
+
+# install grunt.js
 npm install -g grunt-cli
-cd /vagrant
-npm install
 
-# Install screen
-apt-get install -y screen
+# install local npm packages
+cd /vagrant && npm install --no-bin-links
 
-# Run various Yii console tasks
+# --- yii ---
+
+# run database migrations
 php /vagrant/app/yiic migrate --interactive=false
+
+# enable the development environment
 php /vagrant/app/yiic environment dev
 
-# Restart Apache
-service apache2 restart
+# --- restart apache ---
+
+sudo service apache2 restart
