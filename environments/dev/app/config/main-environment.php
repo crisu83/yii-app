@@ -10,6 +10,10 @@ return array(
 	),
 	'components' => array(
 		'db' => array(
+            'connectionString' => 'mysql:host=localhost;dbname=yii_app',
+            'username' => 'root',
+            'password' => 'vagrant',
+            'charset' => 'utf8',
 			'enableProfiling' => true,
 			'enableParamLogging' => true,
 		),

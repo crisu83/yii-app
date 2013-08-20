@@ -53,23 +53,21 @@ sudo apt-get install -y pdo-mysql
 # --- mysql ---
 
 # install packages
-echo mysql-server mysql-server/root_password select "yii_app" | debconf-set-selections
-echo mysql-server mysql-server/root_password_again select "yii_app" | debconf-set-selections
+echo mysql-server mysql-server/root_password select "vagrant" | debconf-set-selections
+echo mysql-server mysql-server/root_password_again select "vagrant" | debconf-set-selections
 sudo apt-get install -y mysql-server-5.5
 
 # create database
-mysql -u "root" -p "yii_app" -e "CREATE DATABASE yii_app;"
+mysql -uroot -pvagrant -e "CREATE DATABASE yii_app;"
 
 # --- node.js ---
-
-# install node.js dependencies
-sudo apt-get install -y python g++ make
 
 # add node.js repository
 add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
 
-# install packages
+# install node.js
+sudo apt-get install -y python g++ make
 sudo apt-get install -y nodejs
 
 # install grunt.js
