@@ -35,7 +35,7 @@
         "nordsoftware/yii-audit": "dev-master",
         "nordsoftware/yii-emailer": "dev-master",
         "phpnode/yiipassword": "dev-master",
-        "yiisoft/yii": "1.1.13"
+        "yiisoft/yii": ">=1.1.14"
 
     },
     "require-dev": {
