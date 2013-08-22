@@ -12,6 +12,9 @@ Vagrant.configure("2") do |config|
   # enable port forwarding
   config.vm.network :forwarded_port, host: 4567, guest: 80
 
+  # set file permissions
+  config.vm.synced_folder ".", "/vagrant", :extra => "dmode=777,fmode=666"
+
   # enable the bootstrap-script
   config.vm.provision :shell, :path => "bootstrap.sh"
 
