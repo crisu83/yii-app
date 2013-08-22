@@ -19,6 +19,7 @@
         }
     ],
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=5.3.0",
         "crisu83/yii-composer": "dev-master",
