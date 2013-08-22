@@ -44,10 +44,12 @@ sudo a2enmod rewrite
 
 # install packages
 sudo apt-get install -y php5
+sudo apt-get install -y php5-cli
 sudo apt-get install -y php5-curl
 sudo apt-get install -y php5-gd
 sudo apt-get install -y php5-mcrypt
 sudo apt-get install -y php5-mysql
+sudo apt-get install -y php-apc
 sudo apt-get install -y pdo-mysql
 
 # --- mysql ---
