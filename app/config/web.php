@@ -63,7 +63,7 @@ return array(
         'log' => array(
             'routes' => array(
                 array(
-                    'class' => 'vendor.malyshev.yii-debug-toolbar.yii-debug-toolbar.YiiDebugToolbarRoute',
+                    'class' => 'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',
                     'ipFilters' => array('127.0.0.1', '10.0.2.2'/* Vagrant */, '::1'/* WAMP */),
                 ),
             ),
