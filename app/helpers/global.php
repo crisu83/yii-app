@@ -290,7 +290,7 @@ function sqlDateTime($timestamp = null)
  * @param int $depth
  * @param bool $highlight
  */
-function dump($var, $depth = 10, $highlight = true)
+function dumpAsString($var, $depth = 10, $highlight = true)
 {
     echo CVarDumper::dumpAsString($var, $depth, $highlight);
 }

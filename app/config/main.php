@@ -19,7 +19,6 @@ return array(
         'application.models.ar.*',
         'application.models.form.*',
         'application.components.*',
-        'vendor.crisu83.yiistrap.helpers.TbHtml',
         'vendor.nordsoftware.yii-emailer.models.*',
     ),
     // application components
