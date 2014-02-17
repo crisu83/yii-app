@@ -4,7 +4,10 @@ defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
 
+require(__DIR__ . '/../vendor/autoload.php');
+
 require(__DIR__ . '/../vendor/yiisoft/yii/framework/yii.php');
+require(__DIR__ . '/../app/helpers/global.php');
 require(__DIR__ . '/../vendor/crisu83/yii-consoletools/helpers/ConfigHelper.php');
 
 $config = ConfigHelper::merge(
