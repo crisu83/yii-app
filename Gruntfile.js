@@ -38,18 +38,6 @@ module.exports = function (grunt) {
                 ]
             }
         },
-        "closure-compiler": {
-            main: {
-                closurePath: 'vendor/crisu83/closurecompiler-bin',
-                js: 'environments/dev/web/js/main.js',
-                jsOutputFile: 'environments/prod/web/js/main.js',
-                maxBuffer: 500,
-                options: {
-                    compilation_level: 'SIMPLE_OPTIMIZATIONS',
-                    language_in: 'ECMASCRIPT5_STRICT'
-                }
-            }
-        },
         less: {
             dev: {
                 files: {

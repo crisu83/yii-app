@@ -3,19 +3,32 @@
 
 Vagrant.configure("2") do |config|
 
-  # define the box name
-  config.vm.box = "precise32"
+  # virtualbox config
+  config.vm.box = "precise64"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
-  # define the box url in case Vagrant needs to download it
-  config.vm.box_url = "http://files.vagrantup.com/precise32.box"
+  # vmware fusion config
+  config.vm.provider "vmware_fusion" do |v, o|
+    o.vm.box = "precise64_vmware"
+    o.vm.box_url = "http://files.vagrantup.com/precise64_vmware.box"
+  end
+
+  # vmware workstation config
+  config.vm.provider "vmware_workstation" do |v, o|
+    o.vm.box = "precise64_vmware"
+    o.vm.box_url = "http://files.vagrantup.com/precise64_vmware.box"
+  end
+
+  # set the hostname
+  config.vm.hostname = "yii-app"
 
   # enable port forwarding
-  config.vm.network :forwarded_port, host: 4567, guest: 80
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+
+  # set up provisioning
+  config.vm.provision "shell", :path => "provision/bootstrap.sh"
 
   # set file permissions
-  config.vm.synced_folder ".", "/vagrant", :extra => "dmode=777,fmode=666"
-
-  # enable the bootstrap-script
-  config.vm.provision :shell, :path => "bootstrap.sh"
+  config.vm.synced_folder ".", "/vagrant", :mount_options => ["dmode=777", "fmode=666"]
 
 end

@@ -10,7 +10,6 @@ class WebUser extends CWebUser
     public function init()
     {
         parent::init();
-        $this->attachBehavior('auditChanger', 'AuditChanger');
         $this->updateLastActiveAt();
     }
 

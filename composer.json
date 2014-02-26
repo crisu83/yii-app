@@ -12,36 +12,29 @@
             "homepage": "http://www.cniska.net"
         }
     ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://packages.phundament.com"
-        }
-    ],
     "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "php": ">=5.3.0",
         "crisu83/yii-composer": "dev-master",
-        "crisu83/yii-auth": "dev-master",
-        "crisu83/yii-imagemanager": "dev-master",
-        "crisu83/yii-consoletools": "dev-master",
-        "crisu83/yii-formatter": "dev-master",
-        "crisu83/yii-livereload": "dev-master",
-        "crisu83/yii-multilingual": "dev-master",
-        "crisu83/yii-seo": "dev-master",
-        "crisu83/yii-workflow": "dev-master",
-        "crisu83/yiistrap": "dev-master",
-        "malyshev/yii-debug-toolbar": "dev-master",
-        "nordsoftware/yii-audit": "dev-master",
-        "nordsoftware/yii-emailer": "dev-master",
+        "crisu83/yii-consoletools": "1.0.*",
+        "crisu83/yiistrap": "1.2.*",
         "phpnode/yiipassword": "dev-master",
         "yiisoft/yii": ">=1.1.14"
 
     },
     "require-dev": {
         "codeception/codeception": "@stable",
-        "crisu83/closurecompiler-bin": "dev-master"
+        "malyshev/yii-debug-toolbar": "dev-master"
+    },
+    "suggest": {
+        "crisu83/yii-auth": "1.6.*",
+        "crisu83/yii-arbehaviors": "1.1.*",
+        "crisu83/yii-filemanager": "1.8.*",
+        "crisu83/yii-imagemanager": "1.11.*",
+        "crisu83/yii-sentry": "1.3.*",
+        "crisu83/yii-seo": "dev-master",
+        "nordsoftware/yii-audit": "1.1.*",
+        "nordsoftware/yii-emailer": "1.2.*"
     },
     "scripts": {
         "post-install-cmd": [

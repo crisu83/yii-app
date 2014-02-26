@@ -11,5 +11,4 @@
     <?php js('js/main.js'); ?>
     <?php app()->bootstrap->registerAllScripts(); ?>
     <?php app()->bootstrap->registerYiistrapCss(); ?>
-    <?php app()->livereload->register(); ?>
 </head>

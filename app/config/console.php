@@ -11,7 +11,6 @@ return array(
             'class' => 'vendor.crisu83.yii-consoletools.commands.EnvironmentCommand',
             'basePath' => __DIR__ . '/../../',
             'flushPaths' => array(
-                'app/runtime',
                 'web/assets',
                 'web/css',
                 'web/js',
@@ -20,12 +19,7 @@ return array(
         'maintain' => array(
             'class' => 'vendor.crisu83.yii-consoletools.commands.MaintainCommand',
             'basePath' => __DIR__ . '/../../',
-            'flushPaths' => array(
-                'app/runtime',
-                'web/assets',
-                'web/css',
-                'web/js',
-            ),
+            'flushPaths' => array(),
         ),
         // uncomment the following if you enable the imagemanager extension.
         /*

@@ -28,7 +28,7 @@ A great way to start building your web application with the Yii PHP framework.
  * Download and install Composer by following the instructions [here](http://getcomposer.org/download/).
  * Run `composer create-project crisu83/yii-app [APP-NAME]` and composer will create the project for you.
  * Run `vagrant up` to set up your development environment.
- * You're done! Navigate to `http://localhost:4567/index.php` to see your application.
+ * You're done! Navigate to `http://localhost:8080/index.php` to see your application.
 
 
 For more information on Composer, Grunt and Vagrant:
@@ -46,12 +46,8 @@ The following extensions are part of yii-app:
  * Debug toolbar https://github.com/malyshev/yii-debug-toolbar
  * Console tools https://github.com/Crisu83/yii-consoletools
  * Emailer https://github.com/nordsoftware/yii-emailer
- * Extension https://github.com/Crisu83/yii-extension
  * File manager https://github.com/Crisu83/yii-filemanager
- * Formatter https://github.com/Crisu83/yii-formatter
  * Image manager https://github.com/Crisu83/yii-imagemanager
- * Multilingual https://github.com/Crisu83/yii-multilingual
- * Live reload https://github.com/Crisu83/yii-livereload
  * Password https://github.com/phpnode/YiiPassword
  * Seo https://github.com/Crisu83/yii-seo
  * Yiistrap https://github.com/Crisu83/yiistrap
