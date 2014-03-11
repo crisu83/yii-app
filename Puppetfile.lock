@@ -1,0 +1,77 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    maestrodev/wget (1.3.2)
+    puppetlabs/apt (1.4.2)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/concat (1.1.0-rc1)
+      puppetlabs/stdlib (>= 3.0.0)
+    puppetlabs/stdlib (4.1.0)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-apt.git
+  ref: master
+  sha: 6691c2faded01d273672b4db36f5a8651d3a934f
+  specs:
+    apt (1.4.1)
+      puppetlabs/stdlib (>= 2.2.1)
+
+GIT
+  remote: https://github.com/Brainsware/puppet-composer.git
+  ref: master
+  sha: 6522c2a8da4ed0535b462f770f9b9e47635919de
+  specs:
+    composer (0.2.2)
+      maestrodev/wget (>= 1.2.2)
+      puppetlabs/stdlib (>= 4.1.0)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-apache.git
+  ref: 0.10.0
+  sha: 1f1cffcff00fde938033323757a00fdee1d134bd
+  specs:
+    apache (0.10.0)
+      puppetlabs/concat (>= 1.0.0)
+      puppetlabs/stdlib (>= 2.4.0)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-git.git
+  ref: 0.0.3
+  sha: faf74215e9f3e30178e3170373e549b5bc0dc38f
+  specs:
+    git (0.0.3)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-mysql.git
+  ref: 2.1.0
+  sha: e303e361b7a1e7c1a808e92a02a8eacaaac3a498
+  specs:
+    mysql (2.1.0)
+      puppetlabs/stdlib (>= 2.2.1)
+
+GIT
+  remote: https://github.com/puppetlabs/puppetlabs-nodejs.git
+  ref: master
+  sha: cc60a877db078ca116a74ce0f31a89eb3a663c3d
+  specs:
+    nodejs (0.4.0)
+      puppetlabs/apt (>= 0.0.3)
+      puppetlabs/stdlib (>= 2.0.0)
+
+GIT
+  remote: https://github.com/woss/puppet-php.git
+  ref: v1.1.0
+  sha: 1f6ca01195d38ced5276b5e675d3cc5117018b83
+  specs:
+    php (1.1.0)
+
+DEPENDENCIES
+  apache (>= 0)
+  apt (>= 0)
+  composer (>= 0)
+  git (>= 0)
+  mysql (>= 0)
+  nodejs (>= 0)
+  php (>= 0)
+  puppetlabs/stdlib (>= 0)
+

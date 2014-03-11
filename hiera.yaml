@@ -1,0 +1,8 @@
+---
+:backends: yaml
+:yaml:
+  :datadir: manifests/hiera
+:hierarchy:
+  - "env/%{::env}"
+  - common
+:logger: console

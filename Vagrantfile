@@ -23,10 +23,20 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "yii-app"
 
   # enable port forwarding
-  config.vm.network "forwarded_port", guest: 80, host: 8080
+  config.vm.network "forwarded_port", guest: 80, host: 1337
 
-  # set up provisioning
-  config.vm.provision "shell", :path => "provision/bootstrap.sh"
+  # provision the vm
+  config.vm.provision "shell", :path => "setup-puppet.sh"
+  config.vm.provision "puppet" do |puppet|
+    puppet.hiera_config_path = "hiera.yaml"
+    puppet.module_path = "modules"
+    puppet.temp_dir = "/vagrant/.tmp"
+    #puppet.options = "--verbose --debug"
+    puppet.working_directory = "/vagrant"
+    puppet.facter = {
+      "env" => "php",
+    }
+  end
 
   # set file permissions
   config.vm.synced_folder ".", "/vagrant", :mount_options => ["dmode=777", "fmode=666"]

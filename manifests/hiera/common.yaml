@@ -1,0 +1,49 @@
+---
+classes:
+  - "apt"
+  - "git"
+  - "mysql::client"
+  - "nodejs"
+apt:always_apt_update: true
+default_packages:
+  - "python-software-properties"
+  - "curl"
+  - "build-essential"
+  - "screen"
+  - "htop"
+  - "vim"
+vhosts:
+  app:
+    port: 80
+    docroot: "/vagrant/web"
+    docroot_owner: "vagrant"
+    docroot_group: "vagrant"
+    default_vhost: true
+    directories:
+      -
+        path: "/vagrant/web"
+        allow_override:
+          - "All"
+        options:
+          - "Indexes"
+          - "FollowSymLinks"
+          - "MultiViews"
+        index_options:
+          - "FancyIndexing"
+          - "FoldersFirst"
+db_classes:
+  - "mysql::server"
+  - "mysql::client"
+mysql::server::root_password: "root"
+databases:
+  app:
+    ensure: "present"
+    charset: "utf8"
+    collate: "utf8_general_ci"
+mysql_default_user:
+  username: "root"
+  password: "root"
+nodejs::manage_repo: true
+npms_to_install:
+  - "bower"
+  - "grunt-cli"

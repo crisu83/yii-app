@@ -31,3 +31,10 @@ node_modules/*
 
 # vagrant
 .vagrant/
+
+# puppet
+.librarian/
+modules/
+
+# temp
+.tmp/
