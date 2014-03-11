@@ -14,7 +14,6 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
   config.vm.provider "virtualbox" do |v|
-    v.name = "my_vm"
     v.customize [
         'modifyvm', :id,
         '--name', hostname,
@@ -38,7 +37,7 @@ Vagrant.configure("2") do |config|
   end
 
   # Common settings
-  # -- Configure hostname, orward port, set ip, forward SSH agent, set file permissions
+  # -- Configure hostname, forward port, set ip, forward SSH agent, set file permissions
   config.vm.host_name = (domain) ? hostname + '.' + domain : hostname
   config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.network :private_network, ip: ip
