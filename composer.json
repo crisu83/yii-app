@@ -19,10 +19,8 @@
         "crisu83/yiistrap": "1.2.*",
         "phpnode/yiipassword": "dev-master",
         "yiisoft/yii": ">=1.1.14"
-
     },
     "require-dev": {
-        "codeception/codeception": "@stable",
         "malyshev/yii-debug-toolbar": "dev-master"
     },
     "suggest": {
@@ -36,8 +34,9 @@
         "nordsoftware/yii-emailer": "1.2.*"
     },
     "scripts": {
-        "post-install-cmd": [
-            "Crisu83\\YiiComposer\\InstallHandler::setPermissions"
+        "post-update-cmd": [
+            "Crisu83\\YiiComposer\\InstallHandler::setPermissions",
+            "Crisu83\\YiiComposer\\InstallHandler::configure"
         ]
     },
     "extra": {
@@ -48,6 +47,9 @@
         ],
         "yii-install-executable": [
             "app/yiic"
-        ]
+        ],
+        "yii-install-config": {
+            "foo": "bar"
+        }
     }
 }
