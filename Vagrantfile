@@ -38,7 +38,8 @@ Vagrant.configure("2") do |config|
   end
 
   # Common settings
-  # -- Forward port, set ip, forward SSH agent, set file permissions
+  # -- Configure hostname, orward port, set ip, forward SSH agent, set file permissions
+  config.vm.host_name = (domain) ? hostname + '.' + domain : hostname
   config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.network :private_network, ip: ip
   config.ssh.forward_agent = true
