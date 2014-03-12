@@ -22,7 +22,7 @@ php_modules:
   mysql: {}
 composer::provider: "wget"
 vhosts:
-  "%{::hostname}":
+  yii_app:
     port: 80
     docroot: "/vagrant/web"
     docroot_owner: "vagrant"
@@ -36,16 +36,12 @@ vhosts:
         options:
           - "Indexes"
           - "FollowSymLinks"
-          - "MultiViews"
-        index_options:
-          - "FancyIndexing"
-          - "FoldersFirst"
 db_classes:
   - "mysql::server"
   - "mysql::client"
 mysql::server::root_password: "%{::db_root_password}"
 databases:
-  "%{::db_name}":
+  yii_app:
     ensure: "present"
     charset: "utf8"
     collate: "utf8_general_ci"
