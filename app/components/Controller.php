@@ -1,9 +1,8 @@
 <?php
-/**
- * Controller is the customized base controller class.
- * All controller classes for this application should extend from this base class.
- */
-class Controller extends CController
+
+namespace app\components;
+
+class Controller extends \CController
 {
     /**
      * @var array context menu items. This property will be assigned to {@link CMenu::items}.
@@ -18,7 +17,7 @@ class Controller extends CController
 
     /**
      * Performs ajax validation on the given model.
-     * @param CModel $model the model to validate.
+     * @param \CModel $model the model to validate.
      * @param string $formId the form id.
      */
     public function performAjaxValidation($model, $formId)
@@ -28,7 +27,7 @@ class Controller extends CController
                 $model = array($model);
             }
             foreach ($model as $m) {
-                echo CActiveForm::validate($m);
+                echo \CActiveForm::validate($m);
             }
             app()->end();
         }
@@ -40,7 +39,7 @@ class Controller extends CController
      */
     public function pageNotFound()
     {
-        throw new CHttpException(404, t('error', 'Page not found.'));
+        throw new \CHttpException(404, t('error', 'Page not found.'));
     }
 
     /**
@@ -49,7 +48,7 @@ class Controller extends CController
      */
     public function accessDenied()
     {
-        throw new CHttpException(403, t('error', 'Access denied.'));
+        throw new \CHttpException(403, t('error', 'Access denied.'));
     }
 
     /**
@@ -58,6 +57,6 @@ class Controller extends CController
      */
     public function badRequest()
     {
-        throw new CHttpException(400, t('error', 'Invalid request.'));
+        throw new \CHttpException(400, t('error', 'Invalid request.'));
     }
 }

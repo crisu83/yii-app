@@ -1,15 +1,24 @@
 <?php
 // web application configuration
 return array(
+    // theme name
+    'theme' => 'yiistrap',
     // path aliases
     'aliases' => array(
-        'bootstrap' => 'vendor.crisu83.yiistrap',
+        'app' => 'application',
+    ),
+    // paths to import
+    'import' => array(
+        'app.helpers.*',
+        'app.models.ar.*',
+        'app.models.form.*',
+        'app.components.*',
     ),
     // application behaviors
     'behaviors' => array(
         'maintain' => array(
-            'class' => 'vendor.crisu83.yii-consoletools.behaviors.MaintainApplicationBehavior',
-            'maintainFile' => __DIR__ . '/../runtime/maintain',
+            'class' => 'MaintainApplicationBehavior',
+            'maintainFile' => dirname(__DIR__) . '/runtime/maintain',
         ),
     ),
     // controllers mappings
@@ -21,15 +30,7 @@ return array(
     // application components
     'components' => array(
         'bootstrap' => array(
-            'class' => 'bootstrap.components.TbApi',
-        ),
-        'log' => array(
-            'routes' => array(
-                array(
-                    'class' => 'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',
-                    'ipFilters' => array('127.0.0.1', '10.0.2.2'/* Vagrant */, '::1'/* WAMP */),
-                ),
-            ),
+            'class' => 'TbApi',
         ),
         'urlManager' => array(
             'urlFormat' => 'path',
@@ -41,11 +42,14 @@ return array(
             ),
         ),
         'user' => array(
-            'class'=>'app.components.WebUser',
+            'class'=>'\app\components\WebUser',
             'allowAutoLogin' => true,
         ),
         'errorHandler' => array(
             'errorAction' => 'site/error',
+        ),
+        'themeManager' => array(
+            'basePath' => realpath(dirname(__DIR__) . '/themes'),
         ),
     ),
 );

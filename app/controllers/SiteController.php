@@ -1,5 +1,10 @@
 <?php
 
+use app\components\Controller;
+use app\components\WebUser;
+use app\models\form\ContactForm;
+use app\models\form\LoginForm;
+
 class SiteController extends Controller
 {
     /**

@@ -1,12 +1,20 @@
 <?php
 
-Yii::import('vendor.nordsoftware.yii-audit.behaviors.AuditChanger');
+namespace app\components;
 
-// todo: add missing comments.
-class WebUser extends CWebUser
+use \Yii;
+use app\models\records\User;
+
+class WebUser extends \CWebUser
 {
+    /**
+     * @var User
+     */
     protected $_model;
 
+    /**
+     * Initializes the component.
+     */
     public function init()
     {
         parent::init();
@@ -25,8 +33,7 @@ class WebUser extends CWebUser
             if ($this->isGuest) {
                 return null;
             }
-            return null; // todo: fix this in the build by adding a fixture.
-            //return $this->_model = User::model()->findByPk($this->id);
+            return $this->_model = User::model()->findByPk($this->id);
         }
     }
 
@@ -60,6 +67,10 @@ class WebUser extends CWebUser
         return false;
     }
 
+    /**
+     * Returns the id for the currently logged in user (or zero if the user is not logged in).
+     * @return int user id.
+     */
     public function getId()
     {
         return !$this->isGuest ? parent::getId() : 0;

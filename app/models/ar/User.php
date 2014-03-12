@@ -1,6 +1,9 @@
 <?php
 
-Yii::import('vendor.phpnode.yiipassword.*');
+namespace app\models\ar;
+
+use app\components\ActiveRecord;
+use \Yii;
 
 /**
  * This is the model class for table "user".
@@ -51,19 +54,6 @@ class User extends ActiveRecord
                     ),
                 ),
             ),
-            'workflow' => array(
-                'class' => 'vendor.crisu83.yii-workflow.behaviors.WorkflowBehavior',
-                'defaultStatus' => self::STATUS_DEFAULT,
-                'statuses' => array(
-                    self::STATUS_DEFAULT => array(
-                        'label' => t('label', 'Default'),
-                        'transitions' => array(self::STATUS_DELETED),
-                    ),
-                    self::STATUS_DELETED => array(
-                        'label' => t('label', 'Deleted'),
-                    ),
-                ),
-            ),
         ));
     }
 
@@ -106,18 +96,18 @@ class User extends ActiveRecord
 
     /**
      * Retrieves a list of models based on the current search/filter conditions.
-     * @return CActiveDataProvider the data provider.
+     * @return \CActiveDataProvider the data provider.
      */
     public function search()
     {
-        $criteria = new CDbCriteria;
+        $criteria = new \CDbCriteria;
 
         $criteria->compare('t.id', $this->id);
         $criteria->compare('t.name', $this->name, true);
         $criteria->compare('t.lastLoginAt', $this->lastLoginAt, true);
         $criteria->compare('t.lastActiveAt', $this->lastActiveAt, true);
 
-        return new CActiveDataProvider($this, array(
+        return new \CActiveDataProvider($this, array(
             'criteria' => $criteria,
         ));
     }

@@ -2,7 +2,7 @@
 .idea/*
 
 # environment files
-app/config/*-environment.php
+*/config/*-environment.php
 app/tests/acceptance.suite.yml
 app/tests/functional.suite.yml
 web/css/*
@@ -14,20 +14,21 @@ web/test.php
 app/config/*-local.php
 
 # runtime directories
-app/runtime/*
-app/tests/_log/*
+*/runtime/*
+*/tests/_log/*
 web/assets/*
 web/files/*
 
 # composer
 vendor/*
-composer.phar
-
-# codeception
-codecept.phar
 
 # npm
 node_modules/*
+
+# puppet
+.librarian/*
+.tmp/*
+modules/*
 
 # vagrant
 .vagrant/

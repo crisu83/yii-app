@@ -1,11 +1,15 @@
 <?php
 
+namespace app\models\form;
+
+use app\components\UserIdentity;
+
 /**
  * LoginForm class.
  * LoginForm is the data structure for keeping
  * user login form data. It is used by the 'login' action of 'SiteController'.
  */
-class LoginForm extends CFormModel
+class LoginForm extends \CFormModel
 {
     public $username;
     public $password;

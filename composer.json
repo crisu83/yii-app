@@ -1,54 +1,52 @@
 {
-    "name": "crisu83/yii-app",
-    "description": "A great way to start building your web application with Yii PHP framework.",
-    "keywords": ["yii", "application-template"],
-    "homepage": "https://github.com/Crisu83/yii-app",
-    "type": "project",
-    "license": "BSD-3-Clause",
-    "authors": [
-        {
-            "name": "Christoffer Niska",
-            "email": "christoffer.niska@gmail.com",
-            "homepage": "http://www.cniska.net"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=5.3.0",
-        "crisu83/yii-composer": "dev-master",
-        "crisu83/yii-consoletools": "1.0.*",
-        "crisu83/yiistrap": "1.2.*",
-        "phpnode/yiipassword": "dev-master",
-        "yiisoft/yii": ">=1.1.14"
-
-    },
-    "require-dev": {
-        "codeception/codeception": "@stable",
-        "malyshev/yii-debug-toolbar": "dev-master"
-    },
-    "suggest": {
-        "crisu83/yii-auth": "1.6.*",
-        "crisu83/yii-arbehaviors": "1.1.*",
-        "crisu83/yii-filemanager": "1.8.*",
-        "crisu83/yii-imagemanager": "1.11.*",
-        "crisu83/yii-sentry": "1.3.*",
-        "crisu83/yii-seo": "dev-master",
-        "nordsoftware/yii-audit": "1.1.*",
-        "nordsoftware/yii-emailer": "1.2.*"
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "Crisu83\\YiiComposer\\InstallHandler::setPermissions"
-        ]
-    },
-    "extra": {
-        "yii-install-writable": [
-            "app/runtime",
-            "app/tests/_log",
-            "web/assets"
-        ],
-        "yii-install-executable": [
-            "app/yiic"
-        ]
+  "name": "crisu83/yii-app",
+  "description": "A great way to start building your web application with Yii PHP framework.",
+  "keywords": ["yii", "application-template"],
+  "homepage": "https://github.com/Crisu83/yii-app",
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Christoffer Niska",
+      "email": "christoffer.niska@gmail.com",
+      "homepage": "http://www.cniska.net"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "crisu83/yii-composer": "1.1.*",
+    "crisu83/yii-consoletools": "1.1.*",
+    "crisu83/yiistrap": "dev-bs3",
+    "phpnode/yiipassword": "dev-master",
+    "twbs/bootstrap": "3.1.*",
+    "yiisoft/yii": ">=1.1.14"
+  },
+  "require-dev": {
+    "malyshev/yii-debug-toolbar": "dev-master"
+  },
+  "suggest": {
+    "crisu83/yii-auth": "1.6.*",
+    "crisu83/yii-arbehaviors": "1.1.*",
+    "crisu83/yii-filemanager": "1.8.*",
+    "crisu83/yii-imagemanager": "1.11.*",
+    "crisu83/yii-sentry": "1.3.*",
+    "crisu83/yii-seo": "dev-master",
+    "nordsoftware/yii-audit": "1.1.*",
+    "nordsoftware/yii-emailer": "1.2.*"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "Crisu83\\YiiComposer\\InstallHandler::setPermissions"
+    ]
+  },
+  "extra": {
+    "yii-install-writable": [
+      "app/runtime",
+      "app/tests/_log",
+      "web/assets"
+    ],
+    "yii-install-executable": [
+      "yiic"
+    ]
+  }
 }

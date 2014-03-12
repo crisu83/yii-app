@@ -1,10 +1,7 @@
 <?php
-/**
- * This is the bootstrap file for test application.
- * This file should be removed when the application is deployed for production.
- */
 
 defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('STDIN') or define('STDIN', fopen('php://stdin', 'r'));
 
 require(__DIR__ . '/../vendor/autoload.php');
 require(__DIR__ . '/../vendor/yiisoft/yii/framework/yii.php');
@@ -15,17 +12,16 @@ $config = ConfigHelper::merge(
     array(
         // base
         __DIR__ . '/../common/config/common.php',
-        __DIR__ . '/../app/config/web.php',
-        __DIR__ . '/../app/config/test.php',
+        __DIR__ . '/config/console.php',
         // environment
         __DIR__ . '/../common/config/common-environment.php',
-        __DIR__ . '/../app/config/web-environment.php',
-        __DIR__ . '/../app/config/test-environment.php',
+        __DIR__ . '/config/console-environment.php',
         // local
         __DIR__ . '/../common/config/common-local.php',
-        __DIR__ . '/../app/config/web-local.php',
-        __DIR__ . '/../app/config/test-local.php',
+        __DIR__ . '/config/console-local.php',
     )
 );
 
-Yii::createWebApplication($config)->run();
+$app = Yii::createConsoleApplication($config);
+$app->commandRunner->addCommands(YII_PATH . '/cli/commands');
+$app->run();
