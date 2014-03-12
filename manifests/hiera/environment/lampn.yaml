@@ -1,0 +1,54 @@
+---
+classes:
+  - "apache"
+  - "apache::mod::alias"
+  - "apache::mod::php"
+  - "apache::mod::rewrite"
+  - "apache::mod::proxy"
+  - "apache::mod::vhost_alias"
+  - "php::apache2"
+  - "composer"
+apache::mpm_module: "prefork"
+apache::default_vhost: false
+php_modules:
+  dev: {}
+  snmp: {}
+  mcrypt: {}
+  xdebug: {}
+  xcache: {}
+  gd: {}
+  curl: {}
+  uuid: {}
+  mysql: {}
+composer::provider: "wget"
+vhosts:
+  yii_app:
+    port: 80
+    docroot: "/vagrant/web"
+    docroot_owner: "vagrant"
+    docroot_group: "vagrant"
+    default_vhost: true
+    directories:
+      -
+        path: "/vagrant/web"
+        allow_override:
+          - "All"
+        options:
+          - "Indexes"
+          - "FollowSymLinks"
+db_classes:
+  - "mysql::server"
+  - "mysql::client"
+mysql::server::root_password: "%{::db_root_password}"
+databases:
+  yii_app:
+    ensure: "present"
+    charset: "utf8"
+    collate: "utf8_general_ci"
+mysql_default_user:
+  username: "root"
+  password: "%{::db_root_password}"
+nodejs::manage_repo: true
+npms_to_install:
+  - "bower"
+  - "grunt-cli"

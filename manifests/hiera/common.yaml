@@ -1,0 +1,13 @@
+---
+classes:
+  - "apt"
+  - "git"
+  - "mysql::client"
+  - "nodejs"
+default_packages:
+  - "python-software-properties"
+  - "curl"
+  - "build-essential"
+  - "screen"
+  - "htop"
+  - "vim"
