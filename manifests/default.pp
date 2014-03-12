@@ -1,5 +1,7 @@
 hiera_include('classes')
 
+apt::ppa { 'ppa:ondrej/php5-oldstable': }
+
 # APT update
 exec { 'apt-update':
   command => '/usr/bin/apt-get update'
@@ -21,7 +23,6 @@ create_resources(php::module, $php_modules)
 
 php::conf { ['mysqli', 'pdo', 'pdo_mysql']:
   require => Package['php-mysql'],
-# notify  => Service['apache'],
 }
 
 # MySQL
@@ -30,7 +31,6 @@ hiera_include('db_classes')
 $databases = hiera('databases')
 create_resources(mysql_database, $databases)
 
-/*
 mysql_user { 'root@%':
   ensure                   => 'present',
   max_connections_per_hour => '0',
@@ -46,7 +46,6 @@ mysql_grant { 'root@%/*.*':
   table      => '*.*',
   user       => 'root@%',
 }
-*/
 
 # Node.js
 $npms_to_install = hiera('npms_to_install')
