@@ -1,10 +1,13 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-hostname    = "yii-app"
-port        = 8080
-cpus        = 1
-memsize     = 512
+hostname         = "yii-app"
+port             = 8080
+db_name          = "yii_app"
+db_root_password = "root"
+environment      = "lampn"
+cpus             = 1
+memsize          = 512
 
 Vagrant.configure("2") do |config|
 
@@ -54,8 +57,10 @@ Vagrant.configure("2") do |config|
     puppet.hiera_config_path = "manifests/hiera.yaml"
     puppet.working_directory = "/vagrant"
     puppet.facter = {
-      "env" => "lampn",
-      "db_name" => "app_new"
+      "environment" => environment,
+      "host" => hostname,
+      "db_name" => db_name,
+      "db_root_password" => db_root_password,
     }
   end
 

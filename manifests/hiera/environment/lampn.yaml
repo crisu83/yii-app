@@ -22,7 +22,7 @@ php_modules:
   mysql: {}
 composer::provider: "wget"
 vhosts:
-  app:
+  "%{::hostname}":
     port: 80
     docroot: "/vagrant/web"
     docroot_owner: "vagrant"
@@ -43,7 +43,7 @@ vhosts:
 db_classes:
   - "mysql::server"
   - "mysql::client"
-mysql::server::root_password: "root"
+mysql::server::root_password: "%{::db_root_password}"
 databases:
   "%{::db_name}":
     ensure: "present"
@@ -51,7 +51,7 @@ databases:
     collate: "utf8_general_ci"
 mysql_default_user:
   username: "root"
-  password: "root"
+  password: "%{::db_root_password}"
 nodejs::manage_repo: true
 npms_to_install:
   - "bower"

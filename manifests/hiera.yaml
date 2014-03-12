@@ -3,6 +3,6 @@
 :yaml:
   :datadir: manifests/hiera
 :hierarchy:
-  - "env/%{::env}"
+  - "environment/%{::environment}"
   - common
 :logger: console
