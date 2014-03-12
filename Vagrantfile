@@ -4,7 +4,7 @@
 host_name        = "yii-app"
 db_root_password = "root"
 cpus             = 1
-memsize          = 512
+memsize          = 1024
 forwarded_port   = 8080
 
 Vagrant.configure("2") do |config|

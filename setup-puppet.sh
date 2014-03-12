@@ -14,7 +14,7 @@ FOUND_LIB_PUPPET=$?
 
 if [ "${FOUND_LIB_PUPPET}" -ne '0' ]; then
     echo "Installing librarian-puppet..."
-    sudo /opt/ruby/bin/gem install librarian-puppet --no-rdoc --no-ri
+    gem install librarian-puppet --no-rdoc --no-ri
 fi
 
 echo "Running librarian-puppet install..."
