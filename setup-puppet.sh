@@ -9,6 +9,14 @@ if [ "${FOUND_GIT}" -ne '0' ]; then
     sudo apt-get install -y git-core
 fi
 
+$(which gem > /dev/null 2>&1)
+FOUND_GEM=$?
+
+if [ "${FOUND_GEM}" -ne '0' ]; then
+    echo "Installing rubygems..."
+    sudo apt-get install rubygems
+fi
+
 $(which librarian-puppet > /dev/null 2>&1)
 FOUND_LIB_PUPPET=$?
 
