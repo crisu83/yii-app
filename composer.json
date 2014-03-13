@@ -15,7 +15,7 @@
     "minimum-stability": "dev",
     "require": {
         "crisu83/yii-composer": "1.1.*",
-        "crisu83/yii-consoletools": "1.0.*",
+        "crisu83/yii-consoletools": "1.1.*",
         "crisu83/yiistrap": "1.2.*",
         "phpnode/yiipassword": "dev-master",
         "yiisoft/yii": ">=1.1.14"
@@ -35,8 +35,7 @@
     },
     "scripts": {
         "post-update-cmd": [
-            "Crisu83\\YiiComposer\\InstallHandler::setPermissions",
-            "Crisu83\\YiiComposer\\InstallHandler::configure"
+            "Crisu83\\YiiComposer\\InstallHandler::setPermissions"
         ]
     },
     "extra": {

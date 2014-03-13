@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0eb403066d4ef668c6122535f7cf0a54",
+    "hash": "336cc8869314e0e6eebe4d37924215fd",
     "packages": [
         {
             "name": "crisu83/yii-composer",
@@ -45,19 +45,26 @@
         },
         {
             "name": "crisu83/yii-consoletools",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Crisu83/yii-consoletools.git",
-                "reference": "c4e3ddcea2fafe679f9c78ad8f360257364ba843"
+                "reference": "7938906c1e85e01dd58ed6961d619d165d69e594"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Crisu83/yii-consoletools/zipball/c4e3ddcea2fafe679f9c78ad8f360257364ba843",
-                "reference": "c4e3ddcea2fafe679f9c78ad8f360257364ba843",
+                "url": "https://api.github.com/repos/Crisu83/yii-consoletools/zipball/7938906c1e85e01dd58ed6961d619d165d69e594",
+                "reference": "7938906c1e85e01dd58ed6961d619d165d69e594",
                 "shasum": ""
             },
             "type": "library",
+            "autoload": {
+                "classmap": [
+                    "behaviors/",
+                    "commands/",
+                    "helpers/"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
@@ -75,7 +82,7 @@
                 "tools",
                 "yii"
             ],
-            "time": "2014-02-12 09:45:17"
+            "time": "2014-02-12 09:45:31"
         },
         {
             "name": "crisu83/yiistrap",
@@ -111,7 +118,7 @@
                 {
                     "name": "Christoffer Niska",
                     "email": "christoffer.niska@gmail.com",
-                    "homepage": "http://www.cniska.net/"
+                    "homepage": "http://www.cniska.net"
                 },
                 {
                     "name": "Antonio Ramirez",
