@@ -34,7 +34,7 @@ node_modules/*
 
 # puppet
 .librarian/
-modules/
+puppet/modules/
 
 # temp
 .tmp/

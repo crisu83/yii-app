@@ -25,5 +25,5 @@ if [ "${FOUND_LIB_PUPPET}" -ne '0' ]; then
     gem install librarian-puppet --no-rdoc --no-ri
 fi
 
-echo "Running librarian-puppet install..."
-cd /vagrant && librarian-puppet install
+echo "Installing puppet modules..."
+cd /vagrant/puppet && librarian-puppet install

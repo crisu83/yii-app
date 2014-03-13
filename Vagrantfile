@@ -46,13 +46,13 @@ Vagrant.configure("2") do |config|
   end
 
   # Set up provisioning with Puppet
-  config.vm.provision "shell", :path => "setup-puppet.sh"
+  config.vm.provision "shell", :path => "puppet/setup.sh"
   config.vm.provision "puppet" do |puppet|
     #puppet.options = "--verbost --debug"
-    puppet.manifests_path = "manifests"
+    puppet.manifests_path = "puppet/manifests"
     puppet.manifest_file = "yii_app.pp"
-    puppet.module_path = "modules"
-    puppet.hiera_config_path = "manifests/hiera.yaml"
+    puppet.module_path = "puppet/modules"
+    puppet.hiera_config_path = "puppet/manifests/hiera.yaml"
     puppet.working_directory = "/vagrant"
     puppet.facter = {
       "environment" => "lampn",
