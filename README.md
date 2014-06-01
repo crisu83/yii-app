@@ -2,7 +2,7 @@ yii-app
 =======
 
 [![Latest Stable Version](https://poser.pugx.org/crisu83/yii-app/v/stable.png)](https://packagist.org/packages/crisu83/yii-app)
-[![Build Status](https://travis-ci.org/Crisu83/yii-app.png)](https://travis-ci.org/Crisu83/yii-app)
+[![Build Status](https://travis-ci.org/crisu83/yii-app.png)](https://travis-ci.org/crisu83/yii-app)
 
 A great way to start building your web application with the Yii PHP framework.
 
