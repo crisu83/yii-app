@@ -88,10 +88,10 @@ cd /vagrant && sudo curl -sS https://getcomposer.org/installer | php
 # --- yii ---
 
 # run database migrations
-sudo php /vagrant/console/yiic migrate --interactive=false
+sudo php /vagrant/app/yiic migrate --interactive=false
 
 # enable the development environment
-sudo php /vagrant/console/yiic environment dev
+sudo php /vagrant/app/yiic environment dev
 
 # --- restart apache ---
 

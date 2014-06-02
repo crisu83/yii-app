@@ -12,7 +12,7 @@ return array(
 		'db' => array(
             'connectionString' => 'mysql:host=localhost;dbname=yii_app',
             'username' => 'root',
-            'password' => 'vagrant',
+            'password' => 'yii_app',
             'charset' => 'utf8',
 			'enableProfiling' => true,
 			'enableParamLogging' => true,
